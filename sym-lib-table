@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name experimentboard)(type Legacy)(uri ${KIPRJMOD}/experimentboard.lib)(options "")(descr ""))
+)

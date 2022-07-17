@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name experimentboard)(type KiCad)(uri ${KIPRJMOD}/experimentboard.pretty)(options "")(descr ""))
+  (lib (name BUCK)(type KiCad)(uri ${KIPRJMOD}/BUCK.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,8401 @@
+EESchema Schematic File Version 4
+LIBS:experimentboard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L experimentboard:wrover U6
+U 1 1 5F004246
+P 6050 2800
+F 0 "U6" H 6025 4365 50  0000 C CNN
+F 1 "wrover" H 6025 4274 50  0000 C CNN
+F 2 "experimentboard:wrover" H 6050 2800 50  0001 C CNN
+F 3 "" H 6050 2800 50  0001 C CNN
+	1    6050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F04B5E4
+P 6050 4550
+F 0 "#PWR0101" H 6050 4300 50  0001 C CNN
+F 1 "GND" H 6055 4377 50  0000 C CNN
+F 2 "" H 6050 4550 50  0001 C CNN
+F 3 "" H 6050 4550 50  0001 C CNN
+	1    6050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F04B69F
+P 5350 3550
+F 0 "#PWR0102" H 5350 3300 50  0001 C CNN
+F 1 "GND" V 5355 3422 50  0000 R CNN
+F 2 "" H 5350 3550 50  0001 C CNN
+F 3 "" H 5350 3550 50  0001 C CNN
+	1    5350 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F04B78D
+P 5350 3450
+F 0 "#PWR0103" H 5350 3200 50  0001 C CNN
+F 1 "GND" V 5355 3322 50  0000 R CNN
+F 2 "" H 5350 3450 50  0001 C CNN
+F 3 "" H 5350 3450 50  0001 C CNN
+	1    5350 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F04B87B
+P 5350 1950
+F 0 "#PWR0104" H 5350 1700 50  0001 C CNN
+F 1 "GND" V 5355 1822 50  0000 R CNN
+F 2 "" H 5350 1950 50  0001 C CNN
+F 3 "" H 5350 1950 50  0001 C CNN
+	1    5350 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5F04B9CF
+P 5050 1550
+F 0 "#PWR0105" H 5050 1300 50  0001 C CNN
+F 1 "GND" V 5055 1422 50  0000 R CNN
+F 2 "" H 5050 1550 50  0001 C CNN
+F 3 "" H 5050 1550 50  0001 C CNN
+	1    5050 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5F05B792
+P 5350 2050
+F 0 "#PWR0111" H 5350 1900 50  0001 C CNN
+F 1 "+3V3" V 5365 2178 50  0000 L CNN
+F 2 "" H 5350 2050 50  0001 C CNN
+F 3 "" H 5350 2050 50  0001 C CNN
+	1    5350 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 2150 5350 2150
+Wire Wire Line
+	6900 3250 6700 3250
+Wire Wire Line
+	4350 2150 4350 1700
+$Comp
+L Device:C C5
+U 1 1 5F097527
+P 4500 1700
+F 0 "C5" V 4248 1700 50  0000 C CNN
+F 1 "1u" V 4339 1700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4538 1550 50  0001 C CNN
+F 3 "~" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5F09771C
+P 4650 1700
+F 0 "#PWR0112" H 4650 1450 50  0001 C CNN
+F 1 "GND" V 4655 1572 50  0000 R CNN
+F 2 "" H 4650 1700 50  0001 C CNN
+F 3 "" H 4650 1700 50  0001 C CNN
+	1    4650 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U2
+U 1 1 5F1D10D5
+P 2050 2550
+F 0 "U2" H 2050 2792 50  0000 C CNN
+F 1 "LM1117-3.3" H 2050 2701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2050 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2050 2550 50  0001 C CNN
+	1    2050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5F1D11F8
+P 2050 2850
+F 0 "#PWR0125" H 2050 2600 50  0001 C CNN
+F 1 "GND" H 2055 2677 50  0000 C CNN
+F 2 "" H 2050 2850 50  0001 C CNN
+F 3 "" H 2050 2850 50  0001 C CNN
+	1    2050 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0126
+U 1 1 5F1D6F41
+P 3700 2550
+F 0 "#PWR0126" H 3700 2400 50  0001 C CNN
+F 1 "+3V3" V 3715 2678 50  0000 L CNN
+F 2 "" H 3700 2550 50  0001 C CNN
+F 3 "" H 3700 2550 50  0001 C CNN
+	1    3700 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F1D709C
+P 2800 2700
+F 0 "C1" H 2915 2746 50  0000 L CNN
+F 1 "10u" H 2915 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 2550 50  0001 C CNN
+F 3 "~" H 2800 2700 50  0001 C CNN
+	1    2800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F1D71B9
+P 3100 2700
+F 0 "C2" H 3215 2746 50  0000 L CNN
+F 1 "100n" H 3215 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 2550 50  0001 C CNN
+F 3 "~" H 3100 2700 50  0001 C CNN
+	1    3100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5F1E28CA
+P 3700 2850
+F 0 "#PWR0129" H 3700 2600 50  0001 C CNN
+F 1 "GND" H 3705 2677 50  0000 C CNN
+F 2 "" H 3700 2850 50  0001 C CNN
+F 3 "" H 3700 2850 50  0001 C CNN
+	1    3700 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 5F1E29CD
+P 3700 3800
+F 0 "#PWR0130" H 3700 3550 50  0001 C CNN
+F 1 "GND" H 3705 3627 50  0000 C CNN
+F 2 "" H 3700 3800 50  0001 C CNN
+F 3 "" H 3700 3800 50  0001 C CNN
+	1    3700 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6850 2350 6700 2350
+Wire Wire Line
+	6700 2250 6800 2250
+$Comp
+L Device:C C3
+U 1 1 5F2093E9
+P 3400 2700
+F 0 "C3" H 3515 2746 50  0000 L CNN
+F 1 "10u" H 3515 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 2550 50  0001 C CNN
+F 3 "~" H 3400 2700 50  0001 C CNN
+	1    3400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5F2093F0
+P 3700 2700
+F 0 "C4" H 3815 2746 50  0000 L CNN
+F 1 "100n" H 3815 2655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 2550 50  0001 C CNN
+F 3 "~" H 3700 2700 50  0001 C CNN
+	1    3700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5F209403
+P 3700 4250
+F 0 "#PWR0135" H 3700 4000 50  0001 C CNN
+F 1 "GND" H 3705 4077 50  0000 C CNN
+F 2 "" H 3700 4250 50  0001 C CNN
+F 3 "" H 3700 4250 50  0001 C CNN
+	1    3700 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 5F209409
+P 3700 4700
+F 0 "#PWR0136" H 3700 4450 50  0001 C CNN
+F 1 "GND" H 3705 4527 50  0000 C CNN
+F 2 "" H 3700 4700 50  0001 C CNN
+F 3 "" H 3700 4700 50  0001 C CNN
+	1    3700 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 62D190EC
+P 1100 1200
+F 0 "J1" H 1155 1667 50  0000 C CNN
+F 1 "USB_B_Micro" H 1155 1576 50  0000 C CNN
+F 2 "Connector_USB:USB_Mini-B_Lumberg_2486_01_Horizontal" H 1250 1150 50  0001 C CNN
+F 3 "~" H 1250 1150 50  0001 C CNN
+	1    1100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:CH340G U5
+U 1 1 62D191C7
+P 2500 1300
+F 0 "U5" H 2500 614 50  0000 C CNN
+F 1 "CH340G" H 2500 523 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2550 750 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 2150 2100 50  0001 C CNN
+	1    2500 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y1
+U 1 1 62D19310
+P 1800 1650
+F 0 "Y1" V 1754 1781 50  0000 L CNN
+F 1 "12Mhz" V 1845 1781 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 1800 1650 50  0001 C CNN
+F 3 "~" H 1800 1650 50  0001 C CNN
+	1    1800 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 62D19444
+P 1650 1500
+F 0 "C6" V 1398 1500 50  0000 C CNN
+F 1 "22pF" V 1489 1500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 1350 50  0001 C CNN
+F 3 "~" H 1650 1500 50  0001 C CNN
+	1    1650 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 62D194AD
+P 1650 1800
+F 0 "C7" V 1398 1800 50  0000 C CNN
+F 1 "22pF" V 1489 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 1650 50  0001 C CNN
+F 3 "~" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1500 1800 1500
+Connection ~ 1800 1500
+Wire Wire Line
+	2100 1700 2100 1800
+Wire Wire Line
+	2100 1800 1800 1800
+Connection ~ 1800 1800
+Wire Wire Line
+	1500 1500 1500 1800
+$Comp
+L power:GND #PWR0106
+U 1 1 62D1A0A3
+P 1500 1800
+F 0 "#PWR0106" H 1500 1550 50  0001 C CNN
+F 1 "GND" H 1505 1627 50  0000 C CNN
+F 2 "" H 1500 1800 50  0001 C CNN
+F 3 "" H 1500 1800 50  0001 C CNN
+	1    1500 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 1800
+$Comp
+L power:GND #PWR0107
+U 1 1 62D1A0EC
+P 1100 1600
+F 0 "#PWR0107" H 1100 1350 50  0001 C CNN
+F 1 "GND" H 1105 1427 50  0000 C CNN
+F 2 "" H 1100 1600 50  0001 C CNN
+F 3 "" H 1100 1600 50  0001 C CNN
+	1    1100 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 62D1A578
+P 1000 1600
+F 0 "#PWR0108" H 1000 1350 50  0001 C CNN
+F 1 "GND" H 1005 1427 50  0000 C CNN
+F 2 "" H 1000 1600 50  0001 C CNN
+F 3 "" H 1000 1600 50  0001 C CNN
+	1    1000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1200 2100 1200
+Wire Wire Line
+	1400 1300 2100 1300
+$Comp
+L Transistor_BJT:BC848 Q1
+U 1 1 62D1B9AD
+P 3450 1500
+F 0 "Q1" V 3686 1500 50  0000 C CNN
+F 1 "BC848" V 3777 1500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3650 1425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3450 1500 50  0001 L CNN
+	1    3450 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC848 Q2
+U 1 1 62D1BA09
+P 3450 2050
+F 0 "Q2" V 3686 2050 50  0000 C CNN
+F 1 "BC848" V 3777 2050 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3650 1975 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 3450 2050 50  0001 L CNN
+	1    3450 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 62D1BA82
+P 3300 1300
+F 0 "R1" V 3093 1300 50  0000 C CNN
+F 1 "1k" V 3184 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3230 1300 50  0001 C CNN
+F 3 "~" H 3300 1300 50  0001 C CNN
+	1    3300 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 62D1BB05
+P 3300 1850
+F 0 "R2" V 3093 1850 50  0000 C CNN
+F 1 "1k" V 3184 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3230 1850 50  0001 C CNN
+F 3 "~" H 3300 1850 50  0001 C CNN
+	1    3300 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 1600 3150 1600
+Wire Wire Line
+	3150 1600 3150 1850
+Wire Wire Line
+	3150 1300 3100 1300
+Wire Wire Line
+	3100 1300 3100 1700
+Wire Wire Line
+	3100 2150 3250 2150
+Wire Wire Line
+	2900 1600 3150 1600
+Connection ~ 3150 1600
+Wire Wire Line
+	2900 1700 3100 1700
+Connection ~ 3100 1700
+Wire Wire Line
+	3100 1700 3100 2150
+Wire Wire Line
+	3650 2150 4350 2150
+Connection ~ 4350 2150
+Wire Wire Line
+	3650 1600 3650 1300
+Wire Wire Line
+	3650 1300 6900 1300
+Wire Wire Line
+	6900 1300 6900 3250
+Wire Wire Line
+	2900 1000 6800 1000
+Wire Wire Line
+	6800 1000 6800 2250
+Wire Wire Line
+	2900 900  6850 900 
+Wire Wire Line
+	6850 900  6850 2350
+$Comp
+L Device:D_Schottky D1
+U 1 1 62D2629D
+P 1600 2550
+F 0 "D1" H 1600 2334 50  0000 C CNN
+F 1 "D_Schottky" H 1600 2425 50  0000 C CNN
+F 2 "Diode_SMD:D_SMC_Handsoldering" H 1600 2550 50  0001 C CNN
+F 3 "~" H 1600 2550 50  0001 C CNN
+	1    1600 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 62D26605
+P 1800 850
+F 0 "C8" H 1915 896 50  0000 L CNN
+F 1 "100n" H 1915 805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1838 700 50  0001 C CNN
+F 3 "~" H 1800 850 50  0001 C CNN
+	1    1800 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 62D2660C
+P 1800 1000
+F 0 "#PWR0109" H 1800 750 50  0001 C CNN
+F 1 "GND" H 1805 827 50  0000 C CNN
+F 2 "" H 1800 1000 50  0001 C CNN
+F 3 "" H 1800 1000 50  0001 C CNN
+	1    1800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 700  1800 700 
+Wire Wire Line
+	1400 1000 1450 1000
+Wire Wire Line
+	1450 1000 1450 2550
+NoConn ~ 1400 1400
+NoConn ~ 2900 1200
+NoConn ~ 2900 1300
+NoConn ~ 2900 1400
+NoConn ~ 2900 1500
+Wire Wire Line
+	2500 700  2400 700 
+Connection ~ 2400 700 
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 62D29A10
+P 1800 700
+F 0 "#PWR0110" H 1800 550 50  0001 C CNN
+F 1 "+3.3V" V 1815 828 50  0000 L CNN
+F 2 "" H 1800 700 50  0001 C CNN
+F 3 "" H 1800 700 50  0001 C CNN
+	1    1800 700 
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1800 700 
+$Comp
+L Device:D_Schottky D2
+U 1 1 62D29E32
+P 1750 2700
+F 0 "D2" V 1704 2779 50  0000 L CNN
+F 1 "D_Schottky" V 1795 2779 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC_Handsoldering" H 1750 2700 50  0001 C CNN
+F 3 "~" H 1750 2700 50  0001 C CNN
+	1    1750 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 62D2A47B
+P 1450 4050
+F 0 "#PWR0113" H 1450 3800 50  0001 C CNN
+F 1 "GND" H 1455 3877 50  0000 C CNN
+F 2 "" H 1450 4050 50  0001 C CNN
+F 3 "" H 1450 4050 50  0001 C CNN
+	1    1450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 62D2A9FF
+P 1450 3950
+F 0 "#PWR0114" H 1450 3700 50  0001 C CNN
+F 1 "GND" H 1455 3777 50  0000 C CNN
+F 2 "" H 1450 3950 50  0001 C CNN
+F 3 "" H 1450 3950 50  0001 C CNN
+	1    1450 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L experimentboard:buck U1
+U 1 1 62D2BB25
+P 2200 3600
+F 0 "U1" H 2200 3925 50  0000 C CNN
+F 1 "buck" H 2200 3834 50  0000 C CNN
+F 2 "BUCK:buck" H 2200 3600 50  0001 C CNN
+F 3 "" H 2200 3600 50  0001 C CNN
+	1    2200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L experimentboard:buck U3
+U 1 1 62D2BC06
+P 2200 4050
+F 0 "U3" H 2200 4375 50  0000 C CNN
+F 1 "buck" H 2200 4284 50  0000 C CNN
+F 2 "BUCK:buck" H 2200 4050 50  0001 C CNN
+F 3 "" H 2200 4050 50  0001 C CNN
+	1    2200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L experimentboard:buck U4
+U 1 1 62D2BC72
+P 2200 4500
+F 0 "U4" H 2200 4825 50  0000 C CNN
+F 1 "buck" H 2200 4734 50  0000 C CNN
+F 2 "BUCK:buck" H 2200 4500 50  0001 C CNN
+F 3 "" H 2200 4500 50  0001 C CNN
+	1    2200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 62D2BCD8
+P 1850 4600
+F 0 "#PWR0115" H 1850 4350 50  0001 C CNN
+F 1 "GND" H 1855 4427 50  0000 C CNN
+F 2 "" H 1850 4600 50  0001 C CNN
+F 3 "" H 1850 4600 50  0001 C CNN
+	1    1850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 62D2C262
+P 1850 4150
+F 0 "#PWR0116" H 1850 3900 50  0001 C CNN
+F 1 "GND" H 1855 3977 50  0000 C CNN
+F 2 "" H 1850 4150 50  0001 C CNN
+F 3 "" H 1850 4150 50  0001 C CNN
+	1    1850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 62D2C7EC
+P 1850 3700
+F 0 "#PWR0117" H 1850 3450 50  0001 C CNN
+F 1 "GND" H 1855 3527 50  0000 C CNN
+F 2 "" H 1850 3700 50  0001 C CNN
+F 3 "" H 1850 3700 50  0001 C CNN
+	1    1850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 62D2CD76
+P 2550 3700
+F 0 "#PWR0118" H 2550 3450 50  0001 C CNN
+F 1 "GND" H 2555 3527 50  0000 C CNN
+F 2 "" H 2550 3700 50  0001 C CNN
+F 3 "" H 2550 3700 50  0001 C CNN
+	1    2550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 62D2D300
+P 2550 4150
+F 0 "#PWR0119" H 2550 3900 50  0001 C CNN
+F 1 "GND" H 2555 3977 50  0000 C CNN
+F 2 "" H 2550 4150 50  0001 C CNN
+F 3 "" H 2550 4150 50  0001 C CNN
+	1    2550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 62D2D88A
+P 2550 4600
+F 0 "#PWR0120" H 2550 4350 50  0001 C CNN
+F 1 "GND" H 2555 4427 50  0000 C CNN
+F 2 "" H 2550 4600 50  0001 C CNN
+F 3 "" H 2550 4600 50  0001 C CNN
+	1    2550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3850 1600 3850
+Wire Wire Line
+	1600 3850 1600 3500
+Wire Wire Line
+	1600 3500 1850 3500
+Wire Wire Line
+	1600 3850 1600 3950
+Wire Wire Line
+	1600 3950 1850 3950
+Connection ~ 1600 3850
+Wire Wire Line
+	1600 3950 1600 4400
+Wire Wire Line
+	1600 4400 1850 4400
+Connection ~ 1600 3950
+Connection ~ 1750 2550
+Wire Wire Line
+	2550 3500 2550 3150
+Wire Wire Line
+	2550 3150 1750 3150
+Wire Wire Line
+	1750 3150 1750 2850
+$Comp
+L Device:C C9
+U 1 1 62D39F3B
+P 2800 3650
+F 0 "C9" H 2915 3696 50  0000 L CNN
+F 1 "10u" H 2915 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 3500 50  0001 C CNN
+F 3 "~" H 2800 3650 50  0001 C CNN
+	1    2800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 62D39F42
+P 3100 3650
+F 0 "C12" H 3215 3696 50  0000 L CNN
+F 1 "100n" H 3215 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 3500 50  0001 C CNN
+F 3 "~" H 3100 3650 50  0001 C CNN
+	1    3100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C15
+U 1 1 62D39F55
+P 3400 3650
+F 0 "C15" H 3515 3696 50  0000 L CNN
+F 1 "10u" H 3515 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 3500 50  0001 C CNN
+F 3 "~" H 3400 3650 50  0001 C CNN
+	1    3400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C18
+U 1 1 62D39F5C
+P 3700 3650
+F 0 "C18" H 3815 3696 50  0000 L CNN
+F 1 "100n" H 3815 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 3500 50  0001 C CNN
+F 3 "~" H 3700 3650 50  0001 C CNN
+	1    3700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C10
+U 1 1 62D3B437
+P 2800 4100
+F 0 "C10" H 2915 4146 50  0000 L CNN
+F 1 "10u" H 2915 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 3950 50  0001 C CNN
+F 3 "~" H 2800 4100 50  0001 C CNN
+	1    2800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 62D3B43E
+P 3100 4100
+F 0 "C13" H 3215 4146 50  0000 L CNN
+F 1 "100n" H 3215 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 3950 50  0001 C CNN
+F 3 "~" H 3100 4100 50  0001 C CNN
+	1    3100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C16
+U 1 1 62D3B445
+P 3400 4100
+F 0 "C16" H 3515 4146 50  0000 L CNN
+F 1 "10u" H 3515 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 3950 50  0001 C CNN
+F 3 "~" H 3400 4100 50  0001 C CNN
+	1    3400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 62D3B44C
+P 3700 4100
+F 0 "C19" H 3815 4146 50  0000 L CNN
+F 1 "100n" H 3815 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 3950 50  0001 C CNN
+F 3 "~" H 3700 4100 50  0001 C CNN
+	1    3700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 62D3BE3C
+P 2800 4550
+F 0 "C11" H 2915 4596 50  0000 L CNN
+F 1 "10u" H 2915 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 4400 50  0001 C CNN
+F 3 "~" H 2800 4550 50  0001 C CNN
+	1    2800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 62D3BE43
+P 3100 4550
+F 0 "C14" H 3215 4596 50  0000 L CNN
+F 1 "100n" H 3215 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 4400 50  0001 C CNN
+F 3 "~" H 3100 4550 50  0001 C CNN
+	1    3100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 62D3BE4A
+P 3400 4550
+F 0 "C17" H 3515 4596 50  0000 L CNN
+F 1 "10u" H 3515 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 4400 50  0001 C CNN
+F 3 "~" H 3400 4550 50  0001 C CNN
+	1    3400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C20
+U 1 1 62D3BE51
+P 3700 4550
+F 0 "C20" H 3815 4596 50  0000 L CNN
+F 1 "100n" H 3815 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 4400 50  0001 C CNN
+F 3 "~" H 3700 4550 50  0001 C CNN
+	1    3700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 3500 2800 3500
+Connection ~ 2550 3500
+Connection ~ 2800 3500
+Wire Wire Line
+	2800 3500 3100 3500
+Connection ~ 3100 3500
+Wire Wire Line
+	3100 3500 3400 3500
+Connection ~ 3400 3500
+Wire Wire Line
+	3400 3500 3700 3500
+Wire Wire Line
+	2550 3950 2800 3950
+Connection ~ 2800 3950
+Wire Wire Line
+	2800 3950 3100 3950
+Connection ~ 3100 3950
+Wire Wire Line
+	3100 3950 3400 3950
+Connection ~ 3400 3950
+Wire Wire Line
+	3400 3950 3700 3950
+Wire Wire Line
+	2550 4400 2800 4400
+Connection ~ 2800 4400
+Wire Wire Line
+	2800 4400 3100 4400
+Connection ~ 3100 4400
+Wire Wire Line
+	3100 4400 3400 4400
+Connection ~ 3400 4400
+Wire Wire Line
+	3400 4400 3700 4400
+Wire Wire Line
+	2800 3800 3100 3800
+Connection ~ 3100 3800
+Wire Wire Line
+	3100 3800 3400 3800
+Connection ~ 3400 3800
+Wire Wire Line
+	3400 3800 3700 3800
+Wire Wire Line
+	2800 4250 3100 4250
+Connection ~ 3100 4250
+Wire Wire Line
+	3100 4250 3400 4250
+Connection ~ 3400 4250
+Wire Wire Line
+	3400 4250 3700 4250
+Wire Wire Line
+	2800 4700 3100 4700
+Connection ~ 3100 4700
+Wire Wire Line
+	3100 4700 3400 4700
+Connection ~ 3400 4700
+Wire Wire Line
+	3400 4700 3700 4700
+Wire Wire Line
+	2800 2850 3100 2850
+Connection ~ 3100 2850
+Wire Wire Line
+	3100 2850 3400 2850
+Connection ~ 3400 2850
+Wire Wire Line
+	3400 2850 3700 2850
+Wire Wire Line
+	3700 2550 3400 2550
+Connection ~ 2800 2550
+Wire Wire Line
+	2800 2550 2350 2550
+Connection ~ 3100 2550
+Wire Wire Line
+	3100 2550 2800 2550
+Connection ~ 3400 2550
+Wire Wire Line
+	3400 2550 3100 2550
+Connection ~ 3700 2550
+$Comp
+L power:+5V #PWR0121
+U 1 1 62D4A551
+P 3700 3500
+F 0 "#PWR0121" H 3700 3350 50  0001 C CNN
+F 1 "+5V" V 3715 3628 50  0000 L CNN
+F 2 "" H 3700 3500 50  0001 C CNN
+F 3 "" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	0    1    1    0   
+$EndComp
+Connection ~ 3700 3500
+$Comp
+L power:+9V #PWR0122
+U 1 1 62D4A606
+P 3700 3950
+F 0 "#PWR0122" H 3700 3800 50  0001 C CNN
+F 1 "+9V" V 3715 4078 50  0000 L CNN
+F 2 "" H 3700 3950 50  0001 C CNN
+F 3 "" H 3700 3950 50  0001 C CNN
+	1    3700 3950
+	0    1    1    0   
+$EndComp
+Connection ~ 3700 3950
+$Comp
+L power:+12V #PWR0123
+U 1 1 62D4A7F6
+P 3700 4400
+F 0 "#PWR0123" H 3700 4250 50  0001 C CNN
+F 1 "+12V" V 3715 4528 50  0000 L CNN
+F 2 "" H 3700 4400 50  0001 C CNN
+F 3 "" H 3700 4400 50  0001 C CNN
+	1    3700 4400
+	0    1    1    0   
+$EndComp
+Connection ~ 3700 4400
+Connection ~ 3700 4700
+Connection ~ 3700 4250
+Connection ~ 3700 3800
+Connection ~ 3700 2850
+$Comp
+L Connector_Generic:Conn_01x02 J15
+U 1 1 62D6D7EF
+P 8050 1950
+F 0 "J15" H 8130 1942 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 1851 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 1950 50  0001 C CNN
+F 3 "~" H 8050 1950 50  0001 C CNN
+	1    8050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3450 6700 3550
+Wire Wire Line
+	6700 3650 6700 3750
+Wire Wire Line
+	5350 3650 5350 3750
+$Comp
+L Connector_Generic:Conn_01x02 J16
+U 1 1 62D73187
+P 8050 2200
+F 0 "J16" H 8130 2192 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 2101 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 2200 50  0001 C CNN
+F 3 "~" H 8050 2200 50  0001 C CNN
+	1    8050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J17
+U 1 1 62D74DC0
+P 8050 2450
+F 0 "J17" H 8130 2442 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 2351 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 2450 50  0001 C CNN
+F 3 "~" H 8050 2450 50  0001 C CNN
+	1    8050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J18
+U 1 1 62D76B54
+P 8050 2700
+F 0 "J18" H 8130 2692 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 2601 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 2700 50  0001 C CNN
+F 3 "~" H 8050 2700 50  0001 C CNN
+	1    8050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J19
+U 1 1 62D76B5B
+P 8050 2950
+F 0 "J19" H 8130 2942 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 2851 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 2950 50  0001 C CNN
+F 3 "~" H 8050 2950 50  0001 C CNN
+	1    8050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J20
+U 1 1 62D76B62
+P 8050 3200
+F 0 "J20" H 8130 3192 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 3101 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 3200 50  0001 C CNN
+F 3 "~" H 8050 3200 50  0001 C CNN
+	1    8050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J21
+U 1 1 62D787DD
+P 8050 3450
+F 0 "J21" H 8130 3442 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 3351 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 3450 50  0001 C CNN
+F 3 "~" H 8050 3450 50  0001 C CNN
+	1    8050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J22
+U 1 1 62D787E4
+P 8050 3700
+F 0 "J22" H 8130 3692 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 3601 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 3700 50  0001 C CNN
+F 3 "~" H 8050 3700 50  0001 C CNN
+	1    8050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J23
+U 1 1 62D787EB
+P 8050 3950
+F 0 "J23" H 8130 3942 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 3851 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 3950 50  0001 C CNN
+F 3 "~" H 8050 3950 50  0001 C CNN
+	1    8050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J24
+U 1 1 62D7A463
+P 8050 4200
+F 0 "J24" H 8130 4192 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 4101 50  0000 L CNN
+F 2 "experimentboard:2_round" H 8050 4200 50  0001 C CNN
+F 3 "~" H 8050 4200 50  0001 C CNN
+	1    8050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 62D7C287
+P 4250 2250
+F 0 "J3" H 4330 2242 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 2151 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 2250 50  0001 C CNN
+F 3 "~" H 4250 2250 50  0001 C CNN
+	1    4250 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 62D7C28E
+P 4250 2500
+F 0 "J4" H 4330 2492 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 2401 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 2500 50  0001 C CNN
+F 3 "~" H 4250 2500 50  0001 C CNN
+	1    4250 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 62D7C295
+P 4250 2750
+F 0 "J5" H 4330 2742 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 2651 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 2750 50  0001 C CNN
+F 3 "~" H 4250 2750 50  0001 C CNN
+	1    4250 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 62D7C29C
+P 4250 3000
+F 0 "J6" H 4330 2992 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 2901 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 3000 50  0001 C CNN
+F 3 "~" H 4250 3000 50  0001 C CNN
+	1    4250 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 62D7C2A3
+P 4250 3250
+F 0 "J7" H 4330 3242 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 3151 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 3250 50  0001 C CNN
+F 3 "~" H 4250 3250 50  0001 C CNN
+	1    4250 3250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J8
+U 1 1 62D7C2AA
+P 4250 3500
+F 0 "J8" H 4330 3492 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 3401 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 3500 50  0001 C CNN
+F 3 "~" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 62D7C2B1
+P 4250 3750
+F 0 "J9" H 4330 3742 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 3651 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 3750 50  0001 C CNN
+F 3 "~" H 4250 3750 50  0001 C CNN
+	1    4250 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 62D7C2B8
+P 4250 4000
+F 0 "J10" H 4330 3992 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 3901 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 4000 50  0001 C CNN
+F 3 "~" H 4250 4000 50  0001 C CNN
+	1    4250 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 62D7C2BF
+P 4250 4250
+F 0 "J11" H 4330 4242 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 4151 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 4250 50  0001 C CNN
+F 3 "~" H 4250 4250 50  0001 C CNN
+	1    4250 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J12
+U 1 1 62D7C2C6
+P 4250 4500
+F 0 "J12" H 4330 4492 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 4401 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 4500 50  0001 C CNN
+F 3 "~" H 4250 4500 50  0001 C CNN
+	1    4250 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J13
+U 1 1 62D7DF7C
+P 4250 4750
+F 0 "J13" H 4330 4742 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 4651 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 4750 50  0001 C CNN
+F 3 "~" H 4250 4750 50  0001 C CNN
+	1    4250 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J14
+U 1 1 62D7DF83
+P 4250 5000
+F 0 "J14" H 4330 4992 50  0000 L CNN
+F 1 "Conn_01x02" H 4330 4901 50  0000 L CNN
+F 2 "experimentboard:2_round" H 4250 5000 50  0001 C CNN
+F 3 "~" H 4250 5000 50  0001 C CNN
+	1    4250 5000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2250 4450 2250
+Wire Wire Line
+	4450 2350 4450 2250
+Connection ~ 4450 2250
+Wire Wire Line
+	4450 2600 4450 2500
+Wire Wire Line
+	5350 2350 4500 2350
+Wire Wire Line
+	4500 2350 4500 2500
+Wire Wire Line
+	4500 2500 4450 2500
+Connection ~ 4450 2500
+Wire Wire Line
+	5350 2450 4550 2450
+Wire Wire Line
+	4550 2450 4550 2750
+Wire Wire Line
+	4550 2750 4450 2750
+Wire Wire Line
+	4450 2850 4450 2750
+Connection ~ 4450 2750
+Wire Wire Line
+	5350 2550 4600 2550
+Wire Wire Line
+	4600 2550 4600 3000
+Wire Wire Line
+	4600 3000 4450 3000
+Wire Wire Line
+	4450 3000 4450 3100
+Connection ~ 4450 3000
+Wire Wire Line
+	5350 2650 4650 2650
+Wire Wire Line
+	4650 2650 4650 3250
+Wire Wire Line
+	4650 3250 4450 3250
+Wire Wire Line
+	4450 3250 4450 3350
+Connection ~ 4450 3250
+Wire Wire Line
+	5350 2750 4700 2750
+Wire Wire Line
+	4700 2750 4700 3500
+Wire Wire Line
+	4700 3500 4450 3500
+Wire Wire Line
+	4450 3500 4450 3600
+Connection ~ 4450 3500
+Wire Wire Line
+	5350 2850 4750 2850
+Wire Wire Line
+	4750 2850 4750 3750
+Wire Wire Line
+	4750 3750 4450 3750
+Wire Wire Line
+	4450 3850 4450 3750
+Connection ~ 4450 3750
+Wire Wire Line
+	5350 2950 4800 2950
+Wire Wire Line
+	4800 2950 4800 4000
+Wire Wire Line
+	4800 4000 4450 4000
+Wire Wire Line
+	5350 3050 4850 3050
+Wire Wire Line
+	4850 3050 4850 4250
+Wire Wire Line
+	4850 4250 4450 4250
+Wire Wire Line
+	4450 4250 4450 4350
+Connection ~ 4450 4250
+Wire Wire Line
+	4450 4000 4450 4100
+Connection ~ 4450 4000
+Wire Wire Line
+	5350 3150 4900 3150
+Wire Wire Line
+	4900 3150 4900 4500
+Wire Wire Line
+	4900 4500 4450 4500
+Wire Wire Line
+	4450 4500 4450 4600
+Connection ~ 4450 4500
+Wire Wire Line
+	5350 3250 4950 3250
+Wire Wire Line
+	4950 3250 4950 4750
+Wire Wire Line
+	4950 4750 4450 4750
+Wire Wire Line
+	4450 4750 4450 4850
+Connection ~ 4450 4750
+Wire Wire Line
+	5350 3650 5000 3650
+Wire Wire Line
+	5000 3650 5000 5000
+Wire Wire Line
+	5000 5000 4450 5000
+Wire Wire Line
+	4450 5000 4450 5100
+Connection ~ 4450 5000
+Wire Wire Line
+	6700 1950 7850 1950
+Wire Wire Line
+	7850 1950 7850 2050
+Connection ~ 7850 1950
+Wire Wire Line
+	6700 2050 7800 2050
+Wire Wire Line
+	7800 2050 7800 2200
+Wire Wire Line
+	7800 2200 7850 2200
+Wire Wire Line
+	7850 2200 7850 2300
+Connection ~ 7850 2200
+Wire Wire Line
+	6700 2150 7750 2150
+Wire Wire Line
+	7750 2150 7750 2450
+Wire Wire Line
+	7750 2450 7850 2450
+Wire Wire Line
+	7850 2450 7850 2550
+Connection ~ 7850 2450
+Wire Wire Line
+	6700 2450 7700 2450
+Wire Wire Line
+	7700 2450 7700 2700
+Wire Wire Line
+	7700 2700 7850 2700
+Wire Wire Line
+	7850 2700 7850 2800
+Connection ~ 7850 2700
+Wire Wire Line
+	6700 2650 7650 2650
+Wire Wire Line
+	7650 2650 7650 2950
+Wire Wire Line
+	7650 2950 7850 2950
+Wire Wire Line
+	7850 2950 7850 3050
+Connection ~ 7850 2950
+Wire Wire Line
+	6700 2750 7600 2750
+Wire Wire Line
+	7600 2750 7600 3200
+Wire Wire Line
+	7600 3200 7850 3200
+Wire Wire Line
+	7850 3200 7850 3300
+Connection ~ 7850 3200
+Wire Wire Line
+	6700 2850 7550 2850
+Wire Wire Line
+	7550 2850 7550 3450
+Wire Wire Line
+	7550 3450 7850 3450
+Wire Wire Line
+	7850 3450 7850 3550
+Connection ~ 7850 3450
+Wire Wire Line
+	6700 3150 7500 3150
+Wire Wire Line
+	7500 3150 7500 3700
+Wire Wire Line
+	7500 3700 7850 3700
+Wire Wire Line
+	7850 3700 7850 3800
+Connection ~ 7850 3700
+Wire Wire Line
+	6700 3450 7450 3450
+Wire Wire Line
+	7450 3450 7450 3950
+Wire Wire Line
+	7450 3950 7850 3950
+Wire Wire Line
+	7850 3950 7850 4050
+Connection ~ 7850 3950
+Wire Wire Line
+	6700 3650 7400 3650
+Wire Wire Line
+	7400 3650 7400 4200
+Wire Wire Line
+	7400 4200 7850 4200
+Wire Wire Line
+	7850 4200 7850 4300
+Connection ~ 7850 4200
+$Comp
+L Connector_Generic:Conn_01x05 J25
+U 1 1 62E30392
+P 9050 900
+F 0 "J25" V 8923 1180 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 1180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 900 50  0001 C CNN
+F 3 "~" H 9050 900 50  0001 C CNN
+	1    9050 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J26
+U 1 1 62E305E4
+P 9050 1200
+F 0 "J26" V 8923 1480 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 1480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 1200 50  0001 C CNN
+F 3 "~" H 9050 1200 50  0001 C CNN
+	1    9050 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J27
+U 1 1 62E35FB5
+P 9050 1500
+F 0 "J27" V 8923 1780 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 1780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 1500 50  0001 C CNN
+F 3 "~" H 9050 1500 50  0001 C CNN
+	1    9050 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J28
+U 1 1 62E35FBC
+P 9050 1800
+F 0 "J28" V 8923 2080 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 2080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 1800 50  0001 C CNN
+F 3 "~" H 9050 1800 50  0001 C CNN
+	1    9050 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J29
+U 1 1 62E3B94C
+P 9050 2100
+F 0 "J29" V 8923 2380 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 2380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 2100 50  0001 C CNN
+F 3 "~" H 9050 2100 50  0001 C CNN
+	1    9050 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J30
+U 1 1 62E3B953
+P 9050 2400
+F 0 "J30" V 8923 2680 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 2680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 2400 50  0001 C CNN
+F 3 "~" H 9050 2400 50  0001 C CNN
+	1    9050 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J31
+U 1 1 62E4132B
+P 9050 2700
+F 0 "J31" V 8923 2980 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 2980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 2700 50  0001 C CNN
+F 3 "~" H 9050 2700 50  0001 C CNN
+	1    9050 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J32
+U 1 1 62E41332
+P 9050 3000
+F 0 "J32" V 8923 3280 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 3280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 3000 50  0001 C CNN
+F 3 "~" H 9050 3000 50  0001 C CNN
+	1    9050 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J33
+U 1 1 62E46EF3
+P 9050 3300
+F 0 "J33" V 8923 3580 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 3580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 3300 50  0001 C CNN
+F 3 "~" H 9050 3300 50  0001 C CNN
+	1    9050 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J34
+U 1 1 62E46EFA
+P 9050 3600
+F 0 "J34" V 8923 3880 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 3880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 3600 50  0001 C CNN
+F 3 "~" H 9050 3600 50  0001 C CNN
+	1    9050 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J35
+U 1 1 62E46F01
+P 9050 3900
+F 0 "J35" V 8923 4180 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 4180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 3900 50  0001 C CNN
+F 3 "~" H 9050 3900 50  0001 C CNN
+	1    9050 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J36
+U 1 1 62E46F08
+P 9050 4200
+F 0 "J36" V 8923 4480 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 4480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 4200 50  0001 C CNN
+F 3 "~" H 9050 4200 50  0001 C CNN
+	1    9050 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J37
+U 1 1 62E46F0F
+P 9050 4500
+F 0 "J37" V 8923 4780 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 4780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 4500 50  0001 C CNN
+F 3 "~" H 9050 4500 50  0001 C CNN
+	1    9050 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J38
+U 1 1 62E46F16
+P 9050 4800
+F 0 "J38" V 8923 5080 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 5080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 4800 50  0001 C CNN
+F 3 "~" H 9050 4800 50  0001 C CNN
+	1    9050 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J39
+U 1 1 62E46F1D
+P 9050 5100
+F 0 "J39" V 8923 5380 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 5380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 5100 50  0001 C CNN
+F 3 "~" H 9050 5100 50  0001 C CNN
+	1    9050 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J40
+U 1 1 62E46F24
+P 9050 5400
+F 0 "J40" V 8923 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 5680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 5400 50  0001 C CNN
+F 3 "~" H 9050 5400 50  0001 C CNN
+	1    9050 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 700  8950 700 
+Connection ~ 8950 700 
+Wire Wire Line
+	8950 700  9050 700 
+Connection ~ 9050 700 
+Wire Wire Line
+	9050 700  9150 700 
+Connection ~ 9150 700 
+Wire Wire Line
+	9150 700  9250 700 
+Wire Wire Line
+	8850 1000 8950 1000
+Connection ~ 8950 1000
+Wire Wire Line
+	8950 1000 9050 1000
+Connection ~ 9050 1000
+Wire Wire Line
+	9050 1000 9150 1000
+Connection ~ 9150 1000
+Wire Wire Line
+	9150 1000 9250 1000
+Wire Wire Line
+	8850 1300 8950 1300
+Connection ~ 8950 1300
+Wire Wire Line
+	8950 1300 9050 1300
+Connection ~ 9050 1300
+Wire Wire Line
+	9050 1300 9150 1300
+Connection ~ 9150 1300
+Wire Wire Line
+	9150 1300 9250 1300
+Wire Wire Line
+	8850 1600 8950 1600
+Connection ~ 8950 1600
+Wire Wire Line
+	8950 1600 9050 1600
+Connection ~ 9050 1600
+Wire Wire Line
+	9050 1600 9150 1600
+Connection ~ 9150 1600
+Wire Wire Line
+	9150 1600 9250 1600
+Wire Wire Line
+	8850 1900 8950 1900
+Connection ~ 8950 1900
+Wire Wire Line
+	8950 1900 9050 1900
+Connection ~ 9050 1900
+Wire Wire Line
+	9050 1900 9150 1900
+Connection ~ 9150 1900
+Wire Wire Line
+	9150 1900 9250 1900
+Wire Wire Line
+	8850 2200 8950 2200
+Connection ~ 8950 2200
+Wire Wire Line
+	8950 2200 9050 2200
+Connection ~ 9050 2200
+Wire Wire Line
+	9050 2200 9150 2200
+Connection ~ 9150 2200
+Wire Wire Line
+	9150 2200 9250 2200
+Wire Wire Line
+	8850 2500 8950 2500
+Connection ~ 8950 2500
+Wire Wire Line
+	8950 2500 9050 2500
+Connection ~ 9050 2500
+Wire Wire Line
+	9050 2500 9150 2500
+Connection ~ 9150 2500
+Wire Wire Line
+	9150 2500 9250 2500
+Wire Wire Line
+	8850 2800 8950 2800
+Connection ~ 8950 2800
+Wire Wire Line
+	8950 2800 9050 2800
+Connection ~ 9050 2800
+Wire Wire Line
+	9050 2800 9150 2800
+Connection ~ 9150 2800
+Wire Wire Line
+	9150 2800 9250 2800
+Wire Wire Line
+	8850 3100 8950 3100
+Connection ~ 8950 3100
+Wire Wire Line
+	8950 3100 9050 3100
+Connection ~ 9050 3100
+Wire Wire Line
+	9050 3100 9150 3100
+Connection ~ 9150 3100
+Wire Wire Line
+	9150 3100 9250 3100
+Wire Wire Line
+	8850 3400 8950 3400
+Connection ~ 8950 3400
+Wire Wire Line
+	8950 3400 9050 3400
+Connection ~ 9050 3400
+Wire Wire Line
+	9050 3400 9150 3400
+Connection ~ 9150 3400
+Wire Wire Line
+	9150 3400 9250 3400
+Wire Wire Line
+	8850 3700 8950 3700
+Connection ~ 8950 3700
+Wire Wire Line
+	8950 3700 9050 3700
+Connection ~ 9050 3700
+Wire Wire Line
+	9050 3700 9150 3700
+Connection ~ 9150 3700
+Wire Wire Line
+	9150 3700 9250 3700
+Wire Wire Line
+	8850 4000 8950 4000
+Connection ~ 8950 4000
+Wire Wire Line
+	8950 4000 9050 4000
+Connection ~ 9050 4000
+Wire Wire Line
+	9050 4000 9150 4000
+Connection ~ 9150 4000
+Wire Wire Line
+	9150 4000 9250 4000
+Wire Wire Line
+	8850 4300 8950 4300
+Connection ~ 8950 4300
+Wire Wire Line
+	8950 4300 9050 4300
+Connection ~ 9050 4300
+Wire Wire Line
+	9050 4300 9150 4300
+Connection ~ 9150 4300
+Wire Wire Line
+	9150 4300 9250 4300
+Wire Wire Line
+	8850 4600 8950 4600
+Connection ~ 8950 4600
+Wire Wire Line
+	8950 4600 9050 4600
+Connection ~ 9050 4600
+Wire Wire Line
+	9050 4600 9150 4600
+Connection ~ 9150 4600
+Wire Wire Line
+	9150 4600 9250 4600
+Wire Wire Line
+	8850 4900 8950 4900
+Connection ~ 8950 4900
+Wire Wire Line
+	8950 4900 9050 4900
+Connection ~ 9050 4900
+Wire Wire Line
+	9050 4900 9150 4900
+Connection ~ 9150 4900
+Wire Wire Line
+	9150 4900 9250 4900
+Wire Wire Line
+	8850 5200 8950 5200
+Connection ~ 8950 5200
+Wire Wire Line
+	8950 5200 9050 5200
+Connection ~ 9050 5200
+Wire Wire Line
+	9050 5200 9150 5200
+Connection ~ 9150 5200
+Wire Wire Line
+	9150 5200 9250 5200
+$Comp
+L Connector_Generic:Conn_01x05 J41
+U 1 1 62ED81D9
+P 9050 5700
+F 0 "J41" V 8923 5980 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 5980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 5700 50  0001 C CNN
+F 3 "~" H 9050 5700 50  0001 C CNN
+	1    9050 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J42
+U 1 1 62ED81E0
+P 9050 6000
+F 0 "J42" V 8923 6280 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 6280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 6000 50  0001 C CNN
+F 3 "~" H 9050 6000 50  0001 C CNN
+	1    9050 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J43
+U 1 1 62ED81E7
+P 9050 6300
+F 0 "J43" V 8923 6580 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 6580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 6300 50  0001 C CNN
+F 3 "~" H 9050 6300 50  0001 C CNN
+	1    9050 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J44
+U 1 1 62ED81EE
+P 9050 6600
+F 0 "J44" V 8923 6880 50  0000 L CNN
+F 1 "Conn_01x05" V 9014 6880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9050 6600 50  0001 C CNN
+F 3 "~" H 9050 6600 50  0001 C CNN
+	1    9050 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 5500 8950 5500
+Connection ~ 8950 5500
+Wire Wire Line
+	8950 5500 9050 5500
+Connection ~ 9050 5500
+Wire Wire Line
+	9050 5500 9150 5500
+Connection ~ 9150 5500
+Wire Wire Line
+	9150 5500 9250 5500
+Wire Wire Line
+	8850 5800 8950 5800
+Connection ~ 8950 5800
+Wire Wire Line
+	8950 5800 9050 5800
+Connection ~ 9050 5800
+Wire Wire Line
+	9050 5800 9150 5800
+Connection ~ 9150 5800
+Wire Wire Line
+	9150 5800 9250 5800
+Wire Wire Line
+	8850 6100 8950 6100
+Connection ~ 8950 6100
+Wire Wire Line
+	8950 6100 9050 6100
+Connection ~ 9050 6100
+Wire Wire Line
+	9050 6100 9150 6100
+Connection ~ 9150 6100
+Wire Wire Line
+	9150 6100 9250 6100
+Wire Wire Line
+	8850 6400 8950 6400
+Connection ~ 8950 6400
+Wire Wire Line
+	8950 6400 9050 6400
+Connection ~ 9050 6400
+Wire Wire Line
+	9050 6400 9150 6400
+Connection ~ 9150 6400
+Wire Wire Line
+	9150 6400 9250 6400
+$Comp
+L Connector_Generic:Conn_01x05 J47
+U 1 1 62EE6CD7
+P 9750 900
+F 0 "J47" V 9623 1180 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 1180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 900 50  0001 C CNN
+F 3 "~" H 9750 900 50  0001 C CNN
+	1    9750 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J48
+U 1 1 62EE6CDE
+P 9750 1200
+F 0 "J48" V 9623 1480 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 1480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 1200 50  0001 C CNN
+F 3 "~" H 9750 1200 50  0001 C CNN
+	1    9750 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J49
+U 1 1 62EE6CE5
+P 9750 1500
+F 0 "J49" V 9623 1780 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 1780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 1500 50  0001 C CNN
+F 3 "~" H 9750 1500 50  0001 C CNN
+	1    9750 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J50
+U 1 1 62EE6CEC
+P 9750 1800
+F 0 "J50" V 9623 2080 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 2080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 1800 50  0001 C CNN
+F 3 "~" H 9750 1800 50  0001 C CNN
+	1    9750 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J51
+U 1 1 62EE6CF3
+P 9750 2100
+F 0 "J51" V 9623 2380 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 2380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 2100 50  0001 C CNN
+F 3 "~" H 9750 2100 50  0001 C CNN
+	1    9750 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J52
+U 1 1 62EE6CFA
+P 9750 2400
+F 0 "J52" V 9623 2680 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 2680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 2400 50  0001 C CNN
+F 3 "~" H 9750 2400 50  0001 C CNN
+	1    9750 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J53
+U 1 1 62EE6D01
+P 9750 2700
+F 0 "J53" V 9623 2980 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 2980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 2700 50  0001 C CNN
+F 3 "~" H 9750 2700 50  0001 C CNN
+	1    9750 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J54
+U 1 1 62EE6D08
+P 9750 3000
+F 0 "J54" V 9623 3280 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 3280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 3000 50  0001 C CNN
+F 3 "~" H 9750 3000 50  0001 C CNN
+	1    9750 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J55
+U 1 1 62EE6D0F
+P 9750 3300
+F 0 "J55" V 9623 3580 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 3580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 3300 50  0001 C CNN
+F 3 "~" H 9750 3300 50  0001 C CNN
+	1    9750 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J56
+U 1 1 62EE6D16
+P 9750 3600
+F 0 "J56" V 9623 3880 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 3880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 3600 50  0001 C CNN
+F 3 "~" H 9750 3600 50  0001 C CNN
+	1    9750 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J57
+U 1 1 62EE6D1D
+P 9750 3900
+F 0 "J57" V 9623 4180 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 4180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 3900 50  0001 C CNN
+F 3 "~" H 9750 3900 50  0001 C CNN
+	1    9750 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J58
+U 1 1 62EE6D24
+P 9750 4200
+F 0 "J58" V 9623 4480 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 4480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 4200 50  0001 C CNN
+F 3 "~" H 9750 4200 50  0001 C CNN
+	1    9750 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J59
+U 1 1 62EE6D2B
+P 9750 4500
+F 0 "J59" V 9623 4780 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 4780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 4500 50  0001 C CNN
+F 3 "~" H 9750 4500 50  0001 C CNN
+	1    9750 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J60
+U 1 1 62EE6D32
+P 9750 4800
+F 0 "J60" V 9623 5080 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 5080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 4800 50  0001 C CNN
+F 3 "~" H 9750 4800 50  0001 C CNN
+	1    9750 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J61
+U 1 1 62EE6D39
+P 9750 5100
+F 0 "J61" V 9623 5380 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 5380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 5100 50  0001 C CNN
+F 3 "~" H 9750 5100 50  0001 C CNN
+	1    9750 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J62
+U 1 1 62EE6D40
+P 9750 5400
+F 0 "J62" V 9623 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 5680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 5400 50  0001 C CNN
+F 3 "~" H 9750 5400 50  0001 C CNN
+	1    9750 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 700  9650 700 
+Connection ~ 9650 700 
+Wire Wire Line
+	9650 700  9750 700 
+Connection ~ 9750 700 
+Wire Wire Line
+	9750 700  9850 700 
+Connection ~ 9850 700 
+Wire Wire Line
+	9850 700  9950 700 
+Wire Wire Line
+	9550 1000 9650 1000
+Connection ~ 9650 1000
+Wire Wire Line
+	9650 1000 9750 1000
+Connection ~ 9750 1000
+Wire Wire Line
+	9750 1000 9850 1000
+Connection ~ 9850 1000
+Wire Wire Line
+	9850 1000 9950 1000
+Wire Wire Line
+	9550 1300 9650 1300
+Connection ~ 9650 1300
+Wire Wire Line
+	9650 1300 9750 1300
+Connection ~ 9750 1300
+Wire Wire Line
+	9750 1300 9850 1300
+Connection ~ 9850 1300
+Wire Wire Line
+	9850 1300 9950 1300
+Wire Wire Line
+	9550 1600 9650 1600
+Connection ~ 9650 1600
+Wire Wire Line
+	9650 1600 9750 1600
+Connection ~ 9750 1600
+Wire Wire Line
+	9750 1600 9850 1600
+Connection ~ 9850 1600
+Wire Wire Line
+	9850 1600 9950 1600
+Wire Wire Line
+	9550 1900 9650 1900
+Connection ~ 9650 1900
+Wire Wire Line
+	9650 1900 9750 1900
+Connection ~ 9750 1900
+Wire Wire Line
+	9750 1900 9850 1900
+Connection ~ 9850 1900
+Wire Wire Line
+	9850 1900 9950 1900
+Wire Wire Line
+	9550 2200 9650 2200
+Connection ~ 9650 2200
+Wire Wire Line
+	9650 2200 9750 2200
+Connection ~ 9750 2200
+Wire Wire Line
+	9750 2200 9850 2200
+Connection ~ 9850 2200
+Wire Wire Line
+	9850 2200 9950 2200
+Wire Wire Line
+	9550 2500 9650 2500
+Connection ~ 9650 2500
+Wire Wire Line
+	9650 2500 9750 2500
+Connection ~ 9750 2500
+Wire Wire Line
+	9750 2500 9850 2500
+Connection ~ 9850 2500
+Wire Wire Line
+	9850 2500 9950 2500
+Wire Wire Line
+	9550 2800 9650 2800
+Connection ~ 9650 2800
+Wire Wire Line
+	9650 2800 9750 2800
+Connection ~ 9750 2800
+Wire Wire Line
+	9750 2800 9850 2800
+Connection ~ 9850 2800
+Wire Wire Line
+	9850 2800 9950 2800
+Wire Wire Line
+	9550 3100 9650 3100
+Connection ~ 9650 3100
+Wire Wire Line
+	9650 3100 9750 3100
+Connection ~ 9750 3100
+Wire Wire Line
+	9750 3100 9850 3100
+Connection ~ 9850 3100
+Wire Wire Line
+	9850 3100 9950 3100
+Wire Wire Line
+	9550 3400 9650 3400
+Connection ~ 9650 3400
+Wire Wire Line
+	9650 3400 9750 3400
+Connection ~ 9750 3400
+Wire Wire Line
+	9750 3400 9850 3400
+Connection ~ 9850 3400
+Wire Wire Line
+	9850 3400 9950 3400
+Wire Wire Line
+	9550 3700 9650 3700
+Connection ~ 9650 3700
+Wire Wire Line
+	9650 3700 9750 3700
+Connection ~ 9750 3700
+Wire Wire Line
+	9750 3700 9850 3700
+Connection ~ 9850 3700
+Wire Wire Line
+	9850 3700 9950 3700
+Wire Wire Line
+	9550 4000 9650 4000
+Connection ~ 9650 4000
+Wire Wire Line
+	9650 4000 9750 4000
+Connection ~ 9750 4000
+Wire Wire Line
+	9750 4000 9850 4000
+Connection ~ 9850 4000
+Wire Wire Line
+	9850 4000 9950 4000
+Wire Wire Line
+	9550 4300 9650 4300
+Connection ~ 9650 4300
+Wire Wire Line
+	9650 4300 9750 4300
+Connection ~ 9750 4300
+Wire Wire Line
+	9750 4300 9850 4300
+Connection ~ 9850 4300
+Wire Wire Line
+	9850 4300 9950 4300
+Wire Wire Line
+	9550 4600 9650 4600
+Connection ~ 9650 4600
+Wire Wire Line
+	9650 4600 9750 4600
+Connection ~ 9750 4600
+Wire Wire Line
+	9750 4600 9850 4600
+Connection ~ 9850 4600
+Wire Wire Line
+	9850 4600 9950 4600
+Wire Wire Line
+	9550 4900 9650 4900
+Connection ~ 9650 4900
+Wire Wire Line
+	9650 4900 9750 4900
+Connection ~ 9750 4900
+Wire Wire Line
+	9750 4900 9850 4900
+Connection ~ 9850 4900
+Wire Wire Line
+	9850 4900 9950 4900
+Wire Wire Line
+	9550 5200 9650 5200
+Connection ~ 9650 5200
+Wire Wire Line
+	9650 5200 9750 5200
+Connection ~ 9750 5200
+Wire Wire Line
+	9750 5200 9850 5200
+Connection ~ 9850 5200
+Wire Wire Line
+	9850 5200 9950 5200
+$Comp
+L Connector_Generic:Conn_01x05 J63
+U 1 1 62EE6DB7
+P 9750 5700
+F 0 "J63" V 9623 5980 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 5980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 5700 50  0001 C CNN
+F 3 "~" H 9750 5700 50  0001 C CNN
+	1    9750 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J64
+U 1 1 62EE6DBE
+P 9750 6000
+F 0 "J64" V 9623 6280 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 6280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 6000 50  0001 C CNN
+F 3 "~" H 9750 6000 50  0001 C CNN
+	1    9750 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J65
+U 1 1 62EE6DC5
+P 9750 6300
+F 0 "J65" V 9623 6580 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 6580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 6300 50  0001 C CNN
+F 3 "~" H 9750 6300 50  0001 C CNN
+	1    9750 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J66
+U 1 1 62EE6DCC
+P 9750 6600
+F 0 "J66" V 9623 6880 50  0000 L CNN
+F 1 "Conn_01x05" V 9714 6880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 9750 6600 50  0001 C CNN
+F 3 "~" H 9750 6600 50  0001 C CNN
+	1    9750 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9550 5500 9650 5500
+Connection ~ 9650 5500
+Wire Wire Line
+	9650 5500 9750 5500
+Connection ~ 9750 5500
+Wire Wire Line
+	9750 5500 9850 5500
+Connection ~ 9850 5500
+Wire Wire Line
+	9850 5500 9950 5500
+Wire Wire Line
+	9550 5800 9650 5800
+Connection ~ 9650 5800
+Wire Wire Line
+	9650 5800 9750 5800
+Connection ~ 9750 5800
+Wire Wire Line
+	9750 5800 9850 5800
+Connection ~ 9850 5800
+Wire Wire Line
+	9850 5800 9950 5800
+Wire Wire Line
+	9550 6100 9650 6100
+Connection ~ 9650 6100
+Wire Wire Line
+	9650 6100 9750 6100
+Connection ~ 9750 6100
+Wire Wire Line
+	9750 6100 9850 6100
+Connection ~ 9850 6100
+Wire Wire Line
+	9850 6100 9950 6100
+Wire Wire Line
+	9550 6400 9650 6400
+Connection ~ 9650 6400
+Wire Wire Line
+	9650 6400 9750 6400
+Connection ~ 9750 6400
+Wire Wire Line
+	9750 6400 9850 6400
+Connection ~ 9850 6400
+Wire Wire Line
+	9850 6400 9950 6400
+$Comp
+L Connector_Generic:Conn_01x20 J45
+U 1 1 62F02937
+P 17250 1600
+F 0 "J45" H 17330 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 17330 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 17250 1600 50  0001 C CNN
+F 3 "~" H 17250 1600 50  0001 C CNN
+	1    17250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J46
+U 1 1 62F02AC5
+P 17600 1600
+F 0 "J46" H 17680 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 17680 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 17600 1600 50  0001 C CNN
+F 3 "~" H 17600 1600 50  0001 C CNN
+	1    17600 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17050 700  17050 800 
+Connection ~ 17050 800 
+Wire Wire Line
+	17050 800  17050 900 
+Connection ~ 17050 900 
+Wire Wire Line
+	17050 900  17050 1000
+Connection ~ 17050 1000
+Wire Wire Line
+	17050 1000 17050 1100
+Connection ~ 17050 1100
+Wire Wire Line
+	17050 1100 17050 1200
+Connection ~ 17050 1200
+Wire Wire Line
+	17050 1200 17050 1300
+Connection ~ 17050 1300
+Wire Wire Line
+	17050 1300 17050 1400
+Connection ~ 17050 1400
+Wire Wire Line
+	17050 1400 17050 1500
+Connection ~ 17050 1500
+Wire Wire Line
+	17050 1500 17050 1600
+Connection ~ 17050 1600
+Wire Wire Line
+	17050 1600 17050 1700
+Connection ~ 17050 1700
+Wire Wire Line
+	17050 1700 17050 1800
+Connection ~ 17050 1800
+Wire Wire Line
+	17050 1800 17050 1900
+Connection ~ 17050 1900
+Wire Wire Line
+	17050 1900 17050 2000
+Connection ~ 17050 2000
+Wire Wire Line
+	17050 2000 17050 2100
+Connection ~ 17050 2100
+Wire Wire Line
+	17050 2100 17050 2200
+Connection ~ 17050 2200
+Wire Wire Line
+	17050 2200 17050 2300
+Connection ~ 17050 2300
+Wire Wire Line
+	17050 2300 17050 2400
+Connection ~ 17050 2400
+Wire Wire Line
+	17050 2400 17050 2500
+Connection ~ 17050 2500
+Wire Wire Line
+	17050 2500 17050 2600
+Wire Wire Line
+	17400 700  17400 800 
+Connection ~ 17400 800 
+Wire Wire Line
+	17400 800  17400 900 
+Connection ~ 17400 900 
+Wire Wire Line
+	17400 900  17400 1000
+Connection ~ 17400 1000
+Wire Wire Line
+	17400 1000 17400 1100
+Connection ~ 17400 1100
+Wire Wire Line
+	17400 1100 17400 1200
+Connection ~ 17400 1200
+Wire Wire Line
+	17400 1200 17400 1300
+Connection ~ 17400 1300
+Wire Wire Line
+	17400 1300 17400 1400
+Connection ~ 17400 1400
+Wire Wire Line
+	17400 1400 17400 1500
+Connection ~ 17400 1500
+Wire Wire Line
+	17400 1500 17400 1600
+Connection ~ 17400 1600
+Wire Wire Line
+	17400 1600 17400 1700
+Connection ~ 17400 1700
+Wire Wire Line
+	17400 1700 17400 1800
+Connection ~ 17400 1800
+Wire Wire Line
+	17400 1800 17400 1900
+Connection ~ 17400 1900
+Wire Wire Line
+	17400 1900 17400 2000
+Connection ~ 17400 2000
+Wire Wire Line
+	17400 2000 17400 2100
+Connection ~ 17400 2100
+Wire Wire Line
+	17400 2100 17400 2200
+Connection ~ 17400 2200
+Wire Wire Line
+	17400 2200 17400 2300
+Connection ~ 17400 2300
+Wire Wire Line
+	17400 2300 17400 2400
+Connection ~ 17400 2400
+Wire Wire Line
+	17400 2400 17400 2500
+Connection ~ 17400 2500
+Wire Wire Line
+	17400 2500 17400 2600
+$Comp
+L Connector_Generic:Conn_01x20 J67
+U 1 1 62F3E930
+P 18650 1600
+F 0 "J67" H 18730 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 18730 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 18650 1600 50  0001 C CNN
+F 3 "~" H 18650 1600 50  0001 C CNN
+	1    18650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J68
+U 1 1 62F3E937
+P 19000 1600
+F 0 "J68" H 19080 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 19080 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 19000 1600 50  0001 C CNN
+F 3 "~" H 19000 1600 50  0001 C CNN
+	1    19000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18450 700  18450 800 
+Connection ~ 18450 800 
+Wire Wire Line
+	18450 800  18450 900 
+Connection ~ 18450 900 
+Wire Wire Line
+	18450 900  18450 1000
+Connection ~ 18450 1000
+Wire Wire Line
+	18450 1000 18450 1100
+Connection ~ 18450 1100
+Wire Wire Line
+	18450 1100 18450 1200
+Connection ~ 18450 1200
+Wire Wire Line
+	18450 1200 18450 1300
+Connection ~ 18450 1300
+Wire Wire Line
+	18450 1300 18450 1400
+Connection ~ 18450 1400
+Wire Wire Line
+	18450 1400 18450 1500
+Connection ~ 18450 1500
+Wire Wire Line
+	18450 1500 18450 1600
+Connection ~ 18450 1600
+Wire Wire Line
+	18450 1600 18450 1700
+Connection ~ 18450 1700
+Wire Wire Line
+	18450 1700 18450 1800
+Connection ~ 18450 1800
+Wire Wire Line
+	18450 1800 18450 1900
+Connection ~ 18450 1900
+Wire Wire Line
+	18450 1900 18450 2000
+Connection ~ 18450 2000
+Wire Wire Line
+	18450 2000 18450 2100
+Connection ~ 18450 2100
+Wire Wire Line
+	18450 2100 18450 2200
+Connection ~ 18450 2200
+Wire Wire Line
+	18450 2200 18450 2300
+Connection ~ 18450 2300
+Wire Wire Line
+	18450 2300 18450 2400
+Connection ~ 18450 2400
+Wire Wire Line
+	18450 2400 18450 2500
+Connection ~ 18450 2500
+Wire Wire Line
+	18450 2500 18450 2600
+Wire Wire Line
+	18800 700  18800 800 
+Connection ~ 18800 800 
+Wire Wire Line
+	18800 800  18800 900 
+Connection ~ 18800 900 
+Wire Wire Line
+	18800 900  18800 1000
+Connection ~ 18800 1000
+Wire Wire Line
+	18800 1000 18800 1100
+Connection ~ 18800 1100
+Wire Wire Line
+	18800 1100 18800 1200
+Connection ~ 18800 1200
+Wire Wire Line
+	18800 1200 18800 1300
+Connection ~ 18800 1300
+Wire Wire Line
+	18800 1300 18800 1400
+Connection ~ 18800 1400
+Wire Wire Line
+	18800 1400 18800 1500
+Connection ~ 18800 1500
+Wire Wire Line
+	18800 1500 18800 1600
+Connection ~ 18800 1600
+Wire Wire Line
+	18800 1600 18800 1700
+Connection ~ 18800 1700
+Wire Wire Line
+	18800 1700 18800 1800
+Connection ~ 18800 1800
+Wire Wire Line
+	18800 1800 18800 1900
+Connection ~ 18800 1900
+Wire Wire Line
+	18800 1900 18800 2000
+Connection ~ 18800 2000
+Wire Wire Line
+	18800 2000 18800 2100
+Connection ~ 18800 2100
+Wire Wire Line
+	18800 2100 18800 2200
+Connection ~ 18800 2200
+Wire Wire Line
+	18800 2200 18800 2300
+Connection ~ 18800 2300
+Wire Wire Line
+	18800 2300 18800 2400
+Connection ~ 18800 2400
+Wire Wire Line
+	18800 2400 18800 2500
+Connection ~ 18800 2500
+Wire Wire Line
+	18800 2500 18800 2600
+$Comp
+L Connector_Generic:Conn_01x05 J69
+U 1 1 62F613C5
+P 10450 900
+F 0 "J69" V 10323 1180 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 1180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 900 50  0001 C CNN
+F 3 "~" H 10450 900 50  0001 C CNN
+	1    10450 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J70
+U 1 1 62F613CC
+P 10450 1200
+F 0 "J70" V 10323 1480 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 1480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 1200 50  0001 C CNN
+F 3 "~" H 10450 1200 50  0001 C CNN
+	1    10450 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J71
+U 1 1 62F613D3
+P 10450 1500
+F 0 "J71" V 10323 1780 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 1780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 1500 50  0001 C CNN
+F 3 "~" H 10450 1500 50  0001 C CNN
+	1    10450 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J72
+U 1 1 62F613DA
+P 10450 1800
+F 0 "J72" V 10323 2080 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 2080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 1800 50  0001 C CNN
+F 3 "~" H 10450 1800 50  0001 C CNN
+	1    10450 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J73
+U 1 1 62F613E1
+P 10450 2100
+F 0 "J73" V 10323 2380 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 2380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 2100 50  0001 C CNN
+F 3 "~" H 10450 2100 50  0001 C CNN
+	1    10450 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J74
+U 1 1 62F613E8
+P 10450 2400
+F 0 "J74" V 10323 2680 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 2680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 2400 50  0001 C CNN
+F 3 "~" H 10450 2400 50  0001 C CNN
+	1    10450 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J75
+U 1 1 62F613EF
+P 10450 2700
+F 0 "J75" V 10323 2980 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 2980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 2700 50  0001 C CNN
+F 3 "~" H 10450 2700 50  0001 C CNN
+	1    10450 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J76
+U 1 1 62F613F6
+P 10450 3000
+F 0 "J76" V 10323 3280 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 3280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 3000 50  0001 C CNN
+F 3 "~" H 10450 3000 50  0001 C CNN
+	1    10450 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J77
+U 1 1 62F613FD
+P 10450 3300
+F 0 "J77" V 10323 3580 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 3580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 3300 50  0001 C CNN
+F 3 "~" H 10450 3300 50  0001 C CNN
+	1    10450 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J78
+U 1 1 62F61404
+P 10450 3600
+F 0 "J78" V 10323 3880 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 3880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 3600 50  0001 C CNN
+F 3 "~" H 10450 3600 50  0001 C CNN
+	1    10450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J79
+U 1 1 62F6140B
+P 10450 3900
+F 0 "J79" V 10323 4180 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 4180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 3900 50  0001 C CNN
+F 3 "~" H 10450 3900 50  0001 C CNN
+	1    10450 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J80
+U 1 1 62F61412
+P 10450 4200
+F 0 "J80" V 10323 4480 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 4480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 4200 50  0001 C CNN
+F 3 "~" H 10450 4200 50  0001 C CNN
+	1    10450 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J81
+U 1 1 62F61419
+P 10450 4500
+F 0 "J81" V 10323 4780 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 4780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 4500 50  0001 C CNN
+F 3 "~" H 10450 4500 50  0001 C CNN
+	1    10450 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J82
+U 1 1 62F61420
+P 10450 4800
+F 0 "J82" V 10323 5080 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 5080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 4800 50  0001 C CNN
+F 3 "~" H 10450 4800 50  0001 C CNN
+	1    10450 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J83
+U 1 1 62F61427
+P 10450 5100
+F 0 "J83" V 10323 5380 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 5380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 5100 50  0001 C CNN
+F 3 "~" H 10450 5100 50  0001 C CNN
+	1    10450 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J84
+U 1 1 62F6142E
+P 10450 5400
+F 0 "J84" V 10323 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 5680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 5400 50  0001 C CNN
+F 3 "~" H 10450 5400 50  0001 C CNN
+	1    10450 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 700  10350 700 
+Connection ~ 10350 700 
+Wire Wire Line
+	10350 700  10450 700 
+Connection ~ 10450 700 
+Wire Wire Line
+	10450 700  10550 700 
+Connection ~ 10550 700 
+Wire Wire Line
+	10550 700  10650 700 
+Wire Wire Line
+	10250 1000 10350 1000
+Connection ~ 10350 1000
+Wire Wire Line
+	10350 1000 10450 1000
+Connection ~ 10450 1000
+Wire Wire Line
+	10450 1000 10550 1000
+Connection ~ 10550 1000
+Wire Wire Line
+	10550 1000 10650 1000
+Wire Wire Line
+	10250 1300 10350 1300
+Connection ~ 10350 1300
+Wire Wire Line
+	10350 1300 10450 1300
+Connection ~ 10450 1300
+Wire Wire Line
+	10450 1300 10550 1300
+Connection ~ 10550 1300
+Wire Wire Line
+	10550 1300 10650 1300
+Wire Wire Line
+	10250 1600 10350 1600
+Connection ~ 10350 1600
+Wire Wire Line
+	10350 1600 10450 1600
+Connection ~ 10450 1600
+Wire Wire Line
+	10450 1600 10550 1600
+Connection ~ 10550 1600
+Wire Wire Line
+	10550 1600 10650 1600
+Wire Wire Line
+	10250 1900 10350 1900
+Connection ~ 10350 1900
+Wire Wire Line
+	10350 1900 10450 1900
+Connection ~ 10450 1900
+Wire Wire Line
+	10450 1900 10550 1900
+Connection ~ 10550 1900
+Wire Wire Line
+	10550 1900 10650 1900
+Wire Wire Line
+	10250 2200 10350 2200
+Connection ~ 10350 2200
+Wire Wire Line
+	10350 2200 10450 2200
+Connection ~ 10450 2200
+Wire Wire Line
+	10450 2200 10550 2200
+Connection ~ 10550 2200
+Wire Wire Line
+	10550 2200 10650 2200
+Wire Wire Line
+	10250 2500 10350 2500
+Connection ~ 10350 2500
+Wire Wire Line
+	10350 2500 10450 2500
+Connection ~ 10450 2500
+Wire Wire Line
+	10450 2500 10550 2500
+Connection ~ 10550 2500
+Wire Wire Line
+	10550 2500 10650 2500
+Wire Wire Line
+	10250 2800 10350 2800
+Connection ~ 10350 2800
+Wire Wire Line
+	10350 2800 10450 2800
+Connection ~ 10450 2800
+Wire Wire Line
+	10450 2800 10550 2800
+Connection ~ 10550 2800
+Wire Wire Line
+	10550 2800 10650 2800
+Wire Wire Line
+	10250 3100 10350 3100
+Connection ~ 10350 3100
+Wire Wire Line
+	10350 3100 10450 3100
+Connection ~ 10450 3100
+Wire Wire Line
+	10450 3100 10550 3100
+Connection ~ 10550 3100
+Wire Wire Line
+	10550 3100 10650 3100
+Wire Wire Line
+	10250 3400 10350 3400
+Connection ~ 10350 3400
+Wire Wire Line
+	10350 3400 10450 3400
+Connection ~ 10450 3400
+Wire Wire Line
+	10450 3400 10550 3400
+Connection ~ 10550 3400
+Wire Wire Line
+	10550 3400 10650 3400
+Wire Wire Line
+	10250 3700 10350 3700
+Connection ~ 10350 3700
+Wire Wire Line
+	10350 3700 10450 3700
+Connection ~ 10450 3700
+Wire Wire Line
+	10450 3700 10550 3700
+Connection ~ 10550 3700
+Wire Wire Line
+	10550 3700 10650 3700
+Wire Wire Line
+	10250 4000 10350 4000
+Connection ~ 10350 4000
+Wire Wire Line
+	10350 4000 10450 4000
+Connection ~ 10450 4000
+Wire Wire Line
+	10450 4000 10550 4000
+Connection ~ 10550 4000
+Wire Wire Line
+	10550 4000 10650 4000
+Wire Wire Line
+	10250 4300 10350 4300
+Connection ~ 10350 4300
+Wire Wire Line
+	10350 4300 10450 4300
+Connection ~ 10450 4300
+Wire Wire Line
+	10450 4300 10550 4300
+Connection ~ 10550 4300
+Wire Wire Line
+	10550 4300 10650 4300
+Wire Wire Line
+	10250 4600 10350 4600
+Connection ~ 10350 4600
+Wire Wire Line
+	10350 4600 10450 4600
+Connection ~ 10450 4600
+Wire Wire Line
+	10450 4600 10550 4600
+Connection ~ 10550 4600
+Wire Wire Line
+	10550 4600 10650 4600
+Wire Wire Line
+	10250 4900 10350 4900
+Connection ~ 10350 4900
+Wire Wire Line
+	10350 4900 10450 4900
+Connection ~ 10450 4900
+Wire Wire Line
+	10450 4900 10550 4900
+Connection ~ 10550 4900
+Wire Wire Line
+	10550 4900 10650 4900
+Wire Wire Line
+	10250 5200 10350 5200
+Connection ~ 10350 5200
+Wire Wire Line
+	10350 5200 10450 5200
+Connection ~ 10450 5200
+Wire Wire Line
+	10450 5200 10550 5200
+Connection ~ 10550 5200
+Wire Wire Line
+	10550 5200 10650 5200
+$Comp
+L Connector_Generic:Conn_01x05 J85
+U 1 1 62F614A5
+P 10450 5700
+F 0 "J85" V 10323 5980 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 5980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 5700 50  0001 C CNN
+F 3 "~" H 10450 5700 50  0001 C CNN
+	1    10450 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J86
+U 1 1 62F614AC
+P 10450 6000
+F 0 "J86" V 10323 6280 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 6280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 6000 50  0001 C CNN
+F 3 "~" H 10450 6000 50  0001 C CNN
+	1    10450 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J87
+U 1 1 62F614B3
+P 10450 6300
+F 0 "J87" V 10323 6580 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 6580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 6300 50  0001 C CNN
+F 3 "~" H 10450 6300 50  0001 C CNN
+	1    10450 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J88
+U 1 1 62F614BA
+P 10450 6600
+F 0 "J88" V 10323 6880 50  0000 L CNN
+F 1 "Conn_01x05" V 10414 6880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 10450 6600 50  0001 C CNN
+F 3 "~" H 10450 6600 50  0001 C CNN
+	1    10450 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10250 5500 10350 5500
+Connection ~ 10350 5500
+Wire Wire Line
+	10350 5500 10450 5500
+Connection ~ 10450 5500
+Wire Wire Line
+	10450 5500 10550 5500
+Connection ~ 10550 5500
+Wire Wire Line
+	10550 5500 10650 5500
+Wire Wire Line
+	10250 5800 10350 5800
+Connection ~ 10350 5800
+Wire Wire Line
+	10350 5800 10450 5800
+Connection ~ 10450 5800
+Wire Wire Line
+	10450 5800 10550 5800
+Connection ~ 10550 5800
+Wire Wire Line
+	10550 5800 10650 5800
+Wire Wire Line
+	10250 6100 10350 6100
+Connection ~ 10350 6100
+Wire Wire Line
+	10350 6100 10450 6100
+Connection ~ 10450 6100
+Wire Wire Line
+	10450 6100 10550 6100
+Connection ~ 10550 6100
+Wire Wire Line
+	10550 6100 10650 6100
+Wire Wire Line
+	10250 6400 10350 6400
+Connection ~ 10350 6400
+Wire Wire Line
+	10350 6400 10450 6400
+Connection ~ 10450 6400
+Wire Wire Line
+	10450 6400 10550 6400
+Connection ~ 10550 6400
+Wire Wire Line
+	10550 6400 10650 6400
+$Comp
+L Connector_Generic:Conn_01x05 J93
+U 1 1 62F614DD
+P 11150 900
+F 0 "J93" V 11023 1180 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 1180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 900 50  0001 C CNN
+F 3 "~" H 11150 900 50  0001 C CNN
+	1    11150 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J94
+U 1 1 62F614E4
+P 11150 1200
+F 0 "J94" V 11023 1480 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 1480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 1200 50  0001 C CNN
+F 3 "~" H 11150 1200 50  0001 C CNN
+	1    11150 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J95
+U 1 1 62F614EB
+P 11150 1500
+F 0 "J95" V 11023 1780 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 1780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 1500 50  0001 C CNN
+F 3 "~" H 11150 1500 50  0001 C CNN
+	1    11150 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J96
+U 1 1 62F614F2
+P 11150 1800
+F 0 "J96" V 11023 2080 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 2080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 1800 50  0001 C CNN
+F 3 "~" H 11150 1800 50  0001 C CNN
+	1    11150 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J97
+U 1 1 62F614F9
+P 11150 2100
+F 0 "J97" V 11023 2380 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 2380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 2100 50  0001 C CNN
+F 3 "~" H 11150 2100 50  0001 C CNN
+	1    11150 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J98
+U 1 1 62F61500
+P 11150 2400
+F 0 "J98" V 11023 2680 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 2680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 2400 50  0001 C CNN
+F 3 "~" H 11150 2400 50  0001 C CNN
+	1    11150 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J99
+U 1 1 62F61507
+P 11150 2700
+F 0 "J99" V 11023 2980 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 2980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 2700 50  0001 C CNN
+F 3 "~" H 11150 2700 50  0001 C CNN
+	1    11150 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J100
+U 1 1 62F6150E
+P 11150 3000
+F 0 "J100" V 11023 3280 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 3280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 3000 50  0001 C CNN
+F 3 "~" H 11150 3000 50  0001 C CNN
+	1    11150 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J101
+U 1 1 62F61515
+P 11150 3300
+F 0 "J101" V 11023 3580 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 3580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 3300 50  0001 C CNN
+F 3 "~" H 11150 3300 50  0001 C CNN
+	1    11150 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J102
+U 1 1 62F6151C
+P 11150 3600
+F 0 "J102" V 11023 3880 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 3880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 3600 50  0001 C CNN
+F 3 "~" H 11150 3600 50  0001 C CNN
+	1    11150 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J103
+U 1 1 62F61523
+P 11150 3900
+F 0 "J103" V 11023 4180 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 4180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 3900 50  0001 C CNN
+F 3 "~" H 11150 3900 50  0001 C CNN
+	1    11150 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J104
+U 1 1 62F6152A
+P 11150 4200
+F 0 "J104" V 11023 4480 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 4480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 4200 50  0001 C CNN
+F 3 "~" H 11150 4200 50  0001 C CNN
+	1    11150 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J105
+U 1 1 62F61531
+P 11150 4500
+F 0 "J105" V 11023 4780 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 4780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 4500 50  0001 C CNN
+F 3 "~" H 11150 4500 50  0001 C CNN
+	1    11150 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J106
+U 1 1 62F61538
+P 11150 4800
+F 0 "J106" V 11023 5080 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 5080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 4800 50  0001 C CNN
+F 3 "~" H 11150 4800 50  0001 C CNN
+	1    11150 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J107
+U 1 1 62F6153F
+P 11150 5100
+F 0 "J107" V 11023 5380 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 5380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 5100 50  0001 C CNN
+F 3 "~" H 11150 5100 50  0001 C CNN
+	1    11150 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J108
+U 1 1 62F61546
+P 11150 5400
+F 0 "J108" V 11023 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 5680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 5400 50  0001 C CNN
+F 3 "~" H 11150 5400 50  0001 C CNN
+	1    11150 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10950 700  11050 700 
+Connection ~ 11050 700 
+Wire Wire Line
+	11050 700  11150 700 
+Connection ~ 11150 700 
+Wire Wire Line
+	11150 700  11250 700 
+Connection ~ 11250 700 
+Wire Wire Line
+	11250 700  11350 700 
+Wire Wire Line
+	10950 1000 11050 1000
+Connection ~ 11050 1000
+Wire Wire Line
+	11050 1000 11150 1000
+Connection ~ 11150 1000
+Wire Wire Line
+	11150 1000 11250 1000
+Connection ~ 11250 1000
+Wire Wire Line
+	11250 1000 11350 1000
+Wire Wire Line
+	10950 1300 11050 1300
+Connection ~ 11050 1300
+Wire Wire Line
+	11050 1300 11150 1300
+Connection ~ 11150 1300
+Wire Wire Line
+	11150 1300 11250 1300
+Connection ~ 11250 1300
+Wire Wire Line
+	11250 1300 11350 1300
+Wire Wire Line
+	10950 1600 11050 1600
+Connection ~ 11050 1600
+Wire Wire Line
+	11050 1600 11150 1600
+Connection ~ 11150 1600
+Wire Wire Line
+	11150 1600 11250 1600
+Connection ~ 11250 1600
+Wire Wire Line
+	11250 1600 11350 1600
+Wire Wire Line
+	10950 1900 11050 1900
+Connection ~ 11050 1900
+Wire Wire Line
+	11050 1900 11150 1900
+Connection ~ 11150 1900
+Wire Wire Line
+	11150 1900 11250 1900
+Connection ~ 11250 1900
+Wire Wire Line
+	11250 1900 11350 1900
+Wire Wire Line
+	10950 2200 11050 2200
+Connection ~ 11050 2200
+Wire Wire Line
+	11050 2200 11150 2200
+Connection ~ 11150 2200
+Wire Wire Line
+	11150 2200 11250 2200
+Connection ~ 11250 2200
+Wire Wire Line
+	11250 2200 11350 2200
+Wire Wire Line
+	10950 2500 11050 2500
+Connection ~ 11050 2500
+Wire Wire Line
+	11050 2500 11150 2500
+Connection ~ 11150 2500
+Wire Wire Line
+	11150 2500 11250 2500
+Connection ~ 11250 2500
+Wire Wire Line
+	11250 2500 11350 2500
+Wire Wire Line
+	10950 2800 11050 2800
+Connection ~ 11050 2800
+Wire Wire Line
+	11050 2800 11150 2800
+Connection ~ 11150 2800
+Wire Wire Line
+	11150 2800 11250 2800
+Connection ~ 11250 2800
+Wire Wire Line
+	11250 2800 11350 2800
+Wire Wire Line
+	10950 3100 11050 3100
+Connection ~ 11050 3100
+Wire Wire Line
+	11050 3100 11150 3100
+Connection ~ 11150 3100
+Wire Wire Line
+	11150 3100 11250 3100
+Connection ~ 11250 3100
+Wire Wire Line
+	11250 3100 11350 3100
+Wire Wire Line
+	10950 3400 11050 3400
+Connection ~ 11050 3400
+Wire Wire Line
+	11050 3400 11150 3400
+Connection ~ 11150 3400
+Wire Wire Line
+	11150 3400 11250 3400
+Connection ~ 11250 3400
+Wire Wire Line
+	11250 3400 11350 3400
+Wire Wire Line
+	10950 3700 11050 3700
+Connection ~ 11050 3700
+Wire Wire Line
+	11050 3700 11150 3700
+Connection ~ 11150 3700
+Wire Wire Line
+	11150 3700 11250 3700
+Connection ~ 11250 3700
+Wire Wire Line
+	11250 3700 11350 3700
+Wire Wire Line
+	10950 4000 11050 4000
+Connection ~ 11050 4000
+Wire Wire Line
+	11050 4000 11150 4000
+Connection ~ 11150 4000
+Wire Wire Line
+	11150 4000 11250 4000
+Connection ~ 11250 4000
+Wire Wire Line
+	11250 4000 11350 4000
+Wire Wire Line
+	10950 4300 11050 4300
+Connection ~ 11050 4300
+Wire Wire Line
+	11050 4300 11150 4300
+Connection ~ 11150 4300
+Wire Wire Line
+	11150 4300 11250 4300
+Connection ~ 11250 4300
+Wire Wire Line
+	11250 4300 11350 4300
+Wire Wire Line
+	10950 4600 11050 4600
+Connection ~ 11050 4600
+Wire Wire Line
+	11050 4600 11150 4600
+Connection ~ 11150 4600
+Wire Wire Line
+	11150 4600 11250 4600
+Connection ~ 11250 4600
+Wire Wire Line
+	11250 4600 11350 4600
+Wire Wire Line
+	10950 4900 11050 4900
+Connection ~ 11050 4900
+Wire Wire Line
+	11050 4900 11150 4900
+Connection ~ 11150 4900
+Wire Wire Line
+	11150 4900 11250 4900
+Connection ~ 11250 4900
+Wire Wire Line
+	11250 4900 11350 4900
+Wire Wire Line
+	10950 5200 11050 5200
+Connection ~ 11050 5200
+Wire Wire Line
+	11050 5200 11150 5200
+Connection ~ 11150 5200
+Wire Wire Line
+	11150 5200 11250 5200
+Connection ~ 11250 5200
+Wire Wire Line
+	11250 5200 11350 5200
+$Comp
+L Connector_Generic:Conn_01x05 J109
+U 1 1 62F615BD
+P 11150 5700
+F 0 "J109" V 11023 5980 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 5980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 5700 50  0001 C CNN
+F 3 "~" H 11150 5700 50  0001 C CNN
+	1    11150 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J110
+U 1 1 62F615C4
+P 11150 6000
+F 0 "J110" V 11023 6280 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 6280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 6000 50  0001 C CNN
+F 3 "~" H 11150 6000 50  0001 C CNN
+	1    11150 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J111
+U 1 1 62F615CB
+P 11150 6300
+F 0 "J111" V 11023 6580 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 6580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 6300 50  0001 C CNN
+F 3 "~" H 11150 6300 50  0001 C CNN
+	1    11150 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J112
+U 1 1 62F615D2
+P 11150 6600
+F 0 "J112" V 11023 6880 50  0000 L CNN
+F 1 "Conn_01x05" V 11114 6880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11150 6600 50  0001 C CNN
+F 3 "~" H 11150 6600 50  0001 C CNN
+	1    11150 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10950 5500 11050 5500
+Connection ~ 11050 5500
+Wire Wire Line
+	11050 5500 11150 5500
+Connection ~ 11150 5500
+Wire Wire Line
+	11150 5500 11250 5500
+Connection ~ 11250 5500
+Wire Wire Line
+	11250 5500 11350 5500
+Wire Wire Line
+	10950 5800 11050 5800
+Connection ~ 11050 5800
+Wire Wire Line
+	11050 5800 11150 5800
+Connection ~ 11150 5800
+Wire Wire Line
+	11150 5800 11250 5800
+Connection ~ 11250 5800
+Wire Wire Line
+	11250 5800 11350 5800
+Wire Wire Line
+	10950 6100 11050 6100
+Connection ~ 11050 6100
+Wire Wire Line
+	11050 6100 11150 6100
+Connection ~ 11150 6100
+Wire Wire Line
+	11150 6100 11250 6100
+Connection ~ 11250 6100
+Wire Wire Line
+	11250 6100 11350 6100
+Wire Wire Line
+	10950 6400 11050 6400
+Connection ~ 11050 6400
+Wire Wire Line
+	11050 6400 11150 6400
+Connection ~ 11150 6400
+Wire Wire Line
+	11150 6400 11250 6400
+Connection ~ 11250 6400
+Wire Wire Line
+	11250 6400 11350 6400
+$Comp
+L Connector_Generic:Conn_01x20 J89
+U 1 1 62F615F5
+P 19350 1600
+F 0 "J89" H 19430 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 19430 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 19350 1600 50  0001 C CNN
+F 3 "~" H 19350 1600 50  0001 C CNN
+	1    19350 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19150 700  19150 800 
+Connection ~ 19150 800 
+Wire Wire Line
+	19150 800  19150 900 
+Connection ~ 19150 900 
+Wire Wire Line
+	19150 900  19150 1000
+Connection ~ 19150 1000
+Wire Wire Line
+	19150 1000 19150 1100
+Connection ~ 19150 1100
+Wire Wire Line
+	19150 1100 19150 1200
+Connection ~ 19150 1200
+Wire Wire Line
+	19150 1200 19150 1300
+Connection ~ 19150 1300
+Wire Wire Line
+	19150 1300 19150 1400
+Connection ~ 19150 1400
+Wire Wire Line
+	19150 1400 19150 1500
+Connection ~ 19150 1500
+Wire Wire Line
+	19150 1500 19150 1600
+Connection ~ 19150 1600
+Wire Wire Line
+	19150 1600 19150 1700
+Connection ~ 19150 1700
+Wire Wire Line
+	19150 1700 19150 1800
+Connection ~ 19150 1800
+Wire Wire Line
+	19150 1800 19150 1900
+Connection ~ 19150 1900
+Wire Wire Line
+	19150 1900 19150 2000
+Connection ~ 19150 2000
+Wire Wire Line
+	19150 2000 19150 2100
+Connection ~ 19150 2100
+Wire Wire Line
+	19150 2100 19150 2200
+Connection ~ 19150 2200
+Wire Wire Line
+	19150 2200 19150 2300
+Connection ~ 19150 2300
+Wire Wire Line
+	19150 2300 19150 2400
+Connection ~ 19150 2400
+Wire Wire Line
+	19150 2400 19150 2500
+Connection ~ 19150 2500
+Wire Wire Line
+	19150 2500 19150 2600
+$Comp
+L Connector_Generic:Conn_01x20 J92
+U 1 1 62F61654
+P 19700 1600
+F 0 "J92" H 19780 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 19780 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 19700 1600 50  0001 C CNN
+F 3 "~" H 19700 1600 50  0001 C CNN
+	1    19700 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19500 700  19500 800 
+Connection ~ 19500 800 
+Wire Wire Line
+	19500 800  19500 900 
+Connection ~ 19500 900 
+Wire Wire Line
+	19500 900  19500 1000
+Connection ~ 19500 1000
+Wire Wire Line
+	19500 1000 19500 1100
+Connection ~ 19500 1100
+Wire Wire Line
+	19500 1100 19500 1200
+Connection ~ 19500 1200
+Wire Wire Line
+	19500 1200 19500 1300
+Connection ~ 19500 1300
+Wire Wire Line
+	19500 1300 19500 1400
+Connection ~ 19500 1400
+Wire Wire Line
+	19500 1400 19500 1500
+Connection ~ 19500 1500
+Wire Wire Line
+	19500 1500 19500 1600
+Connection ~ 19500 1600
+Wire Wire Line
+	19500 1600 19500 1700
+Connection ~ 19500 1700
+Wire Wire Line
+	19500 1700 19500 1800
+Connection ~ 19500 1800
+Wire Wire Line
+	19500 1800 19500 1900
+Connection ~ 19500 1900
+Wire Wire Line
+	19500 1900 19500 2000
+Connection ~ 19500 2000
+Wire Wire Line
+	19500 2000 19500 2100
+Connection ~ 19500 2100
+Wire Wire Line
+	19500 2100 19500 2200
+Connection ~ 19500 2200
+Wire Wire Line
+	19500 2200 19500 2300
+Connection ~ 19500 2300
+Wire Wire Line
+	19500 2300 19500 2400
+Connection ~ 19500 2400
+Wire Wire Line
+	19500 2400 19500 2500
+Connection ~ 19500 2500
+Wire Wire Line
+	19500 2500 19500 2600
+$Comp
+L Connector_Generic:Conn_01x05 J113
+U 1 1 62FB7FB5
+P 11850 900
+F 0 "J113" V 11723 1180 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 1180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 900 50  0001 C CNN
+F 3 "~" H 11850 900 50  0001 C CNN
+	1    11850 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J114
+U 1 1 62FB7FBC
+P 11850 1200
+F 0 "J114" V 11723 1480 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 1480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 1200 50  0001 C CNN
+F 3 "~" H 11850 1200 50  0001 C CNN
+	1    11850 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J115
+U 1 1 62FB7FC3
+P 11850 1500
+F 0 "J115" V 11723 1780 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 1780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 1500 50  0001 C CNN
+F 3 "~" H 11850 1500 50  0001 C CNN
+	1    11850 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J116
+U 1 1 62FB7FCA
+P 11850 1800
+F 0 "J116" V 11723 2080 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 2080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 1800 50  0001 C CNN
+F 3 "~" H 11850 1800 50  0001 C CNN
+	1    11850 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J117
+U 1 1 62FB7FD1
+P 11850 2100
+F 0 "J117" V 11723 2380 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 2380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 2100 50  0001 C CNN
+F 3 "~" H 11850 2100 50  0001 C CNN
+	1    11850 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J118
+U 1 1 62FB7FD8
+P 11850 2400
+F 0 "J118" V 11723 2680 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 2680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 2400 50  0001 C CNN
+F 3 "~" H 11850 2400 50  0001 C CNN
+	1    11850 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J119
+U 1 1 62FB7FDF
+P 11850 2700
+F 0 "J119" V 11723 2980 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 2980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 2700 50  0001 C CNN
+F 3 "~" H 11850 2700 50  0001 C CNN
+	1    11850 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J120
+U 1 1 62FB7FE6
+P 11850 3000
+F 0 "J120" V 11723 3280 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 3280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 3000 50  0001 C CNN
+F 3 "~" H 11850 3000 50  0001 C CNN
+	1    11850 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J121
+U 1 1 62FB7FED
+P 11850 3300
+F 0 "J121" V 11723 3580 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 3580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 3300 50  0001 C CNN
+F 3 "~" H 11850 3300 50  0001 C CNN
+	1    11850 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J122
+U 1 1 62FB7FF4
+P 11850 3600
+F 0 "J122" V 11723 3880 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 3880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 3600 50  0001 C CNN
+F 3 "~" H 11850 3600 50  0001 C CNN
+	1    11850 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J123
+U 1 1 62FB7FFB
+P 11850 3900
+F 0 "J123" V 11723 4180 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 4180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 3900 50  0001 C CNN
+F 3 "~" H 11850 3900 50  0001 C CNN
+	1    11850 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J124
+U 1 1 62FB8002
+P 11850 4200
+F 0 "J124" V 11723 4480 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 4480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 4200 50  0001 C CNN
+F 3 "~" H 11850 4200 50  0001 C CNN
+	1    11850 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J125
+U 1 1 62FB8009
+P 11850 4500
+F 0 "J125" V 11723 4780 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 4780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 4500 50  0001 C CNN
+F 3 "~" H 11850 4500 50  0001 C CNN
+	1    11850 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J126
+U 1 1 62FB8010
+P 11850 4800
+F 0 "J126" V 11723 5080 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 5080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 4800 50  0001 C CNN
+F 3 "~" H 11850 4800 50  0001 C CNN
+	1    11850 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J127
+U 1 1 62FB8017
+P 11850 5100
+F 0 "J127" V 11723 5380 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 5380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 5100 50  0001 C CNN
+F 3 "~" H 11850 5100 50  0001 C CNN
+	1    11850 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J128
+U 1 1 62FB801E
+P 11850 5400
+F 0 "J128" V 11723 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 5680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 5400 50  0001 C CNN
+F 3 "~" H 11850 5400 50  0001 C CNN
+	1    11850 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11650 700  11750 700 
+Connection ~ 11750 700 
+Wire Wire Line
+	11750 700  11850 700 
+Connection ~ 11850 700 
+Wire Wire Line
+	11850 700  11950 700 
+Connection ~ 11950 700 
+Wire Wire Line
+	11950 700  12050 700 
+Wire Wire Line
+	11650 1000 11750 1000
+Connection ~ 11750 1000
+Wire Wire Line
+	11750 1000 11850 1000
+Connection ~ 11850 1000
+Wire Wire Line
+	11850 1000 11950 1000
+Connection ~ 11950 1000
+Wire Wire Line
+	11950 1000 12050 1000
+Wire Wire Line
+	11650 1300 11750 1300
+Connection ~ 11750 1300
+Wire Wire Line
+	11750 1300 11850 1300
+Connection ~ 11850 1300
+Wire Wire Line
+	11850 1300 11950 1300
+Connection ~ 11950 1300
+Wire Wire Line
+	11950 1300 12050 1300
+Wire Wire Line
+	11650 1600 11750 1600
+Connection ~ 11750 1600
+Wire Wire Line
+	11750 1600 11850 1600
+Connection ~ 11850 1600
+Wire Wire Line
+	11850 1600 11950 1600
+Connection ~ 11950 1600
+Wire Wire Line
+	11950 1600 12050 1600
+Wire Wire Line
+	11650 1900 11750 1900
+Connection ~ 11750 1900
+Wire Wire Line
+	11750 1900 11850 1900
+Connection ~ 11850 1900
+Wire Wire Line
+	11850 1900 11950 1900
+Connection ~ 11950 1900
+Wire Wire Line
+	11950 1900 12050 1900
+Wire Wire Line
+	11650 2200 11750 2200
+Connection ~ 11750 2200
+Wire Wire Line
+	11750 2200 11850 2200
+Connection ~ 11850 2200
+Wire Wire Line
+	11850 2200 11950 2200
+Connection ~ 11950 2200
+Wire Wire Line
+	11950 2200 12050 2200
+Wire Wire Line
+	11650 2500 11750 2500
+Connection ~ 11750 2500
+Wire Wire Line
+	11750 2500 11850 2500
+Connection ~ 11850 2500
+Wire Wire Line
+	11850 2500 11950 2500
+Connection ~ 11950 2500
+Wire Wire Line
+	11950 2500 12050 2500
+Wire Wire Line
+	11650 2800 11750 2800
+Connection ~ 11750 2800
+Wire Wire Line
+	11750 2800 11850 2800
+Connection ~ 11850 2800
+Wire Wire Line
+	11850 2800 11950 2800
+Connection ~ 11950 2800
+Wire Wire Line
+	11950 2800 12050 2800
+Wire Wire Line
+	11650 3100 11750 3100
+Connection ~ 11750 3100
+Wire Wire Line
+	11750 3100 11850 3100
+Connection ~ 11850 3100
+Wire Wire Line
+	11850 3100 11950 3100
+Connection ~ 11950 3100
+Wire Wire Line
+	11950 3100 12050 3100
+Wire Wire Line
+	11650 3400 11750 3400
+Connection ~ 11750 3400
+Wire Wire Line
+	11750 3400 11850 3400
+Connection ~ 11850 3400
+Wire Wire Line
+	11850 3400 11950 3400
+Connection ~ 11950 3400
+Wire Wire Line
+	11950 3400 12050 3400
+Wire Wire Line
+	11650 3700 11750 3700
+Connection ~ 11750 3700
+Wire Wire Line
+	11750 3700 11850 3700
+Connection ~ 11850 3700
+Wire Wire Line
+	11850 3700 11950 3700
+Connection ~ 11950 3700
+Wire Wire Line
+	11950 3700 12050 3700
+Wire Wire Line
+	11650 4000 11750 4000
+Connection ~ 11750 4000
+Wire Wire Line
+	11750 4000 11850 4000
+Connection ~ 11850 4000
+Wire Wire Line
+	11850 4000 11950 4000
+Connection ~ 11950 4000
+Wire Wire Line
+	11950 4000 12050 4000
+Wire Wire Line
+	11650 4300 11750 4300
+Connection ~ 11750 4300
+Wire Wire Line
+	11750 4300 11850 4300
+Connection ~ 11850 4300
+Wire Wire Line
+	11850 4300 11950 4300
+Connection ~ 11950 4300
+Wire Wire Line
+	11950 4300 12050 4300
+Wire Wire Line
+	11650 4600 11750 4600
+Connection ~ 11750 4600
+Wire Wire Line
+	11750 4600 11850 4600
+Connection ~ 11850 4600
+Wire Wire Line
+	11850 4600 11950 4600
+Connection ~ 11950 4600
+Wire Wire Line
+	11950 4600 12050 4600
+Wire Wire Line
+	11650 4900 11750 4900
+Connection ~ 11750 4900
+Wire Wire Line
+	11750 4900 11850 4900
+Connection ~ 11850 4900
+Wire Wire Line
+	11850 4900 11950 4900
+Connection ~ 11950 4900
+Wire Wire Line
+	11950 4900 12050 4900
+Wire Wire Line
+	11650 5200 11750 5200
+Connection ~ 11750 5200
+Wire Wire Line
+	11750 5200 11850 5200
+Connection ~ 11850 5200
+Wire Wire Line
+	11850 5200 11950 5200
+Connection ~ 11950 5200
+Wire Wire Line
+	11950 5200 12050 5200
+$Comp
+L Connector_Generic:Conn_01x05 J129
+U 1 1 62FB8095
+P 11850 5700
+F 0 "J129" V 11723 5980 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 5980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 5700 50  0001 C CNN
+F 3 "~" H 11850 5700 50  0001 C CNN
+	1    11850 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J130
+U 1 1 62FB809C
+P 11850 6000
+F 0 "J130" V 11723 6280 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 6280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 6000 50  0001 C CNN
+F 3 "~" H 11850 6000 50  0001 C CNN
+	1    11850 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J131
+U 1 1 62FB80A3
+P 11850 6300
+F 0 "J131" V 11723 6580 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 6580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 6300 50  0001 C CNN
+F 3 "~" H 11850 6300 50  0001 C CNN
+	1    11850 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J132
+U 1 1 62FB80AA
+P 11850 6600
+F 0 "J132" V 11723 6880 50  0000 L CNN
+F 1 "Conn_01x05" V 11814 6880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 11850 6600 50  0001 C CNN
+F 3 "~" H 11850 6600 50  0001 C CNN
+	1    11850 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11650 5500 11750 5500
+Connection ~ 11750 5500
+Wire Wire Line
+	11750 5500 11850 5500
+Connection ~ 11850 5500
+Wire Wire Line
+	11850 5500 11950 5500
+Connection ~ 11950 5500
+Wire Wire Line
+	11950 5500 12050 5500
+Wire Wire Line
+	11650 5800 11750 5800
+Connection ~ 11750 5800
+Wire Wire Line
+	11750 5800 11850 5800
+Connection ~ 11850 5800
+Wire Wire Line
+	11850 5800 11950 5800
+Connection ~ 11950 5800
+Wire Wire Line
+	11950 5800 12050 5800
+Wire Wire Line
+	11650 6100 11750 6100
+Connection ~ 11750 6100
+Wire Wire Line
+	11750 6100 11850 6100
+Connection ~ 11850 6100
+Wire Wire Line
+	11850 6100 11950 6100
+Connection ~ 11950 6100
+Wire Wire Line
+	11950 6100 12050 6100
+Wire Wire Line
+	11650 6400 11750 6400
+Connection ~ 11750 6400
+Wire Wire Line
+	11750 6400 11850 6400
+Connection ~ 11850 6400
+Wire Wire Line
+	11850 6400 11950 6400
+Connection ~ 11950 6400
+Wire Wire Line
+	11950 6400 12050 6400
+$Comp
+L Connector_Generic:Conn_01x05 J137
+U 1 1 62FB80CD
+P 12550 900
+F 0 "J137" V 12423 1180 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 1180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 900 50  0001 C CNN
+F 3 "~" H 12550 900 50  0001 C CNN
+	1    12550 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J138
+U 1 1 62FB80D4
+P 12550 1200
+F 0 "J138" V 12423 1480 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 1480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 1200 50  0001 C CNN
+F 3 "~" H 12550 1200 50  0001 C CNN
+	1    12550 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J139
+U 1 1 62FB80DB
+P 12550 1500
+F 0 "J139" V 12423 1780 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 1780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 1500 50  0001 C CNN
+F 3 "~" H 12550 1500 50  0001 C CNN
+	1    12550 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J140
+U 1 1 62FB80E2
+P 12550 1800
+F 0 "J140" V 12423 2080 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 2080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 1800 50  0001 C CNN
+F 3 "~" H 12550 1800 50  0001 C CNN
+	1    12550 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J141
+U 1 1 62FB80E9
+P 12550 2100
+F 0 "J141" V 12423 2380 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 2380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 2100 50  0001 C CNN
+F 3 "~" H 12550 2100 50  0001 C CNN
+	1    12550 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J142
+U 1 1 62FB80F0
+P 12550 2400
+F 0 "J142" V 12423 2680 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 2680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 2400 50  0001 C CNN
+F 3 "~" H 12550 2400 50  0001 C CNN
+	1    12550 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J143
+U 1 1 62FB80F7
+P 12550 2700
+F 0 "J143" V 12423 2980 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 2980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 2700 50  0001 C CNN
+F 3 "~" H 12550 2700 50  0001 C CNN
+	1    12550 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J144
+U 1 1 62FB80FE
+P 12550 3000
+F 0 "J144" V 12423 3280 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 3280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 3000 50  0001 C CNN
+F 3 "~" H 12550 3000 50  0001 C CNN
+	1    12550 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J145
+U 1 1 62FB8105
+P 12550 3300
+F 0 "J145" V 12423 3580 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 3580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 3300 50  0001 C CNN
+F 3 "~" H 12550 3300 50  0001 C CNN
+	1    12550 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J146
+U 1 1 62FB810C
+P 12550 3600
+F 0 "J146" V 12423 3880 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 3880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 3600 50  0001 C CNN
+F 3 "~" H 12550 3600 50  0001 C CNN
+	1    12550 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J147
+U 1 1 62FB8113
+P 12550 3900
+F 0 "J147" V 12423 4180 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 4180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 3900 50  0001 C CNN
+F 3 "~" H 12550 3900 50  0001 C CNN
+	1    12550 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J148
+U 1 1 62FB811A
+P 12550 4200
+F 0 "J148" V 12423 4480 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 4480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 4200 50  0001 C CNN
+F 3 "~" H 12550 4200 50  0001 C CNN
+	1    12550 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J149
+U 1 1 62FB8121
+P 12550 4500
+F 0 "J149" V 12423 4780 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 4780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 4500 50  0001 C CNN
+F 3 "~" H 12550 4500 50  0001 C CNN
+	1    12550 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J150
+U 1 1 62FB8128
+P 12550 4800
+F 0 "J150" V 12423 5080 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 5080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 4800 50  0001 C CNN
+F 3 "~" H 12550 4800 50  0001 C CNN
+	1    12550 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J151
+U 1 1 62FB812F
+P 12550 5100
+F 0 "J151" V 12423 5380 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 5380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 5100 50  0001 C CNN
+F 3 "~" H 12550 5100 50  0001 C CNN
+	1    12550 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J152
+U 1 1 62FB8136
+P 12550 5400
+F 0 "J152" V 12423 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 5680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 5400 50  0001 C CNN
+F 3 "~" H 12550 5400 50  0001 C CNN
+	1    12550 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12350 700  12450 700 
+Connection ~ 12450 700 
+Wire Wire Line
+	12450 700  12550 700 
+Connection ~ 12550 700 
+Wire Wire Line
+	12550 700  12650 700 
+Connection ~ 12650 700 
+Wire Wire Line
+	12650 700  12750 700 
+Wire Wire Line
+	12350 1000 12450 1000
+Connection ~ 12450 1000
+Wire Wire Line
+	12450 1000 12550 1000
+Connection ~ 12550 1000
+Wire Wire Line
+	12550 1000 12650 1000
+Connection ~ 12650 1000
+Wire Wire Line
+	12650 1000 12750 1000
+Wire Wire Line
+	12350 1300 12450 1300
+Connection ~ 12450 1300
+Wire Wire Line
+	12450 1300 12550 1300
+Connection ~ 12550 1300
+Wire Wire Line
+	12550 1300 12650 1300
+Connection ~ 12650 1300
+Wire Wire Line
+	12650 1300 12750 1300
+Wire Wire Line
+	12350 1600 12450 1600
+Connection ~ 12450 1600
+Wire Wire Line
+	12450 1600 12550 1600
+Connection ~ 12550 1600
+Wire Wire Line
+	12550 1600 12650 1600
+Connection ~ 12650 1600
+Wire Wire Line
+	12650 1600 12750 1600
+Wire Wire Line
+	12350 1900 12450 1900
+Connection ~ 12450 1900
+Wire Wire Line
+	12450 1900 12550 1900
+Connection ~ 12550 1900
+Wire Wire Line
+	12550 1900 12650 1900
+Connection ~ 12650 1900
+Wire Wire Line
+	12650 1900 12750 1900
+Wire Wire Line
+	12350 2200 12450 2200
+Connection ~ 12450 2200
+Wire Wire Line
+	12450 2200 12550 2200
+Connection ~ 12550 2200
+Wire Wire Line
+	12550 2200 12650 2200
+Connection ~ 12650 2200
+Wire Wire Line
+	12650 2200 12750 2200
+Wire Wire Line
+	12350 2500 12450 2500
+Connection ~ 12450 2500
+Wire Wire Line
+	12450 2500 12550 2500
+Connection ~ 12550 2500
+Wire Wire Line
+	12550 2500 12650 2500
+Connection ~ 12650 2500
+Wire Wire Line
+	12650 2500 12750 2500
+Wire Wire Line
+	12350 2800 12450 2800
+Connection ~ 12450 2800
+Wire Wire Line
+	12450 2800 12550 2800
+Connection ~ 12550 2800
+Wire Wire Line
+	12550 2800 12650 2800
+Connection ~ 12650 2800
+Wire Wire Line
+	12650 2800 12750 2800
+Wire Wire Line
+	12350 3100 12450 3100
+Connection ~ 12450 3100
+Wire Wire Line
+	12450 3100 12550 3100
+Connection ~ 12550 3100
+Wire Wire Line
+	12550 3100 12650 3100
+Connection ~ 12650 3100
+Wire Wire Line
+	12650 3100 12750 3100
+Wire Wire Line
+	12350 3400 12450 3400
+Connection ~ 12450 3400
+Wire Wire Line
+	12450 3400 12550 3400
+Connection ~ 12550 3400
+Wire Wire Line
+	12550 3400 12650 3400
+Connection ~ 12650 3400
+Wire Wire Line
+	12650 3400 12750 3400
+Wire Wire Line
+	12350 3700 12450 3700
+Connection ~ 12450 3700
+Wire Wire Line
+	12450 3700 12550 3700
+Connection ~ 12550 3700
+Wire Wire Line
+	12550 3700 12650 3700
+Connection ~ 12650 3700
+Wire Wire Line
+	12650 3700 12750 3700
+Wire Wire Line
+	12350 4000 12450 4000
+Connection ~ 12450 4000
+Wire Wire Line
+	12450 4000 12550 4000
+Connection ~ 12550 4000
+Wire Wire Line
+	12550 4000 12650 4000
+Connection ~ 12650 4000
+Wire Wire Line
+	12650 4000 12750 4000
+Wire Wire Line
+	12350 4300 12450 4300
+Connection ~ 12450 4300
+Wire Wire Line
+	12450 4300 12550 4300
+Connection ~ 12550 4300
+Wire Wire Line
+	12550 4300 12650 4300
+Connection ~ 12650 4300
+Wire Wire Line
+	12650 4300 12750 4300
+Wire Wire Line
+	12350 4600 12450 4600
+Connection ~ 12450 4600
+Wire Wire Line
+	12450 4600 12550 4600
+Connection ~ 12550 4600
+Wire Wire Line
+	12550 4600 12650 4600
+Connection ~ 12650 4600
+Wire Wire Line
+	12650 4600 12750 4600
+Wire Wire Line
+	12350 4900 12450 4900
+Connection ~ 12450 4900
+Wire Wire Line
+	12450 4900 12550 4900
+Connection ~ 12550 4900
+Wire Wire Line
+	12550 4900 12650 4900
+Connection ~ 12650 4900
+Wire Wire Line
+	12650 4900 12750 4900
+Wire Wire Line
+	12350 5200 12450 5200
+Connection ~ 12450 5200
+Wire Wire Line
+	12450 5200 12550 5200
+Connection ~ 12550 5200
+Wire Wire Line
+	12550 5200 12650 5200
+Connection ~ 12650 5200
+Wire Wire Line
+	12650 5200 12750 5200
+$Comp
+L Connector_Generic:Conn_01x05 J153
+U 1 1 62FB81AD
+P 12550 5700
+F 0 "J153" V 12423 5980 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 5980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 5700 50  0001 C CNN
+F 3 "~" H 12550 5700 50  0001 C CNN
+	1    12550 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J154
+U 1 1 62FB81B4
+P 12550 6000
+F 0 "J154" V 12423 6280 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 6280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 6000 50  0001 C CNN
+F 3 "~" H 12550 6000 50  0001 C CNN
+	1    12550 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J155
+U 1 1 62FB81BB
+P 12550 6300
+F 0 "J155" V 12423 6580 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 6580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 6300 50  0001 C CNN
+F 3 "~" H 12550 6300 50  0001 C CNN
+	1    12550 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J156
+U 1 1 62FB81C2
+P 12550 6600
+F 0 "J156" V 12423 6880 50  0000 L CNN
+F 1 "Conn_01x05" V 12514 6880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 12550 6600 50  0001 C CNN
+F 3 "~" H 12550 6600 50  0001 C CNN
+	1    12550 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12350 5500 12450 5500
+Connection ~ 12450 5500
+Wire Wire Line
+	12450 5500 12550 5500
+Connection ~ 12550 5500
+Wire Wire Line
+	12550 5500 12650 5500
+Connection ~ 12650 5500
+Wire Wire Line
+	12650 5500 12750 5500
+Wire Wire Line
+	12350 5800 12450 5800
+Connection ~ 12450 5800
+Wire Wire Line
+	12450 5800 12550 5800
+Connection ~ 12550 5800
+Wire Wire Line
+	12550 5800 12650 5800
+Connection ~ 12650 5800
+Wire Wire Line
+	12650 5800 12750 5800
+Wire Wire Line
+	12350 6100 12450 6100
+Connection ~ 12450 6100
+Wire Wire Line
+	12450 6100 12550 6100
+Connection ~ 12550 6100
+Wire Wire Line
+	12550 6100 12650 6100
+Connection ~ 12650 6100
+Wire Wire Line
+	12650 6100 12750 6100
+Wire Wire Line
+	12350 6400 12450 6400
+Connection ~ 12450 6400
+Wire Wire Line
+	12450 6400 12550 6400
+Connection ~ 12550 6400
+Wire Wire Line
+	12550 6400 12650 6400
+Connection ~ 12650 6400
+Wire Wire Line
+	12650 6400 12750 6400
+$Comp
+L Connector_Generic:Conn_01x20 J133
+U 1 1 62FB81E5
+P 16550 1600
+F 0 "J133" H 16630 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 16630 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 16550 1600 50  0001 C CNN
+F 3 "~" H 16550 1600 50  0001 C CNN
+	1    16550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J135
+U 1 1 62FB81EC
+P 16900 1600
+F 0 "J135" H 16980 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 16980 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 16900 1600 50  0001 C CNN
+F 3 "~" H 16900 1600 50  0001 C CNN
+	1    16900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 700  16350 800 
+Connection ~ 16350 800 
+Wire Wire Line
+	16350 800  16350 900 
+Connection ~ 16350 900 
+Wire Wire Line
+	16350 900  16350 1000
+Connection ~ 16350 1000
+Wire Wire Line
+	16350 1000 16350 1100
+Connection ~ 16350 1100
+Wire Wire Line
+	16350 1100 16350 1200
+Connection ~ 16350 1200
+Wire Wire Line
+	16350 1200 16350 1300
+Connection ~ 16350 1300
+Wire Wire Line
+	16350 1300 16350 1400
+Connection ~ 16350 1400
+Wire Wire Line
+	16350 1400 16350 1500
+Connection ~ 16350 1500
+Wire Wire Line
+	16350 1500 16350 1600
+Connection ~ 16350 1600
+Wire Wire Line
+	16350 1600 16350 1700
+Connection ~ 16350 1700
+Wire Wire Line
+	16350 1700 16350 1800
+Connection ~ 16350 1800
+Wire Wire Line
+	16350 1800 16350 1900
+Connection ~ 16350 1900
+Wire Wire Line
+	16350 1900 16350 2000
+Connection ~ 16350 2000
+Wire Wire Line
+	16350 2000 16350 2100
+Connection ~ 16350 2100
+Wire Wire Line
+	16350 2100 16350 2200
+Connection ~ 16350 2200
+Wire Wire Line
+	16350 2200 16350 2300
+Connection ~ 16350 2300
+Wire Wire Line
+	16350 2300 16350 2400
+Connection ~ 16350 2400
+Wire Wire Line
+	16350 2400 16350 2500
+Connection ~ 16350 2500
+Wire Wire Line
+	16350 2500 16350 2600
+Wire Wire Line
+	16700 700  16700 800 
+Connection ~ 16700 800 
+Wire Wire Line
+	16700 800  16700 900 
+Connection ~ 16700 900 
+Wire Wire Line
+	16700 900  16700 1000
+Connection ~ 16700 1000
+Wire Wire Line
+	16700 1000 16700 1100
+Connection ~ 16700 1100
+Wire Wire Line
+	16700 1100 16700 1200
+Connection ~ 16700 1200
+Wire Wire Line
+	16700 1200 16700 1300
+Connection ~ 16700 1300
+Wire Wire Line
+	16700 1300 16700 1400
+Connection ~ 16700 1400
+Wire Wire Line
+	16700 1400 16700 1500
+Connection ~ 16700 1500
+Wire Wire Line
+	16700 1500 16700 1600
+Connection ~ 16700 1600
+Wire Wire Line
+	16700 1600 16700 1700
+Connection ~ 16700 1700
+Wire Wire Line
+	16700 1700 16700 1800
+Connection ~ 16700 1800
+Wire Wire Line
+	16700 1800 16700 1900
+Connection ~ 16700 1900
+Wire Wire Line
+	16700 1900 16700 2000
+Connection ~ 16700 2000
+Wire Wire Line
+	16700 2000 16700 2100
+Connection ~ 16700 2100
+Wire Wire Line
+	16700 2100 16700 2200
+Connection ~ 16700 2200
+Wire Wire Line
+	16700 2200 16700 2300
+Connection ~ 16700 2300
+Wire Wire Line
+	16700 2300 16700 2400
+Connection ~ 16700 2400
+Wire Wire Line
+	16700 2400 16700 2500
+Connection ~ 16700 2500
+Wire Wire Line
+	16700 2500 16700 2600
+$Comp
+L Connector_Generic:Conn_01x20 J134
+U 1 1 62FB823D
+P 17950 1600
+F 0 "J134" H 18030 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 18030 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 17950 1600 50  0001 C CNN
+F 3 "~" H 17950 1600 50  0001 C CNN
+	1    17950 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J136
+U 1 1 62FB8244
+P 18300 1600
+F 0 "J136" H 18380 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 18380 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 18300 1600 50  0001 C CNN
+F 3 "~" H 18300 1600 50  0001 C CNN
+	1    18300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17750 700  17750 800 
+Connection ~ 17750 800 
+Wire Wire Line
+	17750 800  17750 900 
+Connection ~ 17750 900 
+Wire Wire Line
+	17750 900  17750 1000
+Connection ~ 17750 1000
+Wire Wire Line
+	17750 1000 17750 1100
+Connection ~ 17750 1100
+Wire Wire Line
+	17750 1100 17750 1200
+Connection ~ 17750 1200
+Wire Wire Line
+	17750 1200 17750 1300
+Connection ~ 17750 1300
+Wire Wire Line
+	17750 1300 17750 1400
+Connection ~ 17750 1400
+Wire Wire Line
+	17750 1400 17750 1500
+Connection ~ 17750 1500
+Wire Wire Line
+	17750 1500 17750 1600
+Connection ~ 17750 1600
+Wire Wire Line
+	17750 1600 17750 1700
+Connection ~ 17750 1700
+Wire Wire Line
+	17750 1700 17750 1800
+Connection ~ 17750 1800
+Wire Wire Line
+	17750 1800 17750 1900
+Connection ~ 17750 1900
+Wire Wire Line
+	17750 1900 17750 2000
+Connection ~ 17750 2000
+Wire Wire Line
+	17750 2000 17750 2100
+Connection ~ 17750 2100
+Wire Wire Line
+	17750 2100 17750 2200
+Connection ~ 17750 2200
+Wire Wire Line
+	17750 2200 17750 2300
+Connection ~ 17750 2300
+Wire Wire Line
+	17750 2300 17750 2400
+Connection ~ 17750 2400
+Wire Wire Line
+	17750 2400 17750 2500
+Connection ~ 17750 2500
+Wire Wire Line
+	17750 2500 17750 2600
+Wire Wire Line
+	18100 700  18100 800 
+Connection ~ 18100 800 
+Wire Wire Line
+	18100 800  18100 900 
+Connection ~ 18100 900 
+Wire Wire Line
+	18100 900  18100 1000
+Connection ~ 18100 1000
+Wire Wire Line
+	18100 1000 18100 1100
+Connection ~ 18100 1100
+Wire Wire Line
+	18100 1100 18100 1200
+Connection ~ 18100 1200
+Wire Wire Line
+	18100 1200 18100 1300
+Connection ~ 18100 1300
+Wire Wire Line
+	18100 1300 18100 1400
+Connection ~ 18100 1400
+Wire Wire Line
+	18100 1400 18100 1500
+Connection ~ 18100 1500
+Wire Wire Line
+	18100 1500 18100 1600
+Connection ~ 18100 1600
+Wire Wire Line
+	18100 1600 18100 1700
+Connection ~ 18100 1700
+Wire Wire Line
+	18100 1700 18100 1800
+Connection ~ 18100 1800
+Wire Wire Line
+	18100 1800 18100 1900
+Connection ~ 18100 1900
+Wire Wire Line
+	18100 1900 18100 2000
+Connection ~ 18100 2000
+Wire Wire Line
+	18100 2000 18100 2100
+Connection ~ 18100 2100
+Wire Wire Line
+	18100 2100 18100 2200
+Connection ~ 18100 2200
+Wire Wire Line
+	18100 2200 18100 2300
+Connection ~ 18100 2300
+Wire Wire Line
+	18100 2300 18100 2400
+Connection ~ 18100 2400
+Wire Wire Line
+	18100 2400 18100 2500
+Connection ~ 18100 2500
+Wire Wire Line
+	18100 2500 18100 2600
+$Comp
+L Connector:Barrel_Jack_Switch J2
+U 1 1 6323317E
+P 1150 3950
+F 0 "J2" H 1205 4267 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 1205 4176 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1200 3910 50  0001 C CNN
+F 3 "~" H 1200 3910 50  0001 C CNN
+	1    1150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J157
+U 1 1 635E8F71
+P 13250 900
+F 0 "J157" V 13123 1180 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 1180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 900 50  0001 C CNN
+F 3 "~" H 13250 900 50  0001 C CNN
+	1    13250 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J158
+U 1 1 635E8F78
+P 13250 1200
+F 0 "J158" V 13123 1480 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 1480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 1200 50  0001 C CNN
+F 3 "~" H 13250 1200 50  0001 C CNN
+	1    13250 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J159
+U 1 1 635E8F7F
+P 13250 1500
+F 0 "J159" V 13123 1780 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 1780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 1500 50  0001 C CNN
+F 3 "~" H 13250 1500 50  0001 C CNN
+	1    13250 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J160
+U 1 1 635E8F86
+P 13250 1800
+F 0 "J160" V 13123 2080 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 2080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 1800 50  0001 C CNN
+F 3 "~" H 13250 1800 50  0001 C CNN
+	1    13250 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J161
+U 1 1 635E8F8D
+P 13250 2100
+F 0 "J161" V 13123 2380 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 2380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 2100 50  0001 C CNN
+F 3 "~" H 13250 2100 50  0001 C CNN
+	1    13250 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J162
+U 1 1 635E8F94
+P 13250 2400
+F 0 "J162" V 13123 2680 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 2680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 2400 50  0001 C CNN
+F 3 "~" H 13250 2400 50  0001 C CNN
+	1    13250 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J163
+U 1 1 635E8F9B
+P 13250 2700
+F 0 "J163" V 13123 2980 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 2980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 2700 50  0001 C CNN
+F 3 "~" H 13250 2700 50  0001 C CNN
+	1    13250 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J164
+U 1 1 635E8FA2
+P 13250 3000
+F 0 "J164" V 13123 3280 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 3280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 3000 50  0001 C CNN
+F 3 "~" H 13250 3000 50  0001 C CNN
+	1    13250 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J165
+U 1 1 635E8FA9
+P 13250 3300
+F 0 "J165" V 13123 3580 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 3580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 3300 50  0001 C CNN
+F 3 "~" H 13250 3300 50  0001 C CNN
+	1    13250 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J166
+U 1 1 635E8FB0
+P 13250 3600
+F 0 "J166" V 13123 3880 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 3880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 3600 50  0001 C CNN
+F 3 "~" H 13250 3600 50  0001 C CNN
+	1    13250 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J167
+U 1 1 635E8FB7
+P 13250 3900
+F 0 "J167" V 13123 4180 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 4180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 3900 50  0001 C CNN
+F 3 "~" H 13250 3900 50  0001 C CNN
+	1    13250 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J168
+U 1 1 635E8FBE
+P 13250 4200
+F 0 "J168" V 13123 4480 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 4480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 4200 50  0001 C CNN
+F 3 "~" H 13250 4200 50  0001 C CNN
+	1    13250 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J169
+U 1 1 635E8FC5
+P 13250 4500
+F 0 "J169" V 13123 4780 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 4780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 4500 50  0001 C CNN
+F 3 "~" H 13250 4500 50  0001 C CNN
+	1    13250 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J170
+U 1 1 635E8FCC
+P 13250 4800
+F 0 "J170" V 13123 5080 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 5080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 4800 50  0001 C CNN
+F 3 "~" H 13250 4800 50  0001 C CNN
+	1    13250 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J171
+U 1 1 635E8FD3
+P 13250 5100
+F 0 "J171" V 13123 5380 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 5380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 5100 50  0001 C CNN
+F 3 "~" H 13250 5100 50  0001 C CNN
+	1    13250 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J172
+U 1 1 635E8FDA
+P 13250 5400
+F 0 "J172" V 13123 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 5680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 5400 50  0001 C CNN
+F 3 "~" H 13250 5400 50  0001 C CNN
+	1    13250 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13050 700  13150 700 
+Connection ~ 13150 700 
+Wire Wire Line
+	13150 700  13250 700 
+Connection ~ 13250 700 
+Wire Wire Line
+	13250 700  13350 700 
+Connection ~ 13350 700 
+Wire Wire Line
+	13350 700  13450 700 
+Wire Wire Line
+	13050 1000 13150 1000
+Connection ~ 13150 1000
+Wire Wire Line
+	13150 1000 13250 1000
+Connection ~ 13250 1000
+Wire Wire Line
+	13250 1000 13350 1000
+Connection ~ 13350 1000
+Wire Wire Line
+	13350 1000 13450 1000
+Wire Wire Line
+	13050 1300 13150 1300
+Connection ~ 13150 1300
+Wire Wire Line
+	13150 1300 13250 1300
+Connection ~ 13250 1300
+Wire Wire Line
+	13250 1300 13350 1300
+Connection ~ 13350 1300
+Wire Wire Line
+	13350 1300 13450 1300
+Wire Wire Line
+	13050 1600 13150 1600
+Connection ~ 13150 1600
+Wire Wire Line
+	13150 1600 13250 1600
+Connection ~ 13250 1600
+Wire Wire Line
+	13250 1600 13350 1600
+Connection ~ 13350 1600
+Wire Wire Line
+	13350 1600 13450 1600
+Wire Wire Line
+	13050 1900 13150 1900
+Connection ~ 13150 1900
+Wire Wire Line
+	13150 1900 13250 1900
+Connection ~ 13250 1900
+Wire Wire Line
+	13250 1900 13350 1900
+Connection ~ 13350 1900
+Wire Wire Line
+	13350 1900 13450 1900
+Wire Wire Line
+	13050 2200 13150 2200
+Connection ~ 13150 2200
+Wire Wire Line
+	13150 2200 13250 2200
+Connection ~ 13250 2200
+Wire Wire Line
+	13250 2200 13350 2200
+Connection ~ 13350 2200
+Wire Wire Line
+	13350 2200 13450 2200
+Wire Wire Line
+	13050 2500 13150 2500
+Connection ~ 13150 2500
+Wire Wire Line
+	13150 2500 13250 2500
+Connection ~ 13250 2500
+Wire Wire Line
+	13250 2500 13350 2500
+Connection ~ 13350 2500
+Wire Wire Line
+	13350 2500 13450 2500
+Wire Wire Line
+	13050 2800 13150 2800
+Connection ~ 13150 2800
+Wire Wire Line
+	13150 2800 13250 2800
+Connection ~ 13250 2800
+Wire Wire Line
+	13250 2800 13350 2800
+Connection ~ 13350 2800
+Wire Wire Line
+	13350 2800 13450 2800
+Wire Wire Line
+	13050 3100 13150 3100
+Connection ~ 13150 3100
+Wire Wire Line
+	13150 3100 13250 3100
+Connection ~ 13250 3100
+Wire Wire Line
+	13250 3100 13350 3100
+Connection ~ 13350 3100
+Wire Wire Line
+	13350 3100 13450 3100
+Wire Wire Line
+	13050 3400 13150 3400
+Connection ~ 13150 3400
+Wire Wire Line
+	13150 3400 13250 3400
+Connection ~ 13250 3400
+Wire Wire Line
+	13250 3400 13350 3400
+Connection ~ 13350 3400
+Wire Wire Line
+	13350 3400 13450 3400
+Wire Wire Line
+	13050 3700 13150 3700
+Connection ~ 13150 3700
+Wire Wire Line
+	13150 3700 13250 3700
+Connection ~ 13250 3700
+Wire Wire Line
+	13250 3700 13350 3700
+Connection ~ 13350 3700
+Wire Wire Line
+	13350 3700 13450 3700
+Wire Wire Line
+	13050 4000 13150 4000
+Connection ~ 13150 4000
+Wire Wire Line
+	13150 4000 13250 4000
+Connection ~ 13250 4000
+Wire Wire Line
+	13250 4000 13350 4000
+Connection ~ 13350 4000
+Wire Wire Line
+	13350 4000 13450 4000
+Wire Wire Line
+	13050 4300 13150 4300
+Connection ~ 13150 4300
+Wire Wire Line
+	13150 4300 13250 4300
+Connection ~ 13250 4300
+Wire Wire Line
+	13250 4300 13350 4300
+Connection ~ 13350 4300
+Wire Wire Line
+	13350 4300 13450 4300
+Wire Wire Line
+	13050 4600 13150 4600
+Connection ~ 13150 4600
+Wire Wire Line
+	13150 4600 13250 4600
+Connection ~ 13250 4600
+Wire Wire Line
+	13250 4600 13350 4600
+Connection ~ 13350 4600
+Wire Wire Line
+	13350 4600 13450 4600
+Wire Wire Line
+	13050 4900 13150 4900
+Connection ~ 13150 4900
+Wire Wire Line
+	13150 4900 13250 4900
+Connection ~ 13250 4900
+Wire Wire Line
+	13250 4900 13350 4900
+Connection ~ 13350 4900
+Wire Wire Line
+	13350 4900 13450 4900
+Wire Wire Line
+	13050 5200 13150 5200
+Connection ~ 13150 5200
+Wire Wire Line
+	13150 5200 13250 5200
+Connection ~ 13250 5200
+Wire Wire Line
+	13250 5200 13350 5200
+Connection ~ 13350 5200
+Wire Wire Line
+	13350 5200 13450 5200
+$Comp
+L Connector_Generic:Conn_01x05 J173
+U 1 1 635E9051
+P 13250 5700
+F 0 "J173" V 13123 5980 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 5980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 5700 50  0001 C CNN
+F 3 "~" H 13250 5700 50  0001 C CNN
+	1    13250 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J174
+U 1 1 635E9058
+P 13250 6000
+F 0 "J174" V 13123 6280 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 6280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 6000 50  0001 C CNN
+F 3 "~" H 13250 6000 50  0001 C CNN
+	1    13250 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J175
+U 1 1 635E905F
+P 13250 6300
+F 0 "J175" V 13123 6580 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 6580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 6300 50  0001 C CNN
+F 3 "~" H 13250 6300 50  0001 C CNN
+	1    13250 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J176
+U 1 1 635E9066
+P 13250 6600
+F 0 "J176" V 13123 6880 50  0000 L CNN
+F 1 "Conn_01x05" V 13214 6880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13250 6600 50  0001 C CNN
+F 3 "~" H 13250 6600 50  0001 C CNN
+	1    13250 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13050 5500 13150 5500
+Connection ~ 13150 5500
+Wire Wire Line
+	13150 5500 13250 5500
+Connection ~ 13250 5500
+Wire Wire Line
+	13250 5500 13350 5500
+Connection ~ 13350 5500
+Wire Wire Line
+	13350 5500 13450 5500
+Wire Wire Line
+	13050 5800 13150 5800
+Connection ~ 13150 5800
+Wire Wire Line
+	13150 5800 13250 5800
+Connection ~ 13250 5800
+Wire Wire Line
+	13250 5800 13350 5800
+Connection ~ 13350 5800
+Wire Wire Line
+	13350 5800 13450 5800
+Wire Wire Line
+	13050 6100 13150 6100
+Connection ~ 13150 6100
+Wire Wire Line
+	13150 6100 13250 6100
+Connection ~ 13250 6100
+Wire Wire Line
+	13250 6100 13350 6100
+Connection ~ 13350 6100
+Wire Wire Line
+	13350 6100 13450 6100
+Wire Wire Line
+	13050 6400 13150 6400
+Connection ~ 13150 6400
+Wire Wire Line
+	13150 6400 13250 6400
+Connection ~ 13250 6400
+Wire Wire Line
+	13250 6400 13350 6400
+Connection ~ 13350 6400
+Wire Wire Line
+	13350 6400 13450 6400
+$Comp
+L Connector_Generic:Conn_01x05 J181
+U 1 1 635E9089
+P 13950 900
+F 0 "J181" V 13823 1180 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 1180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 900 50  0001 C CNN
+F 3 "~" H 13950 900 50  0001 C CNN
+	1    13950 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J182
+U 1 1 635E9090
+P 13950 1200
+F 0 "J182" V 13823 1480 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 1480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 1200 50  0001 C CNN
+F 3 "~" H 13950 1200 50  0001 C CNN
+	1    13950 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J183
+U 1 1 635E9097
+P 13950 1500
+F 0 "J183" V 13823 1780 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 1780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 1500 50  0001 C CNN
+F 3 "~" H 13950 1500 50  0001 C CNN
+	1    13950 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J184
+U 1 1 635E909E
+P 13950 1800
+F 0 "J184" V 13823 2080 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 2080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 1800 50  0001 C CNN
+F 3 "~" H 13950 1800 50  0001 C CNN
+	1    13950 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J185
+U 1 1 635E90A5
+P 13950 2100
+F 0 "J185" V 13823 2380 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 2380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 2100 50  0001 C CNN
+F 3 "~" H 13950 2100 50  0001 C CNN
+	1    13950 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J186
+U 1 1 635E90AC
+P 13950 2400
+F 0 "J186" V 13823 2680 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 2680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 2400 50  0001 C CNN
+F 3 "~" H 13950 2400 50  0001 C CNN
+	1    13950 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J187
+U 1 1 635E90B3
+P 13950 2700
+F 0 "J187" V 13823 2980 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 2980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 2700 50  0001 C CNN
+F 3 "~" H 13950 2700 50  0001 C CNN
+	1    13950 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J188
+U 1 1 635E90BA
+P 13950 3000
+F 0 "J188" V 13823 3280 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 3280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 3000 50  0001 C CNN
+F 3 "~" H 13950 3000 50  0001 C CNN
+	1    13950 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J189
+U 1 1 635E90C1
+P 13950 3300
+F 0 "J189" V 13823 3580 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 3580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 3300 50  0001 C CNN
+F 3 "~" H 13950 3300 50  0001 C CNN
+	1    13950 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J190
+U 1 1 635E90C8
+P 13950 3600
+F 0 "J190" V 13823 3880 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 3880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 3600 50  0001 C CNN
+F 3 "~" H 13950 3600 50  0001 C CNN
+	1    13950 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J191
+U 1 1 635E90CF
+P 13950 3900
+F 0 "J191" V 13823 4180 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 4180 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 3900 50  0001 C CNN
+F 3 "~" H 13950 3900 50  0001 C CNN
+	1    13950 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J192
+U 1 1 635E90D6
+P 13950 4200
+F 0 "J192" V 13823 4480 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 4480 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 4200 50  0001 C CNN
+F 3 "~" H 13950 4200 50  0001 C CNN
+	1    13950 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J193
+U 1 1 635E90DD
+P 13950 4500
+F 0 "J193" V 13823 4780 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 4780 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 4500 50  0001 C CNN
+F 3 "~" H 13950 4500 50  0001 C CNN
+	1    13950 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J194
+U 1 1 635E90E4
+P 13950 4800
+F 0 "J194" V 13823 5080 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 5080 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 4800 50  0001 C CNN
+F 3 "~" H 13950 4800 50  0001 C CNN
+	1    13950 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J195
+U 1 1 635E90EB
+P 13950 5100
+F 0 "J195" V 13823 5380 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 5380 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 5100 50  0001 C CNN
+F 3 "~" H 13950 5100 50  0001 C CNN
+	1    13950 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J196
+U 1 1 635E90F2
+P 13950 5400
+F 0 "J196" V 13823 5680 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 5680 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 5400 50  0001 C CNN
+F 3 "~" H 13950 5400 50  0001 C CNN
+	1    13950 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13750 700  13850 700 
+Connection ~ 13850 700 
+Wire Wire Line
+	13850 700  13950 700 
+Connection ~ 13950 700 
+Wire Wire Line
+	13950 700  14050 700 
+Connection ~ 14050 700 
+Wire Wire Line
+	14050 700  14150 700 
+Wire Wire Line
+	13750 1000 13850 1000
+Connection ~ 13850 1000
+Wire Wire Line
+	13850 1000 13950 1000
+Connection ~ 13950 1000
+Wire Wire Line
+	13950 1000 14050 1000
+Connection ~ 14050 1000
+Wire Wire Line
+	14050 1000 14150 1000
+Wire Wire Line
+	13750 1300 13850 1300
+Connection ~ 13850 1300
+Wire Wire Line
+	13850 1300 13950 1300
+Connection ~ 13950 1300
+Wire Wire Line
+	13950 1300 14050 1300
+Connection ~ 14050 1300
+Wire Wire Line
+	14050 1300 14150 1300
+Wire Wire Line
+	13750 1600 13850 1600
+Connection ~ 13850 1600
+Wire Wire Line
+	13850 1600 13950 1600
+Connection ~ 13950 1600
+Wire Wire Line
+	13950 1600 14050 1600
+Connection ~ 14050 1600
+Wire Wire Line
+	14050 1600 14150 1600
+Wire Wire Line
+	13750 1900 13850 1900
+Connection ~ 13850 1900
+Wire Wire Line
+	13850 1900 13950 1900
+Connection ~ 13950 1900
+Wire Wire Line
+	13950 1900 14050 1900
+Connection ~ 14050 1900
+Wire Wire Line
+	14050 1900 14150 1900
+Wire Wire Line
+	13750 2200 13850 2200
+Connection ~ 13850 2200
+Wire Wire Line
+	13850 2200 13950 2200
+Connection ~ 13950 2200
+Wire Wire Line
+	13950 2200 14050 2200
+Connection ~ 14050 2200
+Wire Wire Line
+	14050 2200 14150 2200
+Wire Wire Line
+	13750 2500 13850 2500
+Connection ~ 13850 2500
+Wire Wire Line
+	13850 2500 13950 2500
+Connection ~ 13950 2500
+Wire Wire Line
+	13950 2500 14050 2500
+Connection ~ 14050 2500
+Wire Wire Line
+	14050 2500 14150 2500
+Wire Wire Line
+	13750 2800 13850 2800
+Connection ~ 13850 2800
+Wire Wire Line
+	13850 2800 13950 2800
+Connection ~ 13950 2800
+Wire Wire Line
+	13950 2800 14050 2800
+Connection ~ 14050 2800
+Wire Wire Line
+	14050 2800 14150 2800
+Wire Wire Line
+	13750 3100 13850 3100
+Connection ~ 13850 3100
+Wire Wire Line
+	13850 3100 13950 3100
+Connection ~ 13950 3100
+Wire Wire Line
+	13950 3100 14050 3100
+Connection ~ 14050 3100
+Wire Wire Line
+	14050 3100 14150 3100
+Wire Wire Line
+	13750 3400 13850 3400
+Connection ~ 13850 3400
+Wire Wire Line
+	13850 3400 13950 3400
+Connection ~ 13950 3400
+Wire Wire Line
+	13950 3400 14050 3400
+Connection ~ 14050 3400
+Wire Wire Line
+	14050 3400 14150 3400
+Wire Wire Line
+	13750 3700 13850 3700
+Connection ~ 13850 3700
+Wire Wire Line
+	13850 3700 13950 3700
+Connection ~ 13950 3700
+Wire Wire Line
+	13950 3700 14050 3700
+Connection ~ 14050 3700
+Wire Wire Line
+	14050 3700 14150 3700
+Wire Wire Line
+	13750 4000 13850 4000
+Connection ~ 13850 4000
+Wire Wire Line
+	13850 4000 13950 4000
+Connection ~ 13950 4000
+Wire Wire Line
+	13950 4000 14050 4000
+Connection ~ 14050 4000
+Wire Wire Line
+	14050 4000 14150 4000
+Wire Wire Line
+	13750 4300 13850 4300
+Connection ~ 13850 4300
+Wire Wire Line
+	13850 4300 13950 4300
+Connection ~ 13950 4300
+Wire Wire Line
+	13950 4300 14050 4300
+Connection ~ 14050 4300
+Wire Wire Line
+	14050 4300 14150 4300
+Wire Wire Line
+	13750 4600 13850 4600
+Connection ~ 13850 4600
+Wire Wire Line
+	13850 4600 13950 4600
+Connection ~ 13950 4600
+Wire Wire Line
+	13950 4600 14050 4600
+Connection ~ 14050 4600
+Wire Wire Line
+	14050 4600 14150 4600
+Wire Wire Line
+	13750 4900 13850 4900
+Connection ~ 13850 4900
+Wire Wire Line
+	13850 4900 13950 4900
+Connection ~ 13950 4900
+Wire Wire Line
+	13950 4900 14050 4900
+Connection ~ 14050 4900
+Wire Wire Line
+	14050 4900 14150 4900
+Wire Wire Line
+	13750 5200 13850 5200
+Connection ~ 13850 5200
+Wire Wire Line
+	13850 5200 13950 5200
+Connection ~ 13950 5200
+Wire Wire Line
+	13950 5200 14050 5200
+Connection ~ 14050 5200
+Wire Wire Line
+	14050 5200 14150 5200
+$Comp
+L Connector_Generic:Conn_01x05 J197
+U 1 1 635E9169
+P 13950 5700
+F 0 "J197" V 13823 5980 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 5980 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 5700 50  0001 C CNN
+F 3 "~" H 13950 5700 50  0001 C CNN
+	1    13950 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J198
+U 1 1 635E9170
+P 13950 6000
+F 0 "J198" V 13823 6280 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 6280 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 6000 50  0001 C CNN
+F 3 "~" H 13950 6000 50  0001 C CNN
+	1    13950 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J199
+U 1 1 635E9177
+P 13950 6300
+F 0 "J199" V 13823 6580 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 6580 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 6300 50  0001 C CNN
+F 3 "~" H 13950 6300 50  0001 C CNN
+	1    13950 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J200
+U 1 1 635E917E
+P 13950 6600
+F 0 "J200" V 13823 6880 50  0000 L CNN
+F 1 "Conn_01x05" V 13914 6880 50  0000 L CNN
+F 2 "experimentboard:5_round" H 13950 6600 50  0001 C CNN
+F 3 "~" H 13950 6600 50  0001 C CNN
+	1    13950 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13750 5500 13850 5500
+Connection ~ 13850 5500
+Wire Wire Line
+	13850 5500 13950 5500
+Connection ~ 13950 5500
+Wire Wire Line
+	13950 5500 14050 5500
+Connection ~ 14050 5500
+Wire Wire Line
+	14050 5500 14150 5500
+Wire Wire Line
+	13750 5800 13850 5800
+Connection ~ 13850 5800
+Wire Wire Line
+	13850 5800 13950 5800
+Connection ~ 13950 5800
+Wire Wire Line
+	13950 5800 14050 5800
+Connection ~ 14050 5800
+Wire Wire Line
+	14050 5800 14150 5800
+Wire Wire Line
+	13750 6100 13850 6100
+Connection ~ 13850 6100
+Wire Wire Line
+	13850 6100 13950 6100
+Connection ~ 13950 6100
+Wire Wire Line
+	13950 6100 14050 6100
+Connection ~ 14050 6100
+Wire Wire Line
+	14050 6100 14150 6100
+Wire Wire Line
+	13750 6400 13850 6400
+Connection ~ 13850 6400
+Wire Wire Line
+	13850 6400 13950 6400
+Connection ~ 13950 6400
+Wire Wire Line
+	13950 6400 14050 6400
+Connection ~ 14050 6400
+Wire Wire Line
+	14050 6400 14150 6400
+$Comp
+L Connector_Generic:Conn_01x20 J177
+U 1 1 635E91A1
+P 15850 1600
+F 0 "J177" H 15930 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 15930 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 15850 1600 50  0001 C CNN
+F 3 "~" H 15850 1600 50  0001 C CNN
+	1    15850 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x20 J179
+U 1 1 635E91A8
+P 16200 1600
+F 0 "J179" H 16280 1592 50  0000 L CNN
+F 1 "Conn_01x20" H 16280 1501 50  0000 L CNN
+F 2 "experimentboard:20_square" H 16200 1600 50  0001 C CNN
+F 3 "~" H 16200 1600 50  0001 C CNN
+	1    16200 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15650 700  15650 800 
+Connection ~ 15650 800 
+Wire Wire Line
+	15650 800  15650 900 
+Connection ~ 15650 900 
+Wire Wire Line
+	15650 900  15650 1000
+Connection ~ 15650 1000
+Wire Wire Line
+	15650 1000 15650 1100
+Connection ~ 15650 1100
+Wire Wire Line
+	15650 1100 15650 1200
+Connection ~ 15650 1200
+Wire Wire Line
+	15650 1200 15650 1300
+Connection ~ 15650 1300
+Wire Wire Line
+	15650 1300 15650 1400
+Connection ~ 15650 1400
+Wire Wire Line
+	15650 1400 15650 1500
+Connection ~ 15650 1500
+Wire Wire Line
+	15650 1500 15650 1600
+Connection ~ 15650 1600
+Wire Wire Line
+	15650 1600 15650 1700
+Connection ~ 15650 1700
+Wire Wire Line
+	15650 1700 15650 1800
+Connection ~ 15650 1800
+Wire Wire Line
+	15650 1800 15650 1900
+Connection ~ 15650 1900
+Wire Wire Line
+	15650 1900 15650 2000
+Connection ~ 15650 2000
+Wire Wire Line
+	15650 2000 15650 2100
+Connection ~ 15650 2100
+Wire Wire Line
+	15650 2100 15650 2200
+Connection ~ 15650 2200
+Wire Wire Line
+	15650 2200 15650 2300
+Connection ~ 15650 2300
+Wire Wire Line
+	15650 2300 15650 2400
+Connection ~ 15650 2400
+Wire Wire Line
+	15650 2400 15650 2500
+Connection ~ 15650 2500
+Wire Wire Line
+	15650 2500 15650 2600
+Wire Wire Line
+	16000 700  16000 800 
+Connection ~ 16000 800 
+Wire Wire Line
+	16000 800  16000 900 
+Connection ~ 16000 900 
+Wire Wire Line
+	16000 900  16000 1000
+Connection ~ 16000 1000
+Wire Wire Line
+	16000 1000 16000 1100
+Connection ~ 16000 1100
+Wire Wire Line
+	16000 1100 16000 1200
+Connection ~ 16000 1200
+Wire Wire Line
+	16000 1200 16000 1300
+Connection ~ 16000 1300
+Wire Wire Line
+	16000 1300 16000 1400
+Connection ~ 16000 1400
+Wire Wire Line
+	16000 1400 16000 1500
+Connection ~ 16000 1500
+Wire Wire Line
+	16000 1500 16000 1600
+Connection ~ 16000 1600
+Wire Wire Line
+	16000 1600 16000 1700
+Connection ~ 16000 1700
+Wire Wire Line
+	16000 1700 16000 1800
+Connection ~ 16000 1800
+Wire Wire Line
+	16000 1800 16000 1900
+Connection ~ 16000 1900
+Wire Wire Line
+	16000 1900 16000 2000
+Connection ~ 16000 2000
+Wire Wire Line
+	16000 2000 16000 2100
+Connection ~ 16000 2100
+Wire Wire Line
+	16000 2100 16000 2200
+Connection ~ 16000 2200
+Wire Wire Line
+	16000 2200 16000 2300
+Connection ~ 16000 2300
+Wire Wire Line
+	16000 2300 16000 2400
+Connection ~ 16000 2400
+Wire Wire Line
+	16000 2400 16000 2500
+Connection ~ 16000 2500
+Wire Wire Line
+	16000 2500 16000 2600
+Wire Wire Line
+	16000 3050 16000 3150
+Wire Wire Line
+	15650 3050 15650 3150
+$Comp
+L Connector_Generic:Conn_01x11 J178
+U 1 1 638DAF87
+P 15850 3550
+F 0 "J178" H 15930 3592 50  0000 L CNN
+F 1 "Conn_01x11" H 15930 3501 50  0000 L CNN
+F 2 "experimentboard:11_square" H 15850 3550 50  0001 C CNN
+F 3 "~" H 15850 3550 50  0001 C CNN
+	1    15850 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 15650 3150
+Wire Wire Line
+	15650 3150 15650 3250
+Connection ~ 15650 3250
+Wire Wire Line
+	15650 3250 15650 3350
+Connection ~ 15650 3350
+Wire Wire Line
+	15650 3350 15650 3450
+Connection ~ 15650 3450
+Wire Wire Line
+	15650 3450 15650 3550
+Connection ~ 15650 3550
+Wire Wire Line
+	15650 3550 15650 3650
+Connection ~ 15650 3650
+Wire Wire Line
+	15650 3650 15650 3750
+Connection ~ 15650 3750
+Wire Wire Line
+	15650 3750 15650 3850
+Connection ~ 15650 3850
+Wire Wire Line
+	15650 3850 15650 3950
+Connection ~ 15650 3950
+Wire Wire Line
+	15650 3950 15650 4050
+$Comp
+L Connector_Generic:Conn_01x11 J180
+U 1 1 63ACB1E4
+P 16200 3550
+F 0 "J180" H 16280 3592 50  0000 L CNN
+F 1 "Conn_01x11" H 16280 3501 50  0000 L CNN
+F 2 "experimentboard:11_square" H 16200 3550 50  0001 C CNN
+F 3 "~" H 16200 3550 50  0001 C CNN
+	1    16200 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 16000 3150
+Wire Wire Line
+	16000 3150 16000 3250
+Connection ~ 16000 3250
+Wire Wire Line
+	16000 3250 16000 3350
+Connection ~ 16000 3350
+Wire Wire Line
+	16000 3350 16000 3450
+Connection ~ 16000 3450
+Wire Wire Line
+	16000 3450 16000 3550
+Connection ~ 16000 3550
+Wire Wire Line
+	16000 3550 16000 3650
+Connection ~ 16000 3650
+Wire Wire Line
+	16000 3650 16000 3750
+Connection ~ 16000 3750
+Wire Wire Line
+	16000 3750 16000 3850
+Connection ~ 16000 3850
+Wire Wire Line
+	16000 3850 16000 3950
+Connection ~ 16000 3950
+Wire Wire Line
+	16000 3950 16000 4050
+$Comp
+L Connector_Generic:Conn_01x11 J91
+U 1 1 63CC309D
+P 16900 3550
+F 0 "J91" H 16980 3592 50  0000 L CNN
+F 1 "Conn_01x11" H 16980 3501 50  0000 L CNN
+F 2 "experimentboard:11_square" H 16900 3550 50  0001 C CNN
+F 3 "~" H 16900 3550 50  0001 C CNN
+	1    16900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16700 3050 16700 3150
+Connection ~ 16700 3150
+Wire Wire Line
+	16700 3150 16700 3250
+Connection ~ 16700 3250
+Wire Wire Line
+	16700 3250 16700 3350
+Connection ~ 16700 3350
+Wire Wire Line
+	16700 3350 16700 3450
+Connection ~ 16700 3450
+Wire Wire Line
+	16700 3450 16700 3550
+Connection ~ 16700 3550
+Wire Wire Line
+	16700 3550 16700 3650
+Connection ~ 16700 3650
+Wire Wire Line
+	16700 3650 16700 3750
+Connection ~ 16700 3750
+Wire Wire Line
+	16700 3750 16700 3850
+Connection ~ 16700 3850
+Wire Wire Line
+	16700 3850 16700 3950
+Connection ~ 16700 3950
+Wire Wire Line
+	16700 3950 16700 4050
+$Comp
+L Connector_Generic:Conn_01x11 J90
+U 1 1 6409F378
+P 16550 3550
+F 0 "J90" H 16630 3592 50  0000 L CNN
+F 1 "Conn_01x11" H 16630 3501 50  0000 L CNN
+F 2 "experimentboard:11_square" H 16550 3550 50  0001 C CNN
+F 3 "~" H 16550 3550 50  0001 C CNN
+	1    16550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 3050 16350 3150
+Connection ~ 16350 3150
+Wire Wire Line
+	16350 3150 16350 3250
+Connection ~ 16350 3250
+Wire Wire Line
+	16350 3250 16350 3350
+Connection ~ 16350 3350
+Wire Wire Line
+	16350 3350 16350 3450
+Connection ~ 16350 3450
+Wire Wire Line
+	16350 3450 16350 3550
+Connection ~ 16350 3550
+Wire Wire Line
+	16350 3550 16350 3650
+Connection ~ 16350 3650
+Wire Wire Line
+	16350 3650 16350 3750
+Connection ~ 16350 3750
+Wire Wire Line
+	16350 3750 16350 3850
+Connection ~ 16350 3850
+Wire Wire Line
+	16350 3850 16350 3950
+Connection ~ 16350 3950
+Wire Wire Line
+	16350 3950 16350 4050
+$Comp
+L Connector_Generic:Conn_01x05 J201
+U 1 1 653C5469
+P 17800 3950
+F 0 "J201" V 17673 4230 50  0000 L CNN
+F 1 "Conn_01x05" V 17764 4230 50  0000 L CNN
+F 2 "experimentboard:5_square" H 17800 3950 50  0001 C CNN
+F 3 "~" H 17800 3950 50  0001 C CNN
+	1    17800 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J202
+U 1 1 653C5470
+P 18100 3950
+F 0 "J202" V 17973 4230 50  0000 L CNN
+F 1 "Conn_01x05" V 18064 4230 50  0000 L CNN
+F 2 "experimentboard:5_square" H 18100 3950 50  0001 C CNN
+F 3 "~" H 18100 3950 50  0001 C CNN
+	1    18100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J203
+U 1 1 653C5477
+P 18400 3950
+F 0 "J203" V 18273 4230 50  0000 L CNN
+F 1 "Conn_01x05" V 18364 4230 50  0000 L CNN
+F 2 "experimentboard:5_square" H 18400 3950 50  0001 C CNN
+F 3 "~" H 18400 3950 50  0001 C CNN
+	1    18400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J204
+U 1 1 653C547E
+P 18700 3950
+F 0 "J204" V 18573 4230 50  0000 L CNN
+F 1 "Conn_01x05" V 18664 4230 50  0000 L CNN
+F 2 "experimentboard:5_square" H 18700 3950 50  0001 C CNN
+F 3 "~" H 18700 3950 50  0001 C CNN
+	1    18700 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17600 4150 17600 4050
+Connection ~ 17600 4050
+Wire Wire Line
+	17600 4050 17600 3950
+Connection ~ 17600 3950
+Wire Wire Line
+	17600 3950 17600 3850
+Connection ~ 17600 3850
+Wire Wire Line
+	17600 3850 17600 3750
+Wire Wire Line
+	17900 4150 17900 4050
+Connection ~ 17900 4050
+Wire Wire Line
+	17900 4050 17900 3950
+Connection ~ 17900 3950
+Wire Wire Line
+	17900 3950 17900 3850
+Connection ~ 17900 3850
+Wire Wire Line
+	17900 3850 17900 3750
+Wire Wire Line
+	18200 4150 18200 4050
+Connection ~ 18200 4050
+Wire Wire Line
+	18200 4050 18200 3950
+Connection ~ 18200 3950
+Wire Wire Line
+	18200 3950 18200 3850
+Connection ~ 18200 3850
+Wire Wire Line
+	18200 3850 18200 3750
+Wire Wire Line
+	18500 4150 18500 4050
+Connection ~ 18500 4050
+Wire Wire Line
+	18500 4050 18500 3950
+Connection ~ 18500 3950
+Wire Wire Line
+	18500 3950 18500 3850
+Connection ~ 18500 3850
+Wire Wire Line
+	18500 3850 18500 3750
+$Comp
+L experimentboard:buck U7
+U 1 1 655E3E76
+P 2200 4950
+F 0 "U7" H 2200 5275 50  0000 C CNN
+F 1 "buck" H 2200 5184 50  0000 C CNN
+F 2 "BUCK:buck" H 2200 4950 50  0001 C CNN
+F 3 "" H 2200 4950 50  0001 C CNN
+	1    2200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 655E3E7D
+P 1850 5050
+F 0 "#PWR01" H 1850 4800 50  0001 C CNN
+F 1 "GND" H 1855 4877 50  0000 C CNN
+F 2 "" H 1850 5050 50  0001 C CNN
+F 3 "" H 1850 5050 50  0001 C CNN
+	1    1850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 655E3E83
+P 2550 5050
+F 0 "#PWR02" H 2550 4800 50  0001 C CNN
+F 1 "GND" H 2555 4877 50  0000 C CNN
+F 2 "" H 2550 5050 50  0001 C CNN
+F 3 "" H 2550 5050 50  0001 C CNN
+	1    2550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 656ED5AC
+P 3700 5150
+F 0 "#PWR04" H 3700 4900 50  0001 C CNN
+F 1 "GND" H 3705 4977 50  0000 C CNN
+F 2 "" H 3700 5150 50  0001 C CNN
+F 3 "" H 3700 5150 50  0001 C CNN
+	1    3700 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 656ED5B2
+P 2800 5000
+F 0 "C21" H 2915 5046 50  0000 L CNN
+F 1 "10u" H 2915 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 4850 50  0001 C CNN
+F 3 "~" H 2800 5000 50  0001 C CNN
+	1    2800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 656ED5B9
+P 3100 5000
+F 0 "C22" H 3215 5046 50  0000 L CNN
+F 1 "100n" H 3215 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3138 4850 50  0001 C CNN
+F 3 "~" H 3100 5000 50  0001 C CNN
+	1    3100 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C23
+U 1 1 656ED5C0
+P 3400 5000
+F 0 "C23" H 3515 5046 50  0000 L CNN
+F 1 "10u" H 3515 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3438 4850 50  0001 C CNN
+F 3 "~" H 3400 5000 50  0001 C CNN
+	1    3400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C24
+U 1 1 656ED5C7
+P 3700 5000
+F 0 "C24" H 3815 5046 50  0000 L CNN
+F 1 "100n" H 3815 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3738 4850 50  0001 C CNN
+F 3 "~" H 3700 5000 50  0001 C CNN
+	1    3700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4850 2800 4850
+Connection ~ 2800 4850
+Wire Wire Line
+	2800 4850 3100 4850
+Connection ~ 3100 4850
+Wire Wire Line
+	3100 4850 3400 4850
+Connection ~ 3400 4850
+Wire Wire Line
+	3400 4850 3700 4850
+Wire Wire Line
+	2800 5150 3100 5150
+Connection ~ 3100 5150
+Wire Wire Line
+	3100 5150 3400 5150
+Connection ~ 3400 5150
+Wire Wire Line
+	3400 5150 3700 5150
+Connection ~ 3700 5150
+Connection ~ 6700 3650
+Connection ~ 6700 3450
+Connection ~ 5350 3650
+$Comp
+L power:+10V #PWR03
+U 1 1 65C50D1E
+P 3700 4850
+F 0 "#PWR03" H 3700 4700 50  0001 C CNN
+F 1 "+10V" V 3715 4978 50  0000 L CNN
+F 2 "" H 3700 4850 50  0001 C CNN
+F 3 "" H 3700 4850 50  0001 C CNN
+	1    3700 4850
+	0    1    1    0   
+$EndComp
+Connection ~ 3700 4850
+Wire Wire Line
+	1600 4400 1600 4850
+Wire Wire Line
+	1600 4850 1850 4850
+Connection ~ 1600 4400
+$Comp
+L Driver_Motor:L298HN U8
+U 1 1 65D664C2
+P 2000 6450
+F 0 "U8" H 2000 7328 50  0000 C CNN
+F 1 "L298HN" H 2000 7237 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical" H 2050 5800 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf" H 2150 6700 50  0001 C CNN
+	1    2000 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J205
+U 1 1 65E794AD
+P 950 5700
+F 0 "J205" H 870 5917 50  0000 C CNN
+F 1 "Conn_01x02" H 870 5826 50  0000 C CNN
+F 2 "experimentboard:2_round" H 950 5700 50  0001 C CNN
+F 3 "~" H 950 5700 50  0001 C CNN
+	1    950  5700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J206
+U 1 1 65F8B739
+P 950 5950
+F 0 "J206" H 870 6167 50  0000 C CNN
+F 1 "Conn_01x02" H 870 6076 50  0000 C CNN
+F 2 "experimentboard:2_round" H 950 5950 50  0001 C CNN
+F 3 "~" H 950 5950 50  0001 C CNN
+	1    950  5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J207
+U 1 1 6609D9BB
+P 950 6200
+F 0 "J207" H 870 6417 50  0000 C CNN
+F 1 "Conn_01x02" H 870 6326 50  0000 C CNN
+F 2 "experimentboard:2_round" H 950 6200 50  0001 C CNN
+F 3 "~" H 950 6200 50  0001 C CNN
+	1    950  6200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J208
+U 1 1 661AFC2D
+P 950 6450
+F 0 "J208" H 870 6667 50  0000 C CNN
+F 1 "Conn_01x02" H 870 6576 50  0000 C CNN
+F 2 "experimentboard:2_round" H 950 6450 50  0001 C CNN
+F 3 "~" H 950 6450 50  0001 C CNN
+	1    950  6450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J209
+U 1 1 662C1EA7
+P 950 6700
+F 0 "J209" H 870 6917 50  0000 C CNN
+F 1 "Conn_01x02" H 870 6826 50  0000 C CNN
+F 2 "experimentboard:2_round" H 950 6700 50  0001 C CNN
+F 3 "~" H 950 6700 50  0001 C CNN
+	1    950  6700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J210
+U 1 1 663D4121
+P 950 6950
+F 0 "J210" H 870 7167 50  0000 C CNN
+F 1 "Conn_01x02" H 870 7076 50  0000 C CNN
+F 2 "experimentboard:2_round" H 950 6950 50  0001 C CNN
+F 3 "~" H 950 6950 50  0001 C CNN
+	1    950  6950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 670ADFC9
+P 1700 7150
+F 0 "#PWR0124" H 1700 6900 50  0001 C CNN
+F 1 "GND" H 1705 6977 50  0000 C CNN
+F 2 "" H 1700 7150 50  0001 C CNN
+F 3 "" H 1700 7150 50  0001 C CNN
+	1    1700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 671C0236
+P 1800 7150
+F 0 "#PWR0127" H 1800 6900 50  0001 C CNN
+F 1 "GND" H 1805 6977 50  0000 C CNN
+F 2 "" H 1800 7150 50  0001 C CNN
+F 3 "" H 1800 7150 50  0001 C CNN
+	1    1800 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 672D24A3
+P 2000 7150
+F 0 "#PWR0128" H 2000 6900 50  0001 C CNN
+F 1 "GND" H 2005 6977 50  0000 C CNN
+F 2 "" H 2000 7150 50  0001 C CNN
+F 3 "" H 2000 7150 50  0001 C CNN
+	1    2000 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5950 1150 6050
+Wire Wire Line
+	1400 6050 1150 6050
+Connection ~ 1150 6050
+Wire Wire Line
+	1150 5700 1150 5800
+Wire Wire Line
+	1150 5800 1200 5800
+Wire Wire Line
+	1200 5800 1200 5950
+Wire Wire Line
+	1200 5950 1400 5950
+Connection ~ 1150 5800
+Wire Wire Line
+	1150 6300 1150 6200
+Wire Wire Line
+	1150 6200 1200 6200
+Wire Wire Line
+	1200 6200 1200 6150
+Wire Wire Line
+	1200 6150 1400 6150
+Connection ~ 1150 6200
+Wire Wire Line
+	1150 6550 1150 6450
+Wire Wire Line
+	1150 6450 1200 6450
+Wire Wire Line
+	1200 6450 1200 6350
+Wire Wire Line
+	1200 6350 1400 6350
+Connection ~ 1150 6450
+Wire Wire Line
+	1150 6800 1150 6700
+Wire Wire Line
+	1150 6700 1250 6700
+Wire Wire Line
+	1250 6700 1250 6450
+Wire Wire Line
+	1250 6450 1400 6450
+Connection ~ 1150 6700
+Wire Wire Line
+	1150 7050 1150 6950
+Wire Wire Line
+	1150 6950 1300 6950
+Wire Wire Line
+	1300 6950 1300 6550
+Wire Wire Line
+	1300 6550 1400 6550
+Connection ~ 1150 6950
+$Comp
+L Connector_Generic:Conn_01x02 J211
+U 1 1 68348EFC
+P 1800 5650
+F 0 "J211" H 1720 5867 50  0000 C CNN
+F 1 "Conn_01x02" H 1720 5776 50  0000 C CNN
+F 2 "experimentboard:2_square" H 1800 5650 50  0001 C CNN
+F 3 "~" H 1800 5650 50  0001 C CNN
+	1    1800 5650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J212
+U 1 1 6846CBC9
+P 2300 5650
+F 0 "J212" H 2380 5642 50  0000 L CNN
+F 1 "Conn_01x02" H 2380 5551 50  0000 L CNN
+F 2 "experimentboard:2_square" H 2300 5650 50  0001 C CNN
+F 3 "~" H 2300 5650 50  0001 C CNN
+	1    2300 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5750 2000 5650
+Connection ~ 2000 5750
+Wire Wire Line
+	2100 5750 2100 5650
+Connection ~ 2100 5750
+$Comp
+L Connector_Generic:Conn_01x02 J213
+U 1 1 68EB068C
+P 3000 6000
+F 0 "J213" H 3080 5992 50  0000 L CNN
+F 1 "Conn_01x02" H 3080 5901 50  0000 L CNN
+F 2 "experimentboard:2_round" H 3000 6000 50  0001 C CNN
+F 3 "~" H 3000 6000 50  0001 C CNN
+	1    3000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J214
+U 1 1 690FA0E1
+P 3000 6250
+F 0 "J214" H 3080 6242 50  0000 L CNN
+F 1 "Conn_01x02" H 3080 6151 50  0000 L CNN
+F 2 "experimentboard:2_round" H 3000 6250 50  0001 C CNN
+F 3 "~" H 3000 6250 50  0001 C CNN
+	1    3000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J215
+U 1 1 6921EE06
+P 3000 6500
+F 0 "J215" H 3080 6492 50  0000 L CNN
+F 1 "Conn_01x02" H 3080 6401 50  0000 L CNN
+F 2 "experimentboard:2_round" H 3000 6500 50  0001 C CNN
+F 3 "~" H 3000 6500 50  0001 C CNN
+	1    3000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J216
+U 1 1 69343B31
+P 3000 6750
+F 0 "J216" H 3080 6742 50  0000 L CNN
+F 1 "Conn_01x02" H 3080 6651 50  0000 L CNN
+F 2 "experimentboard:2_round" H 3000 6750 50  0001 C CNN
+F 3 "~" H 3000 6750 50  0001 C CNN
+	1    3000 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 6250 2800 6350
+Wire Wire Line
+	2600 6350 2800 6350
+Connection ~ 2800 6350
+Wire Wire Line
+	2800 6000 2800 6100
+Wire Wire Line
+	2800 6100 2750 6100
+Wire Wire Line
+	2750 6100 2750 6250
+Wire Wire Line
+	2750 6250 2600 6250
+Connection ~ 2800 6100
+Wire Wire Line
+	2800 6500 2800 6550
+Wire Wire Line
+	2600 6550 2800 6550
+Connection ~ 2800 6550
+Wire Wire Line
+	2800 6550 2800 6600
+Wire Wire Line
+	2800 6850 2800 6750
+Wire Wire Line
+	2800 6750 2750 6750
+Wire Wire Line
+	2750 6750 2750 6650
+Wire Wire Line
+	2750 6650 2600 6650
+Connection ~ 2800 6750
+$Comp
+L Driver_Motor:L298HN U9
+U 1 1 69EDB842
+P 4600 6400
+F 0 "U9" H 4600 7278 50  0000 C CNN
+F 1 "L298HN" H 4600 7187 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-15_P2.54x2.54mm_StaggerOdd_Lead4.58mm_Vertical" H 4650 5750 50  0001 L CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000240.pdf" H 4750 6650 50  0001 C CNN
+	1    4600 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J217
+U 1 1 69EDB849
+P 3550 5650
+F 0 "J217" H 3470 5867 50  0000 C CNN
+F 1 "Conn_01x02" H 3470 5776 50  0000 C CNN
+F 2 "experimentboard:2_round" H 3550 5650 50  0001 C CNN
+F 3 "~" H 3550 5650 50  0001 C CNN
+	1    3550 5650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J218
+U 1 1 69EDB850
+P 3550 5900
+F 0 "J218" H 3470 6117 50  0000 C CNN
+F 1 "Conn_01x02" H 3470 6026 50  0000 C CNN
+F 2 "experimentboard:2_round" H 3550 5900 50  0001 C CNN
+F 3 "~" H 3550 5900 50  0001 C CNN
+	1    3550 5900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J219
+U 1 1 69EDB857
+P 3550 6150
+F 0 "J219" H 3470 6367 50  0000 C CNN
+F 1 "Conn_01x02" H 3470 6276 50  0000 C CNN
+F 2 "experimentboard:2_round" H 3550 6150 50  0001 C CNN
+F 3 "~" H 3550 6150 50  0001 C CNN
+	1    3550 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J220
+U 1 1 69EDB85E
+P 3550 6400
+F 0 "J220" H 3470 6617 50  0000 C CNN
+F 1 "Conn_01x02" H 3470 6526 50  0000 C CNN
+F 2 "experimentboard:2_round" H 3550 6400 50  0001 C CNN
+F 3 "~" H 3550 6400 50  0001 C CNN
+	1    3550 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J221
+U 1 1 69EDB865
+P 3550 6650
+F 0 "J221" H 3470 6867 50  0000 C CNN
+F 1 "Conn_01x02" H 3470 6776 50  0000 C CNN
+F 2 "experimentboard:2_round" H 3550 6650 50  0001 C CNN
+F 3 "~" H 3550 6650 50  0001 C CNN
+	1    3550 6650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J222
+U 1 1 69EDB86C
+P 3550 6900
+F 0 "J222" H 3470 7117 50  0000 C CNN
+F 1 "Conn_01x02" H 3470 7026 50  0000 C CNN
+F 2 "experimentboard:2_round" H 3550 6900 50  0001 C CNN
+F 3 "~" H 3550 6900 50  0001 C CNN
+	1    3550 6900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 69EDB873
+P 4300 7100
+F 0 "#PWR05" H 4300 6850 50  0001 C CNN
+F 1 "GND" H 4305 6927 50  0000 C CNN
+F 2 "" H 4300 7100 50  0001 C CNN
+F 3 "" H 4300 7100 50  0001 C CNN
+	1    4300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 69EDB879
+P 4400 7100
+F 0 "#PWR06" H 4400 6850 50  0001 C CNN
+F 1 "GND" H 4405 6927 50  0000 C CNN
+F 2 "" H 4400 7100 50  0001 C CNN
+F 3 "" H 4400 7100 50  0001 C CNN
+	1    4400 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 69EDB87F
+P 4600 7100
+F 0 "#PWR07" H 4600 6850 50  0001 C CNN
+F 1 "GND" H 4605 6927 50  0000 C CNN
+F 2 "" H 4600 7100 50  0001 C CNN
+F 3 "" H 4600 7100 50  0001 C CNN
+	1    4600 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5900 3750 6000
+Wire Wire Line
+	4000 6000 3750 6000
+Connection ~ 3750 6000
+Wire Wire Line
+	3750 5650 3750 5750
+Wire Wire Line
+	3750 5750 3800 5750
+Wire Wire Line
+	3800 5750 3800 5900
+Wire Wire Line
+	3800 5900 4000 5900
+Connection ~ 3750 5750
+Wire Wire Line
+	3750 6250 3750 6150
+Wire Wire Line
+	3750 6150 3800 6150
+Wire Wire Line
+	3800 6150 3800 6100
+Wire Wire Line
+	3800 6100 4000 6100
+Connection ~ 3750 6150
+Wire Wire Line
+	3750 6500 3750 6400
+Wire Wire Line
+	3750 6400 3800 6400
+Wire Wire Line
+	3800 6400 3800 6300
+Wire Wire Line
+	3800 6300 4000 6300
+Connection ~ 3750 6400
+Wire Wire Line
+	3750 6750 3750 6650
+Wire Wire Line
+	3750 6650 3850 6650
+Wire Wire Line
+	3850 6650 3850 6400
+Wire Wire Line
+	3850 6400 4000 6400
+Connection ~ 3750 6650
+Wire Wire Line
+	3750 7000 3750 6900
+Wire Wire Line
+	3750 6900 3900 6900
+Wire Wire Line
+	3900 6900 3900 6500
+Wire Wire Line
+	3900 6500 4000 6500
+Connection ~ 3750 6900
+$Comp
+L Connector_Generic:Conn_01x02 J223
+U 1 1 69EDB8A1
+P 4400 5600
+F 0 "J223" H 4320 5817 50  0000 C CNN
+F 1 "Conn_01x02" H 4320 5726 50  0000 C CNN
+F 2 "experimentboard:2_square" H 4400 5600 50  0001 C CNN
+F 3 "~" H 4400 5600 50  0001 C CNN
+	1    4400 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J224
+U 1 1 69EDB8A8
+P 4900 5600
+F 0 "J224" H 4980 5592 50  0000 L CNN
+F 1 "Conn_01x02" H 4980 5501 50  0000 L CNN
+F 2 "experimentboard:2_square" H 4900 5600 50  0001 C CNN
+F 3 "~" H 4900 5600 50  0001 C CNN
+	1    4900 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5700 4600 5600
+Connection ~ 4600 5700
+Wire Wire Line
+	4700 5700 4700 5600
+Connection ~ 4700 5700
+$Comp
+L Connector_Generic:Conn_01x02 J225
+U 1 1 69EDB8B3
+P 5600 5950
+F 0 "J225" H 5680 5942 50  0000 L CNN
+F 1 "Conn_01x02" H 5680 5851 50  0000 L CNN
+F 2 "experimentboard:2_round" H 5600 5950 50  0001 C CNN
+F 3 "~" H 5600 5950 50  0001 C CNN
+	1    5600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J226
+U 1 1 69EDB8BA
+P 5600 6200
+F 0 "J226" H 5680 6192 50  0000 L CNN
+F 1 "Conn_01x02" H 5680 6101 50  0000 L CNN
+F 2 "experimentboard:2_round" H 5600 6200 50  0001 C CNN
+F 3 "~" H 5600 6200 50  0001 C CNN
+	1    5600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J227
+U 1 1 69EDB8C1
+P 5600 6450
+F 0 "J227" H 5680 6442 50  0000 L CNN
+F 1 "Conn_01x02" H 5680 6351 50  0000 L CNN
+F 2 "experimentboard:2_round" H 5600 6450 50  0001 C CNN
+F 3 "~" H 5600 6450 50  0001 C CNN
+	1    5600 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J228
+U 1 1 69EDB8C8
+P 5600 6700
+F 0 "J228" H 5680 6692 50  0000 L CNN
+F 1 "Conn_01x02" H 5680 6601 50  0000 L CNN
+F 2 "experimentboard:2_round" H 5600 6700 50  0001 C CNN
+F 3 "~" H 5600 6700 50  0001 C CNN
+	1    5600 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6200 5400 6300
+Wire Wire Line
+	5200 6300 5400 6300
+Connection ~ 5400 6300
+Wire Wire Line
+	5400 5950 5400 6050
+Wire Wire Line
+	5400 6050 5350 6050
+Wire Wire Line
+	5350 6050 5350 6200
+Wire Wire Line
+	5350 6200 5200 6200
+Connection ~ 5400 6050
+Wire Wire Line
+	5400 6450 5400 6500
+Wire Wire Line
+	5200 6500 5400 6500
+Connection ~ 5400 6500
+Wire Wire Line
+	5400 6500 5400 6550
+Wire Wire Line
+	5400 6800 5400 6700
+Wire Wire Line
+	5400 6700 5350 6700
+Wire Wire Line
+	5350 6700 5350 6600
+Wire Wire Line
+	5350 6600 5200 6600
+Connection ~ 5400 6700
+$Comp
+L Connector_Generic:Conn_01x08 J229
+U 1 1 6A029EEF
+P 8200 5550
+F 0 "J229" H 8280 5542 50  0000 L CNN
+F 1 "Conn_01x08" H 8280 5451 50  0000 L CNN
+F 2 "experimentboard:8_powcon" H 8200 5550 50  0001 C CNN
+F 3 "~" H 8200 5550 50  0001 C CNN
+	1    8200 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J232
+U 1 1 6A02AE17
+P 7850 5550
+F 0 "J232" H 7930 5542 50  0000 L CNN
+F 1 "Conn_01x08" H 7930 5451 50  0000 L CNN
+F 2 "experimentboard:8_powcon" H 7850 5550 50  0001 C CNN
+F 3 "~" H 7850 5550 50  0001 C CNN
+	1    7850 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J231
+U 1 1 6A1766AB
+P 7500 5550
+F 0 "J231" H 7580 5542 50  0000 L CNN
+F 1 "Conn_01x08" H 7580 5451 50  0000 L CNN
+F 2 "experimentboard:8_powcon" H 7500 5550 50  0001 C CNN
+F 3 "~" H 7500 5550 50  0001 C CNN
+	1    7500 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J230
+U 1 1 6A2C19EE
+P 7150 5550
+F 0 "J230" H 7230 5542 50  0000 L CNN
+F 1 "Conn_01x08" H 7230 5451 50  0000 L CNN
+F 2 "experimentboard:8_powcon" H 7150 5550 50  0001 C CNN
+F 3 "~" H 7150 5550 50  0001 C CNN
+	1    7150 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 5450 8400 5350
+Connection ~ 8400 5350
+Wire Wire Line
+	8400 5350 8400 5250
+Connection ~ 8400 5250
+Wire Wire Line
+	8400 5250 8400 5150
+Wire Wire Line
+	8050 5450 8050 5350
+Connection ~ 8050 5350
+Wire Wire Line
+	8050 5350 8050 5250
+Connection ~ 8050 5250
+Wire Wire Line
+	8050 5250 8050 5150
+Wire Wire Line
+	7700 5450 7700 5350
+Connection ~ 7700 5350
+Wire Wire Line
+	7700 5350 7700 5250
+Connection ~ 7700 5250
+Wire Wire Line
+	7700 5250 7700 5150
+Wire Wire Line
+	7350 5450 7350 5350
+Connection ~ 7350 5350
+Wire Wire Line
+	7350 5350 7350 5250
+Connection ~ 7350 5250
+Wire Wire Line
+	7350 5250 7350 5150
+Wire Wire Line
+	7350 5550 7350 5650
+Connection ~ 7350 5750
+Wire Wire Line
+	7350 5750 7350 5850
+Connection ~ 7350 5650
+Wire Wire Line
+	7350 5650 7350 5750
+Wire Wire Line
+	7700 5550 7700 5650
+Connection ~ 7700 5750
+Wire Wire Line
+	7700 5750 7700 5850
+Connection ~ 7700 5650
+Wire Wire Line
+	7700 5650 7700 5750
+Wire Wire Line
+	8050 5550 8050 5650
+Connection ~ 8050 5750
+Wire Wire Line
+	8050 5750 8050 5850
+Connection ~ 8050 5650
+Wire Wire Line
+	8050 5650 8050 5750
+Wire Wire Line
+	8400 5550 8400 5650
+Connection ~ 8400 5750
+Wire Wire Line
+	8400 5750 8400 5850
+Connection ~ 8400 5650
+Wire Wire Line
+	8400 5650 8400 5750
+$Comp
+L power:GND #PWR0131
+U 1 1 6B1509A8
+P 7350 5850
+F 0 "#PWR0131" H 7350 5600 50  0001 C CNN
+F 1 "GND" H 7355 5677 50  0000 C CNN
+F 2 "" H 7350 5850 50  0001 C CNN
+F 3 "" H 7350 5850 50  0001 C CNN
+	1    7350 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 6B2A7FD6
+P 7700 5850
+F 0 "#PWR0132" H 7700 5600 50  0001 C CNN
+F 1 "GND" H 7705 5677 50  0000 C CNN
+F 2 "" H 7700 5850 50  0001 C CNN
+F 3 "" H 7700 5850 50  0001 C CNN
+	1    7700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 6B3FF604
+P 8050 5850
+F 0 "#PWR0133" H 8050 5600 50  0001 C CNN
+F 1 "GND" H 8055 5677 50  0000 C CNN
+F 2 "" H 8050 5850 50  0001 C CNN
+F 3 "" H 8050 5850 50  0001 C CNN
+	1    8050 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 6B556C32
+P 8400 5850
+F 0 "#PWR0134" H 8400 5600 50  0001 C CNN
+F 1 "GND" H 8405 5677 50  0000 C CNN
+F 2 "" H 8400 5850 50  0001 C CNN
+F 3 "" H 8400 5850 50  0001 C CNN
+	1    8400 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 5850
+Connection ~ 8050 5850
+Connection ~ 7700 5850
+Connection ~ 7350 5850
+$Comp
+L power:+10V #PWR0137
+U 1 1 6B6AE7C4
+P 7350 5150
+F 0 "#PWR0137" H 7350 5000 50  0001 C CNN
+F 1 "+10V" H 7365 5323 50  0000 C CNN
+F 2 "" H 7350 5150 50  0001 C CNN
+F 3 "" H 7350 5150 50  0001 C CNN
+	1    7350 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 5150
+$Comp
+L power:+12V #PWR0138
+U 1 1 6B6AEB1D
+P 7700 5150
+F 0 "#PWR0138" H 7700 5000 50  0001 C CNN
+F 1 "+12V" H 7715 5323 50  0000 C CNN
+F 2 "" H 7700 5150 50  0001 C CNN
+F 3 "" H 7700 5150 50  0001 C CNN
+	1    7700 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 5150
+$Comp
+L power:+5V #PWR0139
+U 1 1 6B6AEE76
+P 8050 5150
+F 0 "#PWR0139" H 8050 5000 50  0001 C CNN
+F 1 "+5V" H 8065 5323 50  0000 C CNN
+F 2 "" H 8050 5150 50  0001 C CNN
+F 3 "" H 8050 5150 50  0001 C CNN
+	1    8050 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8050 5150
+$Comp
+L power:+9V #PWR0140
+U 1 1 6B6AF1CF
+P 8400 5150
+F 0 "#PWR0140" H 8400 5000 50  0001 C CNN
+F 1 "+9V" H 8415 5323 50  0000 C CNN
+F 2 "" H 8400 5150 50  0001 C CNN
+F 3 "" H 8400 5150 50  0001 C CNN
+	1    8400 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 5150
+$Comp
+L Device:D_Schottky D3
+U 1 1 6B6B2F49
+P 1900 2200
+F 0 "D3" H 1900 1984 50  0000 C CNN
+F 1 "D_Schottky" H 1900 2075 50  0000 C CNN
+F 2 "Diode_SMD:D_SMC_Handsoldering" H 1900 2200 50  0001 C CNN
+F 3 "~" H 1900 2200 50  0001 C CNN
+	1    1900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2200 1750 2550
+Wire Wire Line
+	2050 2200 2350 2200
+Wire Wire Line
+	2350 2200 2350 2550
+Connection ~ 2350 2550
+$Comp
+L Device:R R3
+U 1 1 6BECB6AE
+P 16300 5300
+F 0 "R3" V 16093 5300 50  0000 C CNN
+F 1 "R" V 16184 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 16230 5300 50  0001 C CNN
+F 3 "~" H 16300 5300 50  0001 C CNN
+	1    16300 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J238
+U 1 1 6BECBA93
+P 16650 5300
+F 0 "J238" H 16730 5292 50  0000 L CNN
+F 1 "Conn_01x02" H 16730 5201 50  0000 L CNN
+F 2 "experimentboard:2_round" H 16650 5300 50  0001 C CNN
+F 3 "~" H 16650 5300 50  0001 C CNN
+	1    16650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J233
+U 1 1 6C2D8CCE
+P 15950 5300
+F 0 "J233" H 15870 5517 50  0000 C CNN
+F 1 "Conn_01x02" H 15870 5426 50  0000 C CNN
+F 2 "experimentboard:2_round" H 15950 5300 50  0001 C CNN
+F 3 "~" H 15950 5300 50  0001 C CNN
+	1    15950 5300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16150 5400 16150 5300
+Connection ~ 16150 5300
+Wire Wire Line
+	16450 5400 16450 5300
+Connection ~ 16450 5300
+$Comp
+L Device:R R4
+U 1 1 6CAF6280
+P 16300 5600
+F 0 "R4" V 16093 5600 50  0000 C CNN
+F 1 "R" V 16184 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 16230 5600 50  0001 C CNN
+F 3 "~" H 16300 5600 50  0001 C CNN
+	1    16300 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J239
+U 1 1 6CAF6287
+P 16650 5600
+F 0 "J239" H 16730 5592 50  0000 L CNN
+F 1 "Conn_01x02" H 16730 5501 50  0000 L CNN
+F 2 "experimentboard:2_round" H 16650 5600 50  0001 C CNN
+F 3 "~" H 16650 5600 50  0001 C CNN
+	1    16650 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J234
+U 1 1 6CAF628E
+P 15950 5600
+F 0 "J234" H 15870 5817 50  0000 C CNN
+F 1 "Conn_01x02" H 15870 5726 50  0000 C CNN
+F 2 "experimentboard:2_round" H 15950 5600 50  0001 C CNN
+F 3 "~" H 15950 5600 50  0001 C CNN
+	1    15950 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16150 5700 16150 5600
+Connection ~ 16150 5600
+Wire Wire Line
+	16450 5700 16450 5600
+Connection ~ 16450 5600
+$Comp
+L Device:R R5
+U 1 1 6CC51B04
+P 16300 5900
+F 0 "R5" V 16093 5900 50  0000 C CNN
+F 1 "R" V 16184 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 16230 5900 50  0001 C CNN
+F 3 "~" H 16300 5900 50  0001 C CNN
+	1    16300 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J240
+U 1 1 6CC51B0B
+P 16650 5900
+F 0 "J240" H 16730 5892 50  0000 L CNN
+F 1 "Conn_01x02" H 16730 5801 50  0000 L CNN
+F 2 "experimentboard:2_round" H 16650 5900 50  0001 C CNN
+F 3 "~" H 16650 5900 50  0001 C CNN
+	1    16650 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J235
+U 1 1 6CC51B12
+P 15950 5900
+F 0 "J235" H 15870 6117 50  0000 C CNN
+F 1 "Conn_01x02" H 15870 6026 50  0000 C CNN
+F 2 "experimentboard:2_round" H 15950 5900 50  0001 C CNN
+F 3 "~" H 15950 5900 50  0001 C CNN
+	1    15950 5900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16150 6000 16150 5900
+Connection ~ 16150 5900
+Wire Wire Line
+	16450 6000 16450 5900
+Connection ~ 16450 5900
+$Comp
+L Device:R R6
+U 1 1 6CDAE24C
+P 16300 6200
+F 0 "R6" V 16093 6200 50  0000 C CNN
+F 1 "R" V 16184 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 16230 6200 50  0001 C CNN
+F 3 "~" H 16300 6200 50  0001 C CNN
+	1    16300 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J241
+U 1 1 6CDAE253
+P 16650 6200
+F 0 "J241" H 16730 6192 50  0000 L CNN
+F 1 "Conn_01x02" H 16730 6101 50  0000 L CNN
+F 2 "experimentboard:2_round" H 16650 6200 50  0001 C CNN
+F 3 "~" H 16650 6200 50  0001 C CNN
+	1    16650 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J236
+U 1 1 6CDAE25A
+P 15950 6200
+F 0 "J236" H 15870 6417 50  0000 C CNN
+F 1 "Conn_01x02" H 15870 6326 50  0000 C CNN
+F 2 "experimentboard:2_round" H 15950 6200 50  0001 C CNN
+F 3 "~" H 15950 6200 50  0001 C CNN
+	1    15950 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16150 6300 16150 6200
+Connection ~ 16150 6200
+Wire Wire Line
+	16450 6300 16450 6200
+Connection ~ 16450 6200
+$Comp
+L Device:R R7
+U 1 1 6CF0B867
+P 16300 6500
+F 0 "R7" V 16093 6500 50  0000 C CNN
+F 1 "R" V 16184 6500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 16230 6500 50  0001 C CNN
+F 3 "~" H 16300 6500 50  0001 C CNN
+	1    16300 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J242
+U 1 1 6CF0B86E
+P 16650 6500
+F 0 "J242" H 16730 6492 50  0000 L CNN
+F 1 "Conn_01x02" H 16730 6401 50  0000 L CNN
+F 2 "experimentboard:2_round" H 16650 6500 50  0001 C CNN
+F 3 "~" H 16650 6500 50  0001 C CNN
+	1    16650 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J237
+U 1 1 6CF0B875
+P 15950 6500
+F 0 "J237" H 15870 6717 50  0000 C CNN
+F 1 "Conn_01x02" H 15870 6626 50  0000 C CNN
+F 2 "experimentboard:2_round" H 15950 6500 50  0001 C CNN
+F 3 "~" H 15950 6500 50  0001 C CNN
+	1    15950 6500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	16150 6600 16150 6500
+Connection ~ 16150 6500
+Wire Wire Line
+	16450 6600 16450 6500
+Connection ~ 16450 6500
+$Comp
+L Device:R R8
+U 1 1 6D06CCEC
+P 17250 5300
+F 0 "R8" V 17043 5300 50  0000 C CNN
+F 1 "R" V 17134 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 17180 5300 50  0001 C CNN
+F 3 "~" H 17250 5300 50  0001 C CNN
+	1    17250 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J248
+U 1 1 6D06CCF3
+P 17600 5300
+F 0 "J248" H 17680 5292 50  0000 L CNN
+F 1 "Conn_01x02" H 17680 5201 50  0000 L CNN
+F 2 "experimentboard:2_round" H 17600 5300 50  0001 C CNN
+F 3 "~" H 17600 5300 50  0001 C CNN
+	1    17600 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J243
+U 1 1 6D06CCFA
+P 16900 5300
+F 0 "J243" H 16820 5517 50  0000 C CNN
+F 1 "Conn_01x02" H 16820 5426 50  0000 C CNN
+F 2 "experimentboard:2_round" H 16900 5300 50  0001 C CNN
+F 3 "~" H 16900 5300 50  0001 C CNN
+	1    16900 5300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 5400 17100 5300
+Connection ~ 17100 5300
+Wire Wire Line
+	17400 5400 17400 5300
+Connection ~ 17400 5300
+$Comp
+L Device:R R9
+U 1 1 6D06CD05
+P 17250 5600
+F 0 "R9" V 17043 5600 50  0000 C CNN
+F 1 "R" V 17134 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 17180 5600 50  0001 C CNN
+F 3 "~" H 17250 5600 50  0001 C CNN
+	1    17250 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J249
+U 1 1 6D06CD0C
+P 17600 5600
+F 0 "J249" H 17680 5592 50  0000 L CNN
+F 1 "Conn_01x02" H 17680 5501 50  0000 L CNN
+F 2 "experimentboard:2_round" H 17600 5600 50  0001 C CNN
+F 3 "~" H 17600 5600 50  0001 C CNN
+	1    17600 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J244
+U 1 1 6D06CD13
+P 16900 5600
+F 0 "J244" H 16820 5817 50  0000 C CNN
+F 1 "Conn_01x02" H 16820 5726 50  0000 C CNN
+F 2 "experimentboard:2_round" H 16900 5600 50  0001 C CNN
+F 3 "~" H 16900 5600 50  0001 C CNN
+	1    16900 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 5700 17100 5600
+Connection ~ 17100 5600
+Wire Wire Line
+	17400 5700 17400 5600
+Connection ~ 17400 5600
+$Comp
+L Device:R R10
+U 1 1 6D06CD1E
+P 17250 5900
+F 0 "R10" V 17043 5900 50  0000 C CNN
+F 1 "R" V 17134 5900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 17180 5900 50  0001 C CNN
+F 3 "~" H 17250 5900 50  0001 C CNN
+	1    17250 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J250
+U 1 1 6D06CD25
+P 17600 5900
+F 0 "J250" H 17680 5892 50  0000 L CNN
+F 1 "Conn_01x02" H 17680 5801 50  0000 L CNN
+F 2 "experimentboard:2_round" H 17600 5900 50  0001 C CNN
+F 3 "~" H 17600 5900 50  0001 C CNN
+	1    17600 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J245
+U 1 1 6D06CD2C
+P 16900 5900
+F 0 "J245" H 16820 6117 50  0000 C CNN
+F 1 "Conn_01x02" H 16820 6026 50  0000 C CNN
+F 2 "experimentboard:2_round" H 16900 5900 50  0001 C CNN
+F 3 "~" H 16900 5900 50  0001 C CNN
+	1    16900 5900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 6000 17100 5900
+Connection ~ 17100 5900
+Wire Wire Line
+	17400 6000 17400 5900
+Connection ~ 17400 5900
+$Comp
+L Device:R R11
+U 1 1 6D06CD37
+P 17250 6200
+F 0 "R11" V 17043 6200 50  0000 C CNN
+F 1 "R" V 17134 6200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 17180 6200 50  0001 C CNN
+F 3 "~" H 17250 6200 50  0001 C CNN
+	1    17250 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J251
+U 1 1 6D06CD3E
+P 17600 6200
+F 0 "J251" H 17680 6192 50  0000 L CNN
+F 1 "Conn_01x02" H 17680 6101 50  0000 L CNN
+F 2 "experimentboard:2_round" H 17600 6200 50  0001 C CNN
+F 3 "~" H 17600 6200 50  0001 C CNN
+	1    17600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J246
+U 1 1 6D06CD45
+P 16900 6200
+F 0 "J246" H 16820 6417 50  0000 C CNN
+F 1 "Conn_01x02" H 16820 6326 50  0000 C CNN
+F 2 "experimentboard:2_round" H 16900 6200 50  0001 C CNN
+F 3 "~" H 16900 6200 50  0001 C CNN
+	1    16900 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 6300 17100 6200
+Connection ~ 17100 6200
+Wire Wire Line
+	17400 6300 17400 6200
+Connection ~ 17400 6200
+$Comp
+L Device:R R12
+U 1 1 6D06CD50
+P 17250 6500
+F 0 "R12" V 17043 6500 50  0000 C CNN
+F 1 "R" V 17134 6500 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 17180 6500 50  0001 C CNN
+F 3 "~" H 17250 6500 50  0001 C CNN
+	1    17250 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J252
+U 1 1 6D06CD57
+P 17600 6500
+F 0 "J252" H 17680 6492 50  0000 L CNN
+F 1 "Conn_01x02" H 17680 6401 50  0000 L CNN
+F 2 "experimentboard:2_round" H 17600 6500 50  0001 C CNN
+F 3 "~" H 17600 6500 50  0001 C CNN
+	1    17600 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J247
+U 1 1 6D06CD5E
+P 16900 6500
+F 0 "J247" H 16820 6717 50  0000 C CNN
+F 1 "Conn_01x02" H 16820 6626 50  0000 C CNN
+F 2 "experimentboard:2_round" H 16900 6500 50  0001 C CNN
+F 3 "~" H 16900 6500 50  0001 C CNN
+	1    16900 6500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 6600 17100 6500
+Connection ~ 17100 6500
+Wire Wire Line
+	17400 6600 17400 6500
+Connection ~ 17400 6500
+$Comp
+L experimentboard:so20 U10
+U 1 1 6D3354D6
+P 18800 5950
+F 0 "U10" H 18800 6625 50  0000 C CNN
+F 1 "so20" H 18800 6534 50  0000 C CNN
+F 2 "experimentboard:SO20" H 18800 5950 50  0001 C CNN
+F 3 "" H 18800 5950 50  0001 C CNN
+	1    18800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L experimentboard:so20 U11
+U 1 1 6D336EA0
+P 19650 5950
+F 0 "U11" H 19650 6625 50  0000 C CNN
+F 1 "so20" H 19650 6534 50  0000 C CNN
+F 2 "experimentboard:SO20" H 19650 5950 50  0001 C CNN
+F 3 "" H 19650 5950 50  0001 C CNN
+	1    19650 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L experimentboard:so20 U12
+U 1 1 6D3379AF
+P 20500 5950
+F 0 "U12" H 20500 6625 50  0000 C CNN
+F 1 "so20" H 20500 6534 50  0000 C CNN
+F 2 "experimentboard:SO20" H 20500 5950 50  0001 C CNN
+F 3 "" H 20500 5950 50  0001 C CNN
+	1    20500 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L experimentboard:so20 U14
+U 1 1 6D603511
+P 21350 5950
+F 0 "U14" H 21350 6625 50  0000 C CNN
+F 1 "so20" H 21350 6534 50  0000 C CNN
+F 2 "experimentboard:SO20B" H 21350 5950 50  0001 C CNN
+F 3 "" H 21350 5950 50  0001 C CNN
+	1    21350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x30 J253
+U 1 1 6E4C17E9
+P 20700 2100
+F 0 "J253" H 20780 2092 50  0000 L CNN
+F 1 "Conn_01x30" H 20780 2001 50  0000 L CNN
+F 2 "experimentboard:30_square" H 20700 2100 50  0001 C CNN
+F 3 "~" H 20700 2100 50  0001 C CNN
+	1    20700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20650 3300 20650 3400
+Wire Wire Line
+	20500 700  20500 800 
+Connection ~ 20500 800 
+Wire Wire Line
+	20500 800  20500 900 
+Connection ~ 20500 900 
+Wire Wire Line
+	20500 900  20500 1000
+Connection ~ 20500 1000
+Wire Wire Line
+	20500 1000 20500 1100
+Connection ~ 20500 1100
+Wire Wire Line
+	20500 1100 20500 1200
+Connection ~ 20500 1200
+Wire Wire Line
+	20500 1200 20500 1300
+Connection ~ 20500 1300
+Wire Wire Line
+	20500 1300 20500 1400
+Connection ~ 20500 1400
+Wire Wire Line
+	20500 1400 20500 1500
+Connection ~ 20500 1500
+Wire Wire Line
+	20500 1500 20500 1600
+Connection ~ 20500 1600
+Wire Wire Line
+	20500 1600 20500 1700
+Connection ~ 20500 1700
+Wire Wire Line
+	20500 1700 20500 1800
+Connection ~ 20500 1800
+Wire Wire Line
+	20500 1800 20500 1900
+Connection ~ 20500 1900
+Wire Wire Line
+	20500 1900 20500 2000
+Connection ~ 20500 2000
+Wire Wire Line
+	20500 2000 20500 2100
+Connection ~ 20500 2100
+Wire Wire Line
+	20500 2100 20500 2200
+Connection ~ 20500 2200
+Wire Wire Line
+	20500 2200 20500 2300
+Connection ~ 20500 2300
+Wire Wire Line
+	20500 2300 20500 2400
+Connection ~ 20500 2400
+Wire Wire Line
+	20500 2400 20500 2500
+Connection ~ 20500 2500
+Wire Wire Line
+	20500 2500 20500 2600
+Connection ~ 20500 2600
+Wire Wire Line
+	20500 2600 20500 2700
+Connection ~ 20500 2700
+Wire Wire Line
+	20500 2700 20500 2800
+Connection ~ 20500 2800
+Wire Wire Line
+	20500 2800 20500 2900
+Connection ~ 20500 2900
+Wire Wire Line
+	20500 2900 20500 3000
+Connection ~ 20500 3000
+Wire Wire Line
+	20500 3000 20500 3100
+Connection ~ 20500 3100
+Wire Wire Line
+	20500 3100 20500 3200
+Connection ~ 20500 3200
+Wire Wire Line
+	20500 3200 20500 3300
+Connection ~ 20500 3300
+Wire Wire Line
+	20500 3300 20500 3400
+Connection ~ 20500 3400
+Wire Wire Line
+	20500 3400 20500 3500
+Connection ~ 20500 3500
+Wire Wire Line
+	20500 3500 20500 3600
+$Comp
+L Connector_Generic:Conn_01x30 J254
+U 1 1 6E8EE16B
+P 21100 2100
+F 0 "J254" H 21180 2092 50  0000 L CNN
+F 1 "Conn_01x30" H 21180 2001 50  0000 L CNN
+F 2 "experimentboard:30_square" H 21100 2100 50  0001 C CNN
+F 3 "~" H 21100 2100 50  0001 C CNN
+	1    21100 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 3300 21050 3400
+Wire Wire Line
+	20900 700  20900 800 
+Connection ~ 20900 800 
+Wire Wire Line
+	20900 800  20900 900 
+Connection ~ 20900 900 
+Wire Wire Line
+	20900 900  20900 1000
+Connection ~ 20900 1000
+Wire Wire Line
+	20900 1000 20900 1100
+Connection ~ 20900 1100
+Wire Wire Line
+	20900 1100 20900 1200
+Connection ~ 20900 1200
+Wire Wire Line
+	20900 1200 20900 1300
+Connection ~ 20900 1300
+Wire Wire Line
+	20900 1300 20900 1400
+Connection ~ 20900 1400
+Wire Wire Line
+	20900 1400 20900 1500
+Connection ~ 20900 1500
+Wire Wire Line
+	20900 1500 20900 1600
+Connection ~ 20900 1600
+Wire Wire Line
+	20900 1600 20900 1700
+Connection ~ 20900 1700
+Wire Wire Line
+	20900 1700 20900 1800
+Connection ~ 20900 1800
+Wire Wire Line
+	20900 1800 20900 1900
+Connection ~ 20900 1900
+Wire Wire Line
+	20900 1900 20900 2000
+Connection ~ 20900 2000
+Wire Wire Line
+	20900 2000 20900 2100
+Connection ~ 20900 2100
+Wire Wire Line
+	20900 2100 20900 2200
+Connection ~ 20900 2200
+Wire Wire Line
+	20900 2200 20900 2300
+Connection ~ 20900 2300
+Wire Wire Line
+	20900 2300 20900 2400
+Connection ~ 20900 2400
+Wire Wire Line
+	20900 2400 20900 2500
+Connection ~ 20900 2500
+Wire Wire Line
+	20900 2500 20900 2600
+Connection ~ 20900 2600
+Wire Wire Line
+	20900 2600 20900 2700
+Connection ~ 20900 2700
+Wire Wire Line
+	20900 2700 20900 2800
+Connection ~ 20900 2800
+Wire Wire Line
+	20900 2800 20900 2900
+Connection ~ 20900 2900
+Wire Wire Line
+	20900 2900 20900 3000
+Connection ~ 20900 3000
+Wire Wire Line
+	20900 3000 20900 3100
+Connection ~ 20900 3100
+Wire Wire Line
+	20900 3100 20900 3200
+Connection ~ 20900 3200
+Wire Wire Line
+	20900 3200 20900 3300
+Connection ~ 20900 3300
+Wire Wire Line
+	20900 3300 20900 3400
+Connection ~ 20900 3400
+Wire Wire Line
+	20900 3400 20900 3500
+Connection ~ 20900 3500
+Wire Wire Line
+	20900 3500 20900 3600
+$Comp
+L Connector_Generic:Conn_01x30 J255
+U 1 1 6EA64D9A
+P 21500 2100
+F 0 "J255" H 21580 2092 50  0000 L CNN
+F 1 "Conn_01x30" H 21580 2001 50  0000 L CNN
+F 2 "experimentboard:30_square" H 21500 2100 50  0001 C CNN
+F 3 "~" H 21500 2100 50  0001 C CNN
+	1    21500 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21450 3300 21450 3400
+Wire Wire Line
+	21300 700  21300 800 
+Connection ~ 21300 800 
+Wire Wire Line
+	21300 800  21300 900 
+Connection ~ 21300 900 
+Wire Wire Line
+	21300 900  21300 1000
+Connection ~ 21300 1000
+Wire Wire Line
+	21300 1000 21300 1100
+Connection ~ 21300 1100
+Wire Wire Line
+	21300 1100 21300 1200
+Connection ~ 21300 1200
+Wire Wire Line
+	21300 1200 21300 1300
+Connection ~ 21300 1300
+Wire Wire Line
+	21300 1300 21300 1400
+Connection ~ 21300 1400
+Wire Wire Line
+	21300 1400 21300 1500
+Connection ~ 21300 1500
+Wire Wire Line
+	21300 1500 21300 1600
+Connection ~ 21300 1600
+Wire Wire Line
+	21300 1600 21300 1700
+Connection ~ 21300 1700
+Wire Wire Line
+	21300 1700 21300 1800
+Connection ~ 21300 1800
+Wire Wire Line
+	21300 1800 21300 1900
+Connection ~ 21300 1900
+Wire Wire Line
+	21300 1900 21300 2000
+Connection ~ 21300 2000
+Wire Wire Line
+	21300 2000 21300 2100
+Connection ~ 21300 2100
+Wire Wire Line
+	21300 2100 21300 2200
+Connection ~ 21300 2200
+Wire Wire Line
+	21300 2200 21300 2300
+Connection ~ 21300 2300
+Wire Wire Line
+	21300 2300 21300 2400
+Connection ~ 21300 2400
+Wire Wire Line
+	21300 2400 21300 2500
+Connection ~ 21300 2500
+Wire Wire Line
+	21300 2500 21300 2600
+Connection ~ 21300 2600
+Wire Wire Line
+	21300 2600 21300 2700
+Connection ~ 21300 2700
+Wire Wire Line
+	21300 2700 21300 2800
+Connection ~ 21300 2800
+Wire Wire Line
+	21300 2800 21300 2900
+Connection ~ 21300 2900
+Wire Wire Line
+	21300 2900 21300 3000
+Connection ~ 21300 3000
+Wire Wire Line
+	21300 3000 21300 3100
+Connection ~ 21300 3100
+Wire Wire Line
+	21300 3100 21300 3200
+Connection ~ 21300 3200
+Wire Wire Line
+	21300 3200 21300 3300
+Connection ~ 21300 3300
+Wire Wire Line
+	21300 3300 21300 3400
+Connection ~ 21300 3400
+Wire Wire Line
+	21300 3400 21300 3500
+Connection ~ 21300 3500
+Wire Wire Line
+	21300 3500 21300 3600
+$Comp
+L Connector_Generic:Conn_01x30 J256
+U 1 1 6EBE6BE1
+P 21900 2100
+F 0 "J256" H 21980 2092 50  0000 L CNN
+F 1 "Conn_01x30" H 21980 2001 50  0000 L CNN
+F 2 "experimentboard:30_square" H 21900 2100 50  0001 C CNN
+F 3 "~" H 21900 2100 50  0001 C CNN
+	1    21900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21850 3300 21850 3400
+Wire Wire Line
+	21700 700  21700 800 
+Connection ~ 21700 800 
+Wire Wire Line
+	21700 800  21700 900 
+Connection ~ 21700 900 
+Wire Wire Line
+	21700 900  21700 1000
+Connection ~ 21700 1000
+Wire Wire Line
+	21700 1000 21700 1100
+Connection ~ 21700 1100
+Wire Wire Line
+	21700 1100 21700 1200
+Connection ~ 21700 1200
+Wire Wire Line
+	21700 1200 21700 1300
+Connection ~ 21700 1300
+Wire Wire Line
+	21700 1300 21700 1400
+Connection ~ 21700 1400
+Wire Wire Line
+	21700 1400 21700 1500
+Connection ~ 21700 1500
+Wire Wire Line
+	21700 1500 21700 1600
+Connection ~ 21700 1600
+Wire Wire Line
+	21700 1600 21700 1700
+Connection ~ 21700 1700
+Wire Wire Line
+	21700 1700 21700 1800
+Connection ~ 21700 1800
+Wire Wire Line
+	21700 1800 21700 1900
+Connection ~ 21700 1900
+Wire Wire Line
+	21700 1900 21700 2000
+Connection ~ 21700 2000
+Wire Wire Line
+	21700 2000 21700 2100
+Connection ~ 21700 2100
+Wire Wire Line
+	21700 2100 21700 2200
+Connection ~ 21700 2200
+Wire Wire Line
+	21700 2200 21700 2300
+Connection ~ 21700 2300
+Wire Wire Line
+	21700 2300 21700 2400
+Connection ~ 21700 2400
+Wire Wire Line
+	21700 2400 21700 2500
+Connection ~ 21700 2500
+Wire Wire Line
+	21700 2500 21700 2600
+Connection ~ 21700 2600
+Wire Wire Line
+	21700 2600 21700 2700
+Connection ~ 21700 2700
+Wire Wire Line
+	21700 2700 21700 2800
+Connection ~ 21700 2800
+Wire Wire Line
+	21700 2800 21700 2900
+Connection ~ 21700 2900
+Wire Wire Line
+	21700 2900 21700 3000
+Connection ~ 21700 3000
+Wire Wire Line
+	21700 3000 21700 3100
+Connection ~ 21700 3100
+Wire Wire Line
+	21700 3100 21700 3200
+Connection ~ 21700 3200
+Wire Wire Line
+	21700 3200 21700 3300
+Connection ~ 21700 3300
+Wire Wire Line
+	21700 3300 21700 3400
+Connection ~ 21700 3400
+Wire Wire Line
+	21700 3400 21700 3500
+Connection ~ 21700 3500
+Wire Wire Line
+	21700 3500 21700 3600
+$Comp
+L Connector_Generic:Conn_01x30 J257
+U 1 1 6ED746C8
+P 22300 2100
+F 0 "J257" H 22380 2092 50  0000 L CNN
+F 1 "Conn_01x30" H 22380 2001 50  0000 L CNN
+F 2 "experimentboard:30_square" H 22300 2100 50  0001 C CNN
+F 3 "~" H 22300 2100 50  0001 C CNN
+	1    22300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22250 3300 22250 3400
+Wire Wire Line
+	22100 700  22100 800 
+Connection ~ 22100 800 
+Wire Wire Line
+	22100 800  22100 900 
+Connection ~ 22100 900 
+Wire Wire Line
+	22100 900  22100 1000
+Connection ~ 22100 1000
+Wire Wire Line
+	22100 1000 22100 1100
+Connection ~ 22100 1100
+Wire Wire Line
+	22100 1100 22100 1200
+Connection ~ 22100 1200
+Wire Wire Line
+	22100 1200 22100 1300
+Connection ~ 22100 1300
+Wire Wire Line
+	22100 1300 22100 1400
+Connection ~ 22100 1400
+Wire Wire Line
+	22100 1400 22100 1500
+Connection ~ 22100 1500
+Wire Wire Line
+	22100 1500 22100 1600
+Connection ~ 22100 1600
+Wire Wire Line
+	22100 1600 22100 1700
+Connection ~ 22100 1700
+Wire Wire Line
+	22100 1700 22100 1800
+Connection ~ 22100 1800
+Wire Wire Line
+	22100 1800 22100 1900
+Connection ~ 22100 1900
+Wire Wire Line
+	22100 1900 22100 2000
+Connection ~ 22100 2000
+Wire Wire Line
+	22100 2000 22100 2100
+Connection ~ 22100 2100
+Wire Wire Line
+	22100 2100 22100 2200
+Connection ~ 22100 2200
+Wire Wire Line
+	22100 2200 22100 2300
+Connection ~ 22100 2300
+Wire Wire Line
+	22100 2300 22100 2400
+Connection ~ 22100 2400
+Wire Wire Line
+	22100 2400 22100 2500
+Connection ~ 22100 2500
+Wire Wire Line
+	22100 2500 22100 2600
+Connection ~ 22100 2600
+Wire Wire Line
+	22100 2600 22100 2700
+Connection ~ 22100 2700
+Wire Wire Line
+	22100 2700 22100 2800
+Connection ~ 22100 2800
+Wire Wire Line
+	22100 2800 22100 2900
+Connection ~ 22100 2900
+Wire Wire Line
+	22100 2900 22100 3000
+Connection ~ 22100 3000
+Wire Wire Line
+	22100 3000 22100 3100
+Connection ~ 22100 3100
+Wire Wire Line
+	22100 3100 22100 3200
+Connection ~ 22100 3200
+Wire Wire Line
+	22100 3200 22100 3300
+Connection ~ 22100 3300
+Wire Wire Line
+	22100 3300 22100 3400
+Connection ~ 22100 3400
+Wire Wire Line
+	22100 3400 22100 3500
+Connection ~ 22100 3500
+Wire Wire Line
+	22100 3500 22100 3600
+$Comp
+L Connector_Generic:Conn_01x30 J258
+U 1 1 6EF0E8EB
+P 22700 2100
+F 0 "J258" H 22780 2092 50  0000 L CNN
+F 1 "Conn_01x30" H 22780 2001 50  0000 L CNN
+F 2 "experimentboard:30_square" H 22700 2100 50  0001 C CNN
+F 3 "~" H 22700 2100 50  0001 C CNN
+	1    22700 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22650 3300 22650 3400
+Wire Wire Line
+	22500 700  22500 800 
+Connection ~ 22500 800 
+Wire Wire Line
+	22500 800  22500 900 
+Connection ~ 22500 900 
+Wire Wire Line
+	22500 900  22500 1000
+Connection ~ 22500 1000
+Wire Wire Line
+	22500 1000 22500 1100
+Connection ~ 22500 1100
+Wire Wire Line
+	22500 1100 22500 1200
+Connection ~ 22500 1200
+Wire Wire Line
+	22500 1200 22500 1300
+Connection ~ 22500 1300
+Wire Wire Line
+	22500 1300 22500 1400
+Connection ~ 22500 1400
+Wire Wire Line
+	22500 1400 22500 1500
+Connection ~ 22500 1500
+Wire Wire Line
+	22500 1500 22500 1600
+Connection ~ 22500 1600
+Wire Wire Line
+	22500 1600 22500 1700
+Connection ~ 22500 1700
+Wire Wire Line
+	22500 1700 22500 1800
+Connection ~ 22500 1800
+Wire Wire Line
+	22500 1800 22500 1900
+Connection ~ 22500 1900
+Wire Wire Line
+	22500 1900 22500 2000
+Connection ~ 22500 2000
+Wire Wire Line
+	22500 2000 22500 2100
+Connection ~ 22500 2100
+Wire Wire Line
+	22500 2100 22500 2200
+Connection ~ 22500 2200
+Wire Wire Line
+	22500 2200 22500 2300
+Connection ~ 22500 2300
+Wire Wire Line
+	22500 2300 22500 2400
+Connection ~ 22500 2400
+Wire Wire Line
+	22500 2400 22500 2500
+Connection ~ 22500 2500
+Wire Wire Line
+	22500 2500 22500 2600
+Connection ~ 22500 2600
+Wire Wire Line
+	22500 2600 22500 2700
+Connection ~ 22500 2700
+Wire Wire Line
+	22500 2700 22500 2800
+Connection ~ 22500 2800
+Wire Wire Line
+	22500 2800 22500 2900
+Connection ~ 22500 2900
+Wire Wire Line
+	22500 2900 22500 3000
+Connection ~ 22500 3000
+Wire Wire Line
+	22500 3000 22500 3100
+Connection ~ 22500 3100
+Wire Wire Line
+	22500 3100 22500 3200
+Connection ~ 22500 3200
+Wire Wire Line
+	22500 3200 22500 3300
+Connection ~ 22500 3300
+Wire Wire Line
+	22500 3300 22500 3400
+Connection ~ 22500 3400
+Wire Wire Line
+	22500 3400 22500 3500
+Connection ~ 22500 3500
+Wire Wire Line
+	22500 3500 22500 3600
+$Comp
+L Device:R R13
+U 1 1 6F260488
+P 22300 5400
+F 0 "R13" V 22093 5400 50  0000 C CNN
+F 1 "R" V 22184 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 22230 5400 50  0001 C CNN
+F 3 "~" H 22300 5400 50  0001 C CNN
+	1    22300 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J264
+U 1 1 6F26048F
+P 22650 5400
+F 0 "J264" H 22730 5392 50  0000 L CNN
+F 1 "Conn_01x02" H 22730 5301 50  0000 L CNN
+F 2 "experimentboard:2_round" H 22650 5400 50  0001 C CNN
+F 3 "~" H 22650 5400 50  0001 C CNN
+	1    22650 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J259
+U 1 1 6F260496
+P 21950 5400
+F 0 "J259" H 21870 5617 50  0000 C CNN
+F 1 "Conn_01x02" H 21870 5526 50  0000 C CNN
+F 2 "experimentboard:2_round" H 21950 5400 50  0001 C CNN
+F 3 "~" H 21950 5400 50  0001 C CNN
+	1    21950 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	22150 5500 22150 5400
+Connection ~ 22150 5400
+Wire Wire Line
+	22450 5500 22450 5400
+Connection ~ 22450 5400
+$Comp
+L Device:R R14
+U 1 1 6F2604A1
+P 22300 5700
+F 0 "R14" V 22093 5700 50  0000 C CNN
+F 1 "R" V 22184 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 22230 5700 50  0001 C CNN
+F 3 "~" H 22300 5700 50  0001 C CNN
+	1    22300 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J265
+U 1 1 6F2604A8
+P 22650 5700
+F 0 "J265" H 22730 5692 50  0000 L CNN
+F 1 "Conn_01x02" H 22730 5601 50  0000 L CNN
+F 2 "experimentboard:2_round" H 22650 5700 50  0001 C CNN
+F 3 "~" H 22650 5700 50  0001 C CNN
+	1    22650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J260
+U 1 1 6F2604AF
+P 21950 5700
+F 0 "J260" H 21870 5917 50  0000 C CNN
+F 1 "Conn_01x02" H 21870 5826 50  0000 C CNN
+F 2 "experimentboard:2_round" H 21950 5700 50  0001 C CNN
+F 3 "~" H 21950 5700 50  0001 C CNN
+	1    21950 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	22150 5800 22150 5700
+Connection ~ 22150 5700
+Wire Wire Line
+	22450 5800 22450 5700
+Connection ~ 22450 5700
+$Comp
+L Device:R R15
+U 1 1 6F2604BA
+P 22300 6000
+F 0 "R15" V 22093 6000 50  0000 C CNN
+F 1 "R" V 22184 6000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 22230 6000 50  0001 C CNN
+F 3 "~" H 22300 6000 50  0001 C CNN
+	1    22300 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J266
+U 1 1 6F2604C1
+P 22650 6000
+F 0 "J266" H 22730 5992 50  0000 L CNN
+F 1 "Conn_01x02" H 22730 5901 50  0000 L CNN
+F 2 "experimentboard:2_round" H 22650 6000 50  0001 C CNN
+F 3 "~" H 22650 6000 50  0001 C CNN
+	1    22650 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J261
+U 1 1 6F2604C8
+P 21950 6000
+F 0 "J261" H 21870 6217 50  0000 C CNN
+F 1 "Conn_01x02" H 21870 6126 50  0000 C CNN
+F 2 "experimentboard:2_round" H 21950 6000 50  0001 C CNN
+F 3 "~" H 21950 6000 50  0001 C CNN
+	1    21950 6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	22150 6100 22150 6000
+Connection ~ 22150 6000
+Wire Wire Line
+	22450 6100 22450 6000
+Connection ~ 22450 6000
+$Comp
+L Device:R R16
+U 1 1 6F2604D3
+P 22300 6300
+F 0 "R16" V 22093 6300 50  0000 C CNN
+F 1 "R" V 22184 6300 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 22230 6300 50  0001 C CNN
+F 3 "~" H 22300 6300 50  0001 C CNN
+	1    22300 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J267
+U 1 1 6F2604DA
+P 22650 6300
+F 0 "J267" H 22730 6292 50  0000 L CNN
+F 1 "Conn_01x02" H 22730 6201 50  0000 L CNN
+F 2 "experimentboard:2_round" H 22650 6300 50  0001 C CNN
+F 3 "~" H 22650 6300 50  0001 C CNN
+	1    22650 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J262
+U 1 1 6F2604E1
+P 21950 6300
+F 0 "J262" H 21870 6517 50  0000 C CNN
+F 1 "Conn_01x02" H 21870 6426 50  0000 C CNN
+F 2 "experimentboard:2_round" H 21950 6300 50  0001 C CNN
+F 3 "~" H 21950 6300 50  0001 C CNN
+	1    21950 6300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	22150 6400 22150 6300
+Connection ~ 22150 6300
+Wire Wire Line
+	22450 6400 22450 6300
+Connection ~ 22450 6300
+$Comp
+L Device:R R17
+U 1 1 6F2604EC
+P 22300 6600
+F 0 "R17" V 22093 6600 50  0000 C CNN
+F 1 "R" V 22184 6600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 22230 6600 50  0001 C CNN
+F 3 "~" H 22300 6600 50  0001 C CNN
+	1    22300 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J268
+U 1 1 6F2604F3
+P 22650 6600
+F 0 "J268" H 22730 6592 50  0000 L CNN
+F 1 "Conn_01x02" H 22730 6501 50  0000 L CNN
+F 2 "experimentboard:2_round" H 22650 6600 50  0001 C CNN
+F 3 "~" H 22650 6600 50  0001 C CNN
+	1    22650 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J263
+U 1 1 6F2604FA
+P 21950 6600
+F 0 "J263" H 21870 6817 50  0000 C CNN
+F 1 "Conn_01x02" H 21870 6726 50  0000 C CNN
+F 2 "experimentboard:2_round" H 21950 6600 50  0001 C CNN
+F 3 "~" H 21950 6600 50  0001 C CNN
+	1    21950 6600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	22150 6700 22150 6600
+Connection ~ 22150 6600
+Wire Wire Line
+	22450 6700 22450 6600
+Connection ~ 22450 6600
+$Comp
+L power:GND #PWR0141
+U 1 1 6F40CCF2
+P 20500 3600
+F 0 "#PWR0141" H 20500 3350 50  0001 C CNN
+F 1 "GND" H 20505 3427 50  0000 C CNN
+F 2 "" H 20500 3600 50  0001 C CNN
+F 3 "" H 20500 3600 50  0001 C CNN
+	1    20500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0142
+U 1 1 6F40D0EC
+P 22100 3600
+F 0 "#PWR0142" H 22100 3350 50  0001 C CNN
+F 1 "GND" H 22105 3427 50  0000 C CNN
+F 2 "" H 22100 3600 50  0001 C CNN
+F 3 "" H 22100 3600 50  0001 C CNN
+	1    22100 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 20500 3600
+Connection ~ 22100 3600
+$Comp
+L Connector_Generic:Conn_01x37 J269
+U 1 1 6F769734
+P 23150 2500
+F 0 "J269" H 23230 2542 50  0000 L CNN
+F 1 "Conn_01x37" H 23230 2451 50  0000 L CNN
+F 2 "experimentboard:37_square" H 23150 2500 50  0001 C CNN
+F 3 "~" H 23150 2500 50  0001 C CNN
+	1    23150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22950 700  22950 800 
+Connection ~ 22950 800 
+Wire Wire Line
+	22950 800  22950 900 
+Connection ~ 22950 900 
+Wire Wire Line
+	22950 900  22950 1000
+Connection ~ 22950 1000
+Wire Wire Line
+	22950 1000 22950 1100
+Connection ~ 22950 1100
+Wire Wire Line
+	22950 1100 22950 1200
+Connection ~ 22950 1200
+Wire Wire Line
+	22950 1200 22950 1300
+Connection ~ 22950 1300
+Wire Wire Line
+	22950 1300 22950 1400
+Connection ~ 22950 1400
+Wire Wire Line
+	22950 1400 22950 1500
+Connection ~ 22950 1500
+Wire Wire Line
+	22950 1500 22950 1600
+Connection ~ 22950 1600
+Wire Wire Line
+	22950 1600 22950 1700
+Connection ~ 22950 1700
+Wire Wire Line
+	22950 1700 22950 1800
+Connection ~ 22950 1800
+Wire Wire Line
+	22950 1800 22950 1900
+Connection ~ 22950 1900
+Wire Wire Line
+	22950 1900 22950 2000
+Connection ~ 22950 2000
+Wire Wire Line
+	22950 2000 22950 2100
+Connection ~ 22950 2100
+Wire Wire Line
+	22950 2100 22950 2200
+Connection ~ 22950 2200
+Wire Wire Line
+	22950 2200 22950 2300
+Connection ~ 22950 2300
+Wire Wire Line
+	22950 2300 22950 2400
+Connection ~ 22950 2400
+Wire Wire Line
+	22950 2400 22950 2500
+Connection ~ 22950 2500
+Wire Wire Line
+	22950 2500 22950 2600
+Connection ~ 22950 2600
+Wire Wire Line
+	22950 2600 22950 2700
+Connection ~ 22950 2700
+Wire Wire Line
+	22950 2700 22950 2800
+Connection ~ 22950 2800
+Wire Wire Line
+	22950 2800 22950 2900
+Connection ~ 22950 2900
+Wire Wire Line
+	22950 2900 22950 3000
+Connection ~ 22950 3000
+Wire Wire Line
+	22950 3000 22950 3100
+Connection ~ 22950 3100
+Wire Wire Line
+	22950 3100 22950 3200
+Connection ~ 22950 3200
+Wire Wire Line
+	22950 3200 22950 3300
+Connection ~ 22950 3300
+Wire Wire Line
+	22950 3300 22950 3400
+Connection ~ 22950 3400
+Wire Wire Line
+	22950 3400 22950 3500
+Connection ~ 22950 3500
+Wire Wire Line
+	22950 3500 22950 3600
+Connection ~ 22950 3600
+Wire Wire Line
+	22950 3600 22950 3700
+Connection ~ 22950 3700
+Wire Wire Line
+	22950 3700 22950 3800
+Connection ~ 22950 3800
+Wire Wire Line
+	22950 3800 22950 3900
+Connection ~ 22950 3900
+Wire Wire Line
+	22950 3900 22950 4000
+Connection ~ 22950 4000
+Wire Wire Line
+	22950 4000 22950 4100
+Connection ~ 22950 4100
+Wire Wire Line
+	22950 4100 22950 4200
+Connection ~ 22950 4200
+Wire Wire Line
+	22950 4200 22950 4300
+$Comp
+L Connector_Generic:Conn_01x37 J270
+U 1 1 6F9162EA
+P 23550 2500
+F 0 "J270" H 23630 2542 50  0000 L CNN
+F 1 "Conn_01x37" H 23630 2451 50  0000 L CNN
+F 2 "experimentboard:37_square" H 23550 2500 50  0001 C CNN
+F 3 "~" H 23550 2500 50  0001 C CNN
+	1    23550 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23350 700  23350 800 
+Connection ~ 23350 800 
+Wire Wire Line
+	23350 800  23350 900 
+Connection ~ 23350 900 
+Wire Wire Line
+	23350 900  23350 1000
+Connection ~ 23350 1000
+Wire Wire Line
+	23350 1000 23350 1100
+Connection ~ 23350 1100
+Wire Wire Line
+	23350 1100 23350 1200
+Connection ~ 23350 1200
+Wire Wire Line
+	23350 1200 23350 1300
+Connection ~ 23350 1300
+Wire Wire Line
+	23350 1300 23350 1400
+Connection ~ 23350 1400
+Wire Wire Line
+	23350 1400 23350 1500
+Connection ~ 23350 1500
+Wire Wire Line
+	23350 1500 23350 1600
+Connection ~ 23350 1600
+Wire Wire Line
+	23350 1600 23350 1700
+Connection ~ 23350 1700
+Wire Wire Line
+	23350 1700 23350 1800
+Connection ~ 23350 1800
+Wire Wire Line
+	23350 1800 23350 1900
+Connection ~ 23350 1900
+Wire Wire Line
+	23350 1900 23350 2000
+Connection ~ 23350 2000
+Wire Wire Line
+	23350 2000 23350 2100
+Connection ~ 23350 2100
+Wire Wire Line
+	23350 2100 23350 2200
+Connection ~ 23350 2200
+Wire Wire Line
+	23350 2200 23350 2300
+Connection ~ 23350 2300
+Wire Wire Line
+	23350 2300 23350 2400
+Connection ~ 23350 2400
+Wire Wire Line
+	23350 2400 23350 2500
+Connection ~ 23350 2500
+Wire Wire Line
+	23350 2500 23350 2600
+Connection ~ 23350 2600
+Wire Wire Line
+	23350 2600 23350 2700
+Connection ~ 23350 2700
+Wire Wire Line
+	23350 2700 23350 2800
+Connection ~ 23350 2800
+Wire Wire Line
+	23350 2800 23350 2900
+Connection ~ 23350 2900
+Wire Wire Line
+	23350 2900 23350 3000
+Connection ~ 23350 3000
+Wire Wire Line
+	23350 3000 23350 3100
+Connection ~ 23350 3100
+Wire Wire Line
+	23350 3100 23350 3200
+Connection ~ 23350 3200
+Wire Wire Line
+	23350 3200 23350 3300
+Connection ~ 23350 3300
+Wire Wire Line
+	23350 3300 23350 3400
+Connection ~ 23350 3400
+Wire Wire Line
+	23350 3400 23350 3500
+Connection ~ 23350 3500
+Wire Wire Line
+	23350 3500 23350 3600
+Connection ~ 23350 3600
+Wire Wire Line
+	23350 3600 23350 3700
+Connection ~ 23350 3700
+Wire Wire Line
+	23350 3700 23350 3800
+Connection ~ 23350 3800
+Wire Wire Line
+	23350 3800 23350 3900
+Connection ~ 23350 3900
+Wire Wire Line
+	23350 3900 23350 4000
+Connection ~ 23350 4000
+Wire Wire Line
+	23350 4000 23350 4100
+Connection ~ 23350 4100
+Wire Wire Line
+	23350 4100 23350 4200
+Connection ~ 23350 4200
+Wire Wire Line
+	23350 4200 23350 4300
+$Comp
+L Connector_Generic:Conn_01x37 J271
+U 1 1 6FAE4CCE
+P 23950 2500
+F 0 "J271" H 24030 2542 50  0000 L CNN
+F 1 "Conn_01x37" H 24030 2451 50  0000 L CNN
+F 2 "experimentboard:37_square" H 23950 2500 50  0001 C CNN
+F 3 "~" H 23950 2500 50  0001 C CNN
+	1    23950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	23750 700  23750 800 
+Connection ~ 23750 800 
+Wire Wire Line
+	23750 800  23750 900 
+Connection ~ 23750 900 
+Wire Wire Line
+	23750 900  23750 1000
+Connection ~ 23750 1000
+Wire Wire Line
+	23750 1000 23750 1100
+Connection ~ 23750 1100
+Wire Wire Line
+	23750 1100 23750 1200
+Connection ~ 23750 1200
+Wire Wire Line
+	23750 1200 23750 1300
+Connection ~ 23750 1300
+Wire Wire Line
+	23750 1300 23750 1400
+Connection ~ 23750 1400
+Wire Wire Line
+	23750 1400 23750 1500
+Connection ~ 23750 1500
+Wire Wire Line
+	23750 1500 23750 1600
+Connection ~ 23750 1600
+Wire Wire Line
+	23750 1600 23750 1700
+Connection ~ 23750 1700
+Wire Wire Line
+	23750 1700 23750 1800
+Connection ~ 23750 1800
+Wire Wire Line
+	23750 1800 23750 1900
+Connection ~ 23750 1900
+Wire Wire Line
+	23750 1900 23750 2000
+Connection ~ 23750 2000
+Wire Wire Line
+	23750 2000 23750 2100
+Connection ~ 23750 2100
+Wire Wire Line
+	23750 2100 23750 2200
+Connection ~ 23750 2200
+Wire Wire Line
+	23750 2200 23750 2300
+Connection ~ 23750 2300
+Wire Wire Line
+	23750 2300 23750 2400
+Connection ~ 23750 2400
+Wire Wire Line
+	23750 2400 23750 2500
+Connection ~ 23750 2500
+Wire Wire Line
+	23750 2500 23750 2600
+Connection ~ 23750 2600
+Wire Wire Line
+	23750 2600 23750 2700
+Connection ~ 23750 2700
+Wire Wire Line
+	23750 2700 23750 2800
+Connection ~ 23750 2800
+Wire Wire Line
+	23750 2800 23750 2900
+Connection ~ 23750 2900
+Wire Wire Line
+	23750 2900 23750 3000
+Connection ~ 23750 3000
+Wire Wire Line
+	23750 3000 23750 3100
+Connection ~ 23750 3100
+Wire Wire Line
+	23750 3100 23750 3200
+Connection ~ 23750 3200
+Wire Wire Line
+	23750 3200 23750 3300
+Connection ~ 23750 3300
+Wire Wire Line
+	23750 3300 23750 3400
+Connection ~ 23750 3400
+Wire Wire Line
+	23750 3400 23750 3500
+Connection ~ 23750 3500
+Wire Wire Line
+	23750 3500 23750 3600
+Connection ~ 23750 3600
+Wire Wire Line
+	23750 3600 23750 3700
+Connection ~ 23750 3700
+Wire Wire Line
+	23750 3700 23750 3800
+Connection ~ 23750 3800
+Wire Wire Line
+	23750 3800 23750 3900
+Connection ~ 23750 3900
+Wire Wire Line
+	23750 3900 23750 4000
+Connection ~ 23750 4000
+Wire Wire Line
+	23750 4000 23750 4100
+Connection ~ 23750 4100
+Wire Wire Line
+	23750 4100 23750 4200
+Connection ~ 23750 4200
+Wire Wire Line
+	23750 4200 23750 4300
+$Comp
+L power:GND #PWR0143
+U 1 1 6FCC63AD
+P 22950 4300
+F 0 "#PWR0143" H 22950 4050 50  0001 C CNN
+F 1 "GND" H 22955 4127 50  0000 C CNN
+F 2 "" H 22950 4300 50  0001 C CNN
+F 3 "" H 22950 4300 50  0001 C CNN
+	1    22950 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 22950 4300
+$EndSCHEMATC

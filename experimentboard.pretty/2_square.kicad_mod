@@ -1,0 +1,18 @@
+(module 2_square (layer F.Cu) (tedit 62D10D8E)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value 2_square (at 0 -0.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start -1.016 -1.016) (end 1.016 -1.016) (layer B.SilkS) (width 0.15))
+  (fp_line (start 1.016 -1.016) (end 1.016 3.556) (layer B.SilkS) (width 0.15))
+  (fp_line (start 1.016 3.556) (end -1.016 3.556) (layer B.SilkS) (width 0.15))
+  (fp_line (start -1.016 3.556) (end -1.016 -1.016) (layer B.SilkS) (width 0.15))
+  (fp_line (start -1.016 -1.016) (end 1.016 -1.016) (layer F.SilkS) (width 0.15))
+  (fp_line (start 1.016 -1.016) (end 1.016 3.556) (layer F.SilkS) (width 0.15))
+  (fp_line (start 1.016 3.556) (end -1.016 3.556) (layer F.SilkS) (width 0.15))
+  (fp_line (start -1.016 3.556) (end -1.016 -1.016) (layer F.SilkS) (width 0.15))
+  (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+  (pad 2 thru_hole rect (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask))
+)
