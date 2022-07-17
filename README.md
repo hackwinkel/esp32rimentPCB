@@ -1,3 +1,9 @@
+#esp32rimentPCB
+
+![PCB] (PCBimage.png)
+
+
+
 KiCAD design files for an ESP32 WROVER experimentation PCB that fits a 130x170x55 mm plastic project box
 https://nl.aliexpress.com/wholesale?SearchText=130x170x55mm
 It is possible to mount 2 PCB's in one box as top and bottom shell have identical mounting pattern
