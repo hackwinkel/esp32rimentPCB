@@ -1,6 +1,6 @@
-#esp32rimentPCB
+## esp32rimentPCB
 
-![PCB] (PCBimage.png)
+![PCB](PCBimage.png)
 
 
 
